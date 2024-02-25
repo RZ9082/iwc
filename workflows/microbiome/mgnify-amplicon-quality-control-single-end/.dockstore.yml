@@ -3,9 +3,9 @@ workflows:
 - name: main
   subclass: Galaxy
   publish: true
-  primaryDescriptorPath: /mgnify-amplicon-pipeline-quality-control-paired-end.ga
+  primaryDescriptorPath: /mgnify-amplicon-pipeline-quality-control-single-end.ga
   testParameterFiles:
-  - /mgnify-amplicon-pipeline-quality-control-paired-end-tests.yml
+  - /mgnify-amplicon-pipeline-quality-control-single-end-tests.yml
   authors:
   - name: Rand Zoabi
     orcid: 0009-0000-2501-8053
