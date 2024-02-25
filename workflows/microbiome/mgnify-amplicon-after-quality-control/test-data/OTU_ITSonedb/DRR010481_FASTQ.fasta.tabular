@@ -1,0 +1,8 @@
+# Constructed from biom file
+# OTU ID	Unspecified	taxonomy	taxid
+1470	4.0	sk__Eukaryota;k__Fungi	
+1486	1.0	sk__Eukaryota;k__Fungi;p__Ascomycota	
+1491	8.0	sk__Eukaryota;k__Fungi;p__Ascomycota;c__;o__;f__;g__;s__Ascomycota_sp	
+6882	9.0	sk__Eukaryota;k__Fungi;p__Ascomycota;c__Dothideomycetes;o__Venturiales	
+25133	1.0	sk__Eukaryota;k__Fungi;p__Basidiomycota;c__Agaricomycetes;o__Agaricales	
+29420	2.0	sk__Eukaryota;k__Fungi;p__Basidiomycota;c__Agaricomycetes;o__Agaricales;f__Mycenaceae	

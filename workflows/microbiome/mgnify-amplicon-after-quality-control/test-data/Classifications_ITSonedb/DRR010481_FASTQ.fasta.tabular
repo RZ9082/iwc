@@ -1,0 +1,27 @@
+# mapseq v1.2.6 (Jan 20 2023)
+#query	dbhit	bitscore	identity	matches	mismatches	gaps	query_start	query_end	dbhit_start	dbhit_end	strand		UNITE	
+DRR010481.1-HUMWT9A01C6SDL-4	GQ160002	122	0.8357487916946411	173	24	10	0	202	184	386	+		sk__Eukaryota;k__Fungi	
+DRR010481.2-HUMWT9A01A6FHU-4	KY228505	200	0.9352226853370667	231	11	5	0	246	7	250	+		sk__Eukaryota;k__Fungi;p__Ascomycota;c__Dothideomycetes;o__Venturiales;f__	
+DRR010481.3-HUMWT9A01CEMJS-4	KY228505	206	0.9346153736114502	243	10	7	0	257	7	263	+		sk__Eukaryota;k__Fungi;p__Ascomycota;c__Dothideomycetes;o__Venturiales;f__	
+DRR010481.4-HUMWT9A01BRR8F-4	KY228505	204	0.9362549781799316	235	11	5	0	250	7	254	+		sk__Eukaryota;k__Fungi;p__Ascomycota;c__Dothideomycetes;o__Venturiales;f__	
+DRR010481.5-HUMWT9A01A29S1-4	KU195486	173	0.9675675630569458	179	6	0	0	185	250	435	+		sk__Eukaryota;k__Fungi;p__Ascomycota;c__;o__;f__;g__;s__Ascomycota_sp	
+DRR010481.6-HUMWT9A01CMBDY-4	KY228505	203	0.9359999895095825	234	11	5	0	249	8	254	+		sk__Eukaryota;k__Fungi;p__Ascomycota;c__Dothideomycetes;o__Venturiales;f__	
+DRR010481.7-HUMWT9A01DMCR3-4	KY228505	204	0.9362549781799316	235	11	5	0	250	7	254	+		sk__Eukaryota;k__Fungi;p__Ascomycota;c__Dothideomycetes;o__Venturiales;f__	
+DRR010481.8-HUMWT9A01A36AF-4	KU195486	173	0.9675675630569458	179	6	0	0	185	250	435	+		sk__Eukaryota;k__Fungi;p__Ascomycota;c__;o__;f__;g__;s__Ascomycota_sp	
+DRR010481.10-HUMWT9A01CLKTT-4	KU195486	173	0.9675675630569458	179	6	0	0	185	250	435	+		sk__Eukaryota;k__Fungi;p__Ascomycota;c__;o__;f__;g__;s__Ascomycota_sp	
+DRR010481.11-HUMWT9A01A55N6-4	KU195486	170	0.9619565010070801	177	7	0	0	184	251	435	+		sk__Eukaryota;k__Fungi;p__Ascomycota;c__;o__;f__;g__;s__Ascomycota_sp	
+DRR010481.12-HUMWT9A01DQZ35-4	GQ160002	118	0.8374384045600891	170	24	9	0	199	183	381	+		sk__Eukaryota;k__Fungi	
+DRR010481.13-HUMWT9A01CWWE7-4	EF434064	111	0.8452380895614624	142	23	3	0	165	217	385	+		sk__Eukaryota;k__Fungi	
+DRR010481.14-HUMWT9A01CWM7O-4	KU195486	173	0.9675675630569458	179	6	0	0	185	250	435	+		sk__Eukaryota;k__Fungi;p__Ascomycota;c__;o__;f__;g__;s__Ascomycota_sp	
+DRR010481.15-HUMWT9A01C6KQE-4	JX030278	308	0.9935897588729858	310	2	0	0	312	286	598	+		sk__Eukaryota;k__Fungi;p__Basidiomycota;c__Agaricomycetes;o__Agaricales;f__Mycenaceae;g__	
+DRR010481.16-HUMWT9A01BP5YQ-4	JX030278	306	0.9903846383094788	309	3	0	0	312	286	598	+		sk__Eukaryota;k__Fungi;p__Basidiomycota;c__Agaricomycetes;o__Agaricales;f__Mycenaceae;g__	
+DRR010481.17-HUMWT9A01CLKK7-4	EF434064	110	0.8443113565444946	141	23	3	0	164	218	385	+		sk__Eukaryota;k__Fungi	
+DRR010481.18-HUMWT9A01ATALC-4	KY228505	203	0.9359999895095825	234	11	5	0	249	8	254	+		sk__Eukaryota;k__Fungi;p__Ascomycota;c__Dothideomycetes;o__Venturiales;f__	
+DRR010481.20-HUMWT9A01C8FXI-4	KT224934	123	1	123	0	0	0	123	335	458	+		sk__Eukaryota;k__Fungi;p__Basidiomycota;c__Agaricomycetes;o__Agaricales	
+DRR010481.21-HUMWT9A01A9JR7-4	KU195486	173	0.9675675630569458	179	6	0	0	185	250	435	+		sk__Eukaryota;k__Fungi;p__Ascomycota;c__;o__;f__;g__;s__Ascomycota_sp	
+DRR010481.23-HUMWT9A01AM5Q3-4	KY228505	202	0.9392712712287903	232	10	5	0	246	7	250	+		sk__Eukaryota;k__Fungi;p__Ascomycota;c__Dothideomycetes;o__Venturiales;f__	
+DRR010481.24-HUMWT9A01CYLUO-4	KY228505	198	0.9456067085266113	226	8	5	0	238	7	242	+		sk__Eukaryota;k__Fungi;p__Ascomycota;c__Dothideomycetes;o__Venturiales;f__;g__	
+DRR010481.25-HUMWT9A01A3MBZ-4	KY228505	201	0.9426229596138	230	10	4	0	243	7	248	+		sk__Eukaryota;k__Fungi;p__Ascomycota;c__Dothideomycetes;o__Venturiales;f__;g__	
+DRR010481.31-HUMWT9A01CFUVG-4	KU195486	184	0.9409090876579285	207	9	4	0	220	250	466	+		sk__Eukaryota;k__Fungi;p__Ascomycota;c__;o__;f__;g__	
+DRR010481.32-HUMWT9A01BTRXI-4	KU195486	146	0.9740259647369385	150	4	0	0	154	250	404	+		sk__Eukaryota;k__Fungi;p__Ascomycota;c__;o__;f__;g__;s__Ascomycota_sp	
+DRR010481.33-HUMWT9A01BUFRP-4	KU195486	145	0.9801324605941772	148	3	0	0	151	250	401	+		sk__Eukaryota;k__Fungi;p__Ascomycota;c__;o__;f__;g__;s__Ascomycota_sp	

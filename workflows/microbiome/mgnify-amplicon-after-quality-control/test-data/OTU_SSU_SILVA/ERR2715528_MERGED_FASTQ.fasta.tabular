@@ -1,0 +1,11 @@
+# Constructed from biom file
+# OTU ID	Unspecified	taxonomy	taxid
+100053	471.0	sk__Eukaryota	2759
+25778	3.0	sk__Eukaryota;k__Fungi	4751
+229700	46.0	sk__Eukaryota;k__Fungi;p__Ascomycota	4890
+121326	1616.0	sk__Eukaryota;k__Fungi;p__Ascomycota;c__Sordariomycetes	147550
+46745	54.0	sk__Eukaryota;k__Fungi;p__Chytridiomycota;c__Chytridiomycetes	451435
+167911	1.0	sk__Eukaryota;k__Metazoa;p__Annelida;c__Polychaeta;o__Phyllodocida;f__Glyceridae;g__Glycera;s__Glycera_nicobarica	529124
+234433	1.0	sk__Eukaryota;k__Metazoa;p__Arthropoda;c__Insecta	50557
+51027	1.0	sk__Eukaryota;k__Viridiplantae	33090
+237552	14.0	sk__Eukaryota;k__Viridiplantae;p__Streptophyta;c__Magnoliopsida;o__Solanales;f__Convolvulaceae;g__Ipomoea	4119

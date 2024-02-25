@@ -1,0 +1,153 @@
+- doc: Test outline for mgnify-amplicon-pipeline-after-quality-control.ga
+  job:
+    processed seqs:
+      class: Collection
+      collection_type: list
+      elements:
+      - class: File
+        identifier: DRR010481_FASTQ.fasta
+        path: test-data/sequences/DRR010481_FASTQ.fasta
+      - class: File
+        identifier: ERR2715528_MERGED_FASTQ.fasta
+        path: test-data/sequences/ERR2715528_MERGED_FASTQ.fasta
+    clan info file:
+      class: File
+      path: test-data/ribo.claninfo
+    covariance models:
+      class: File
+      location: "ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/pipeline-5.0/ref-dbs/rfam_models/ribosomal_models/ribo.cm"
+  outputs:
+    SSU FASTA:
+      element_tests:
+        ERR2715528_MERGED_FASTQ.fasta:
+          path: test-data/SSU_FASTA/ERR2715528_MERGED_FASTQ.fasta.fasta
+          compare: contains
+    LSU FASTA:
+      element_tests:
+        DRR010481_FASTQ.fasta:
+          path: test-data/LSU_FASTA/DRR010481_FASTQ.fasta.fasta
+          compare: contains
+    Classifications SSU SILVA:
+      element_tests:
+        ERR2715528_MERGED_FASTQ.fasta:
+          path: test-data/Classifications_SSU_SILVA/ERR2715528_MERGED_FASTQ.fasta.tabular
+          compare: contains
+    OTU SSU SILVA:
+      element_tests:
+        ERR2715528_MERGED_FASTQ.fasta:
+          path: test-data/OTU_SSU_SILVA/ERR2715528_MERGED_FASTQ.fasta.tabular
+          compare: contains
+    OTU LSU SILVA:
+      element_tests:
+        DRR010481_FASTQ.fasta:
+          path: test-data/OTU_LSU_SILVA/DRR010481_FASTQ.fasta.tabular
+          compare: contains
+    Classifications LSU SILVA:
+      element_tests:
+        DRR010481_FASTQ.fasta:
+          path: test-data/Classifications_LSU_SILVA/DRR010481_FASTQ.fasta.tabular
+          compare: contains
+    ITS FASTA:
+      element_tests:
+        DRR010481_FASTQ.fasta:
+          path: test-data/ITS_FASTA/DRR010481_FASTQ.fasta.fasta
+          compare: contains
+        ERR2715528_MERGED_FASTQ.fasta:
+          path: test-data/ITS_FASTA/ERR2715528_MERGED_FASTQ.fasta.fasta
+          compare: contains
+    HDF5 SSU SILVA:
+      element_tests:
+        ERR2715528_MERGED_FASTQ.fasta:
+          path: test-data/HDF5_SSU_SILVA/ERR2715528_MERGED_FASTQ.fasta.biom1
+          compare: contains
+    JSON SSU SILVA:
+      element_tests:
+        ERR2715528_MERGED_FASTQ.fasta:
+          path: test-data/JSON_SSU_SILVA/ERR2715528_MERGED_FASTQ.fasta.biom1
+          compare: contains
+    Krona SSU SILVA:
+      path: test-data/Krona_SSU_SILVA.html
+      compare: contains
+    HDF5 LSU SILVA:
+      element_tests:
+        DRR010481_FASTQ.fasta:
+          path: test-data/HDF5_LSU_SILVA/DRR010481_FASTQ.fasta.biom1
+          compare: contains
+    JSON LSU SILVA:
+      element_tests:
+        DRR010481_FASTQ.fasta:
+          path: test-data/JSON_LSU_SILVA/DRR010481_FASTQ.fasta.biom1
+          compare: contains
+    Krona LSU SILVA:
+      path: test-data/Krona_LSU_SILVA.html
+      compare: contains
+    Classifications ITSonedb:
+      element_tests:
+        DRR010481_FASTQ.fasta:
+          path: test-data/Classifications_ITSonedb/DRR010481_FASTQ.fasta.tabular
+          compare: contains
+        ERR2715528_MERGED_FASTQ.fasta:
+          path: test-data/Classifications_ITSonedb/ERR2715528_MERGED_FASTQ.fasta.tabular
+        compare: contains
+    OTU ITSonedb:
+      element_tests:
+        DRR010481_FASTQ.fasta:
+          path: test-data/OTU_ITSonedb/DRR010481_FASTQ.fasta.tabular
+          compare: contains
+        ERR2715528_MERGED_FASTQ.fasta:
+          path: test-data/OTU_ITSonedb/ERR2715528_MERGED_FASTQ.fasta.tabular
+        compare: contains
+    OTU ITS UNITE:
+      element_tests:
+        DRR010481_FASTQ.fasta:
+          path: test-data/OTU_ITS_UNITE/DRR010481_FASTQ.fasta.tabular
+          compare: contains
+        ERR2715528_MERGED_FASTQ.fasta:
+          path: test-data/OTU_ITS_UNITE/ERR2715528_MERGED_FASTQ.fasta.tabular
+        compare: contains
+    Classifications ITS UNITE:
+      element_tests:
+        DRR010481_FASTQ.fasta:
+          path: test-data/Classifications_ITS_UNITE/DRR010481_FASTQ.fasta.tabular
+          compare: contains
+        ERR2715528_MERGED_FASTQ.fasta:
+          path: test-data/Classifications_ITS_UNITE/ERR2715528_MERGED_FASTQ.fasta.tabular
+        compare: contains
+    HDF5 ITSonedb:
+      element_tests:
+        DRR010481_FASTQ.fasta:
+          path: test-data/HDF5_ITSonedb/DRR010481_FASTQ.fasta.biom1
+          compare: contains
+        ERR2715528_MERGED_FASTQ.fasta:
+          path: test-data/HDF5_ITSonedb/ERR2715528_MERGED_FASTQ.fasta.biom1
+        compare: contains
+    JSON ITSonedb:
+      element_tests:
+        DRR010481_FASTQ.fasta:
+          path: test-data/JSON_ITSonedb/DRR010481_FASTQ.fasta.biom1
+          compare: contains
+        ERR2715528_MERGED_FASTQ.fasta:
+          path: test-data/JSON_ITSonedb/ERR2715528_MERGED_FASTQ.fasta.biom1
+        compare: contains
+    Krona ITSonedb:
+      path: test-data/Krona_ITSonedb.html
+      compare: contains
+    HDF5 ITS UNITE:
+      element_tests:
+        DRR010481_FASTQ.fasta:
+          path: test-data/HDF5_ITS_UNITE/DRR010481_FASTQ.fasta.biom1
+          compare: contains
+        ERR2715528_MERGED_FASTQ.fasta:
+          path: test-data/HDF5_ITS_UNITE/ERR2715528_MERGED_FASTQ.fasta.biom1
+        compare: contains
+    JSON ITS UNITE:
+      element_tests:
+        DRR010481_FASTQ.fasta:
+          path: test-data/JSON_ITS_UNITE/DRR010481_FASTQ.fasta.biom1
+          compare: contains
+        ERR2715528_MERGED_FASTQ.fasta:
+          path: test-data/JSON_ITS_UNITE/ERR2715528_MERGED_FASTQ.fasta.biom1
+        compare: contains
+    Krona ITS UNITE:
+      path: test-data/Krona_ITS_UNITE.html
+      compare: contains
