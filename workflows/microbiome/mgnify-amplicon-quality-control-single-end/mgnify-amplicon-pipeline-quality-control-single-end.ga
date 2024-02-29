@@ -37,7 +37,13 @@
             "type": "parameter_input",
             "uuid": "d2537e7d-8ad6-48b5-aaf2-5376ff2701f7",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "452d1411-1175-4a34-b139-21b97abd3ebe"
+                }
+            ]
         },
         "1": {
             "annotation": "",
@@ -64,7 +70,13 @@
             "type": "parameter_input",
             "uuid": "104fb7e6-3a37-4976-b986-8be267cb7c2c",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "2ad6cf76-9ae2-4090-aa0a-4645e152e765"
+                }
+            ]
         },
         "2": {
             "annotation": "",
@@ -91,7 +103,13 @@
             "type": "parameter_input",
             "uuid": "d740c196-b22a-45f4-9f86-cec1063865f9",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "98d710e3-6c20-4211-8921-1ab1330befbf"
+                }
+            ]
         },
         "3": {
             "annotation": "",
@@ -118,7 +136,13 @@
             "type": "parameter_input",
             "uuid": "92253232-022c-44e0-97b3-812a24accecf",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "efe1b287-ea0a-48f4-b8a8-899b16ebbd7a"
+                }
+            ]
         },
         "4": {
             "annotation": "",
@@ -145,7 +169,13 @@
             "type": "parameter_input",
             "uuid": "daf0fac9-1f4d-4000-9014-06a716e6657d",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "52aff90b-936a-433c-aca4-a77e1d0efdb5"
+                }
+            ]
         },
         "5": {
             "annotation": "",
@@ -172,7 +202,13 @@
             "type": "parameter_input",
             "uuid": "6bd38b57-ded7-46a2-8dc1-13c941cc0970",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "c0a59931-a6f7-49ed-b9d4-3e4ef27c4ee3"
+                }
+            ]
         },
         "6": {
             "annotation": "",
@@ -199,7 +235,13 @@
             "type": "parameter_input",
             "uuid": "d08e1697-46c6-4d43-9619-fa29ccbd81e0",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "6d441443-3268-40a9-93e0-cff42d1879a7"
+                }
+            ]
         },
         "7": {
             "annotation": "",
@@ -226,7 +268,13 @@
             "type": "parameter_input",
             "uuid": "52e0a3c5-ac79-426f-b2d4-237d93bf2790",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "d19b6cd8-7315-412d-89da-efa09b281c9b"
+                }
+            ]
         },
         "8": {
             "annotation": "",
@@ -253,7 +301,13 @@
             "type": "parameter_input",
             "uuid": "314ffc70-8f0c-4195-8296-d002b18d2c23",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "d9561237-20ed-4f26-8f0d-7f6074958881"
+                }
+            ]
         },
         "9": {
             "annotation": "Download and extract paired-end reads from NCBI SRA via corresponding accession number.",
@@ -316,7 +370,7 @@
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"adv\": {\"defline_seq\": \"@$sn[_$rn]-$ri\", \"minID\": null, \"maxID\": null, \"minlen\": null, \"split\": true, \"alignments\": \"both\", \"region\": null, \"matepairDist\": null, \"readfilter\": \"\", \"spotgroups\": null, \"clip\": false, \"skip_technical\": true, \"table\": \"\"}, \"input\": {\"input_select\": \"accession_number\", \"__current_case__\": 0, \"accession\": {\"__class__\": \"ConnectedValue\"}}, \"outputformat\": \"fastqsanger.gz\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"adv\": {\"defline_seq\": \"@$ac.$si-$sn-$ri\", \"minID\": null, \"maxID\": null, \"minlen\": null, \"split\": true, \"alignments\": \"both\", \"region\": null, \"matepairDist\": null, \"readfilter\": \"\", \"spotgroups\": null, \"clip\": false, \"skip_technical\": true, \"table\": \"\"}, \"input\": {\"input_select\": \"accession_number\", \"__current_case__\": 0, \"accession\": {\"__class__\": \"ConnectedValue\"}}, \"outputformat\": \"fastqsanger.gz\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "3.0.8+galaxy1",
             "type": "tool",
             "uuid": "c3f1cd4f-094f-4ef9-b252-170962690a05",
@@ -385,7 +439,7 @@
                 "owner": "pjbriggs",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"illuminaclip\": {\"do_illuminaclip\": false, \"__current_case__\": 1}, \"operations\": [{\"__index__\": 0, \"operation\": {\"name\": \"SLIDINGWINDOW\", \"__current_case__\": 0, \"window_size\": {\"__class__\": \"ConnectedValue\"}, \"required_quality\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"operation\": {\"name\": \"LEADING\", \"__current_case__\": 2, \"leading\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 2, \"operation\": {\"name\": \"TRAILING\", \"__current_case__\": 3, \"trailing\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 3, \"operation\": {\"name\": \"MINLEN\", \"__current_case__\": 1, \"minlen\": {\"__class__\": \"ConnectedValue\"}}}], \"output_err\": false, \"output_logs\": false, \"quality_score\": {\"__class__\": \"ConnectedValue\"}, \"readtype\": {\"single_or_paired\": \"se\", \"__current_case__\": 0, \"fastq_in\": {\"__class__\": \"ConnectedValue\"}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"illuminaclip\": {\"do_illuminaclip\": \"no\", \"__current_case__\": 1}, \"operations\": [{\"__index__\": 0, \"operation\": {\"name\": \"SLIDINGWINDOW\", \"__current_case__\": 0, \"window_size\": {\"__class__\": \"ConnectedValue\"}, \"required_quality\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"operation\": {\"name\": \"LEADING\", \"__current_case__\": 2, \"leading\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 2, \"operation\": {\"name\": \"TRAILING\", \"__current_case__\": 3, \"trailing\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 3, \"operation\": {\"name\": \"MINLEN\", \"__current_case__\": 1, \"minlen\": {\"__class__\": \"ConnectedValue\"}}}], \"output_err\": false, \"output_logs\": false, \"quality_score\": {\"__class__\": \"ConnectedValue\"}, \"readtype\": {\"single_or_paired\": \"se\", \"__current_case__\": 0, \"fastq_in\": {\"__class__\": \"ConnectedValue\"}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.39+galaxy2",
             "type": "tool",
             "uuid": "e13865f5-b424-4e8a-9a78-cc3ade27910d",
@@ -792,7 +846,7 @@
         },
         "18": {
             "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_to_tabular/fastq_to_tabular/1.1.5",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqtofasta/fastq_to_fasta_python/1.1.5",
             "errors": null,
             "id": 18,
             "input_connections": {
@@ -803,16 +857,16 @@
             },
             "inputs": [],
             "label": null,
-            "name": "FASTQ to Tabular",
+            "name": "FASTQ to FASTA",
             "outputs": [
                 {
                     "name": "output_file",
-                    "type": "tabular"
+                    "type": "fasta"
                 }
             ],
             "position": {
-                "left": 1492.7333374023438,
-                "top": 510.787813148357
+                "left": 1775.8164640063083,
+                "top": 634.3621610446716
             },
             "post_job_actions": {
                 "HideDatasetActionoutput_file": {
@@ -821,17 +875,17 @@
                     "output_name": "output_file"
                 }
             },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_to_tabular/fastq_to_tabular/1.1.5",
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqtofasta/fastq_to_fasta_python/1.1.5",
             "tool_shed_repository": {
-                "changeset_revision": "4b347702c4aa",
-                "name": "fastq_to_tabular",
+                "changeset_revision": "297962e79f39",
+                "name": "fastqtofasta",
                 "owner": "devteam",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"descr_columns\": \"1\", \"input_file\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"input_file\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.1.5",
             "type": "tool",
-            "uuid": "226244e1-92d0-4c69-84a5-d645850574a8",
+            "uuid": "e0e88955-5475-49ea-a12b-0cc0bb9a8019",
             "when": null,
             "workflow_outputs": []
         },
@@ -949,7 +1003,7 @@
         },
         "21": {
             "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/filter_tabular/filter_tabular/3.3.0",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fasta_formatter/cshl_fasta_formatter/1.0.1+galaxy2",
             "errors": null,
             "id": 21,
             "input_connections": {
@@ -960,37 +1014,45 @@
             },
             "inputs": [],
             "label": null,
-            "name": "Filter Tabular",
+            "name": "FASTA Width",
             "outputs": [
                 {
                     "name": "output",
-                    "type": "tabular"
+                    "type": "fasta"
                 }
             ],
             "position": {
-                "left": 1738.857801055257,
-                "top": 546.144975607886
+                "left": 2068.646496697877,
+                "top": 647.1088294674363
             },
             "post_job_actions": {
-                "HideDatasetActionoutput": {
-                    "action_arguments": {},
-                    "action_type": "HideDatasetAction",
+                "RenameDatasetActionoutput": {
+                    "action_arguments": {
+                        "newname": "processed_FASTA"
+                    },
+                    "action_type": "RenameDatasetAction",
                     "output_name": "output"
                 }
             },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/filter_tabular/filter_tabular/3.3.0",
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fasta_formatter/cshl_fasta_formatter/1.0.1+galaxy2",
             "tool_shed_repository": {
-                "changeset_revision": "557ec8d7087d",
-                "name": "filter_tabular",
-                "owner": "iuc",
+                "changeset_revision": "516b97a23d7e",
+                "name": "fasta_formatter",
+                "owner": "devteam",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"comment_char\": true, \"input\": {\"__class__\": \"ConnectedValue\"}, \"linefilters\": [{\"__index__\": 0, \"filter\": {\"filter_type\": \"append_dataset_name\", \"__current_case__\": 5}}, {\"__index__\": 1, \"filter\": {\"filter_type\": \"append_text\", \"__current_case__\": 7, \"column_text\": \".\"}}, {\"__index__\": 2, \"filter\": {\"filter_type\": \"prepend_line_num\", \"__current_case__\": 2}}, {\"__index__\": 3, \"filter\": {\"filter_type\": \"append_text\", \"__current_case__\": 7, \"column_text\": \"-\"}}, {\"__index__\": 4, \"filter\": {\"filter_type\": \"select_columns\", \"__current_case__\": 9, \"columns\": \"5,6,1,7,2,3,4\"}}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "3.3.0",
+            "tool_state": "{\"input\": {\"__class__\": \"ConnectedValue\"}, \"width\": \"60\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.0.1+galaxy2",
             "type": "tool",
-            "uuid": "2a7572dc-4547-44d8-9877-df8cbcab3abd",
+            "uuid": "06186b99-b528-497c-8310-707923e1923b",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": "processed_FASTA",
+                    "output_name": "output",
+                    "uuid": "c38cb057-ba4d-42f1-bab5-c80d02827b3a"
+                }
+            ]
         },
         "22": {
             "annotation": "",
@@ -1039,54 +1101,9 @@
         },
         "23": {
             "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/merge_cols/mergeCols1/1.0.2",
-            "errors": null,
-            "id": 23,
-            "input_connections": {
-                "input1": {
-                    "id": 21,
-                    "output_name": "output"
-                }
-            },
-            "inputs": [],
-            "label": null,
-            "name": "Merge Columns",
-            "outputs": [
-                {
-                    "name": "out_file1",
-                    "type": "tabular"
-                }
-            ],
-            "position": {
-                "left": 1978.4996233168254,
-                "top": 533.982312853562
-            },
-            "post_job_actions": {
-                "HideDatasetActionout_file1": {
-                    "action_arguments": {},
-                    "action_type": "HideDatasetAction",
-                    "output_name": "out_file1"
-                }
-            },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/merge_cols/mergeCols1/1.0.2",
-            "tool_shed_repository": {
-                "changeset_revision": "dd40b1e9eebe",
-                "name": "merge_cols",
-                "owner": "devteam",
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            },
-            "tool_state": "{\"col1\": \"1\", \"col2\": \"2\", \"columns\": [{\"__index__\": 0, \"datacol\": \"3\"}, {\"__index__\": 1, \"datacol\": \"4\"}, {\"__index__\": 2, \"datacol\": \"5\"}], \"input1\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "1.0.2",
-            "type": "tool",
-            "uuid": "7e846a20-ccc2-4ceb-850f-582eda7a02fe",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "24": {
-            "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.11+galaxy1",
             "errors": null,
-            "id": 24,
+            "id": 23,
             "input_connections": {
                 "results_0|software_cond|output_0|input": {
                     "id": 14,
@@ -1162,357 +1179,11 @@
                     "uuid": "687d8a67-e0c4-44e8-90f0-3c1d932e7be7"
                 }
             ]
-        },
-        "25": {
-            "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/filter_tabular/filter_tabular/3.3.0",
-            "errors": null,
-            "id": 25,
-            "input_connections": {
-                "input": {
-                    "id": 23,
-                    "output_name": "out_file1"
-                }
-            },
-            "inputs": [],
-            "label": null,
-            "name": "Filter Tabular",
-            "outputs": [
-                {
-                    "name": "output",
-                    "type": "tabular"
-                }
-            ],
-            "position": {
-                "left": 2208.687538883388,
-                "top": 535.3469178870276
-            },
-            "post_job_actions": {
-                "HideDatasetActionoutput": {
-                    "action_arguments": {},
-                    "action_type": "HideDatasetAction",
-                    "output_name": "output"
-                }
-            },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/filter_tabular/filter_tabular/3.3.0",
-            "tool_shed_repository": {
-                "changeset_revision": "557ec8d7087d",
-                "name": "filter_tabular",
-                "owner": "iuc",
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            },
-            "tool_state": "{\"comment_char\": true, \"input\": {\"__class__\": \"ConnectedValue\"}, \"linefilters\": [{\"__index__\": 0, \"filter\": {\"filter_type\": \"select_columns\", \"__current_case__\": 9, \"columns\": \"8,6,7\"}}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "3.3.0",
-            "type": "tool",
-            "uuid": "b65a3aca-59dc-4115-b09d-06b31a091397",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "26": {
-            "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/tabular_to_fasta/tab2fasta/1.1.1",
-            "errors": null,
-            "id": 26,
-            "input_connections": {
-                "input": {
-                    "id": 25,
-                    "output_name": "output"
-                }
-            },
-            "inputs": [],
-            "label": null,
-            "name": "Tabular-to-FASTA",
-            "outputs": [
-                {
-                    "name": "output",
-                    "type": "fasta"
-                }
-            ],
-            "position": {
-                "left": 2334,
-                "top": 845.354463538982
-            },
-            "post_job_actions": {
-                "HideDatasetActionoutput": {
-                    "action_arguments": {},
-                    "action_type": "HideDatasetAction",
-                    "output_name": "output"
-                }
-            },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/tabular_to_fasta/tab2fasta/1.1.1",
-            "tool_shed_repository": {
-                "changeset_revision": "0a7799698fe5",
-                "name": "tabular_to_fasta",
-                "owner": "devteam",
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            },
-            "tool_state": "{\"input\": {\"__class__\": \"ConnectedValue\"}, \"seq_col\": \"2\", \"title_col\": \"1\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "1.1.1",
-            "type": "tool",
-            "uuid": "f7259d8b-3503-4933-a4e2-99343b7edac8",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "27": {
-            "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/tabular_to_fastq/tabular_to_fastq/1.1.5",
-            "errors": null,
-            "id": 27,
-            "input_connections": {
-                "input_file": {
-                    "id": 25,
-                    "output_name": "output"
-                }
-            },
-            "inputs": [],
-            "label": null,
-            "name": "Tabular to FASTQ",
-            "outputs": [
-                {
-                    "name": "output_file",
-                    "type": "fastq"
-                }
-            ],
-            "position": {
-                "left": 2470.631797238582,
-                "top": 550.8546155584352
-            },
-            "post_job_actions": {
-                "ChangeDatatypeActionoutput_file": {
-                    "action_arguments": {
-                        "newtype": "fastqsanger"
-                    },
-                    "action_type": "ChangeDatatypeAction",
-                    "output_name": "output_file"
-                }
-            },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/tabular_to_fastq/tabular_to_fastq/1.1.5",
-            "tool_shed_repository": {
-                "changeset_revision": "2dcfbbf9071a",
-                "name": "tabular_to_fastq",
-                "owner": "devteam",
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            },
-            "tool_state": "{\"identifier\": \"1\", \"input_file\": {\"__class__\": \"ConnectedValue\"}, \"quality\": \"3\", \"sequence\": \"2\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "1.1.5",
-            "type": "tool",
-            "uuid": "417882b4-ec5e-42df-9f34-5ef19972e201",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "28": {
-            "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fasta_formatter/cshl_fasta_formatter/1.0.1+galaxy2",
-            "errors": null,
-            "id": 28,
-            "input_connections": {
-                "input": {
-                    "id": 26,
-                    "output_name": "output"
-                }
-            },
-            "inputs": [],
-            "label": null,
-            "name": "FASTA Width",
-            "outputs": [
-                {
-                    "name": "output",
-                    "type": "fasta"
-                }
-            ],
-            "position": {
-                "left": 2601.832813951401,
-                "top": 929.0878009413258
-            },
-            "post_job_actions": {
-                "RenameDatasetActionoutput": {
-                    "action_arguments": {
-                        "newname": "processed_FASTA"
-                    },
-                    "action_type": "RenameDatasetAction",
-                    "output_name": "output"
-                }
-            },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fasta_formatter/cshl_fasta_formatter/1.0.1+galaxy2",
-            "tool_shed_repository": {
-                "changeset_revision": "516b97a23d7e",
-                "name": "fasta_formatter",
-                "owner": "devteam",
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            },
-            "tool_state": "{\"input\": {\"__class__\": \"ConnectedValue\"}, \"width\": \"60\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "1.0.1+galaxy2",
-            "type": "tool",
-            "uuid": "06186b99-b528-497c-8310-707923e1923b",
-            "when": null,
-            "workflow_outputs": [
-                {
-                    "label": "processed_FASTA",
-                    "output_name": "output",
-                    "uuid": "c38cb057-ba4d-42f1-bab5-c80d02827b3a"
-                }
-            ]
-        },
-        "29": {
-            "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/seqkit_stats/seqkit_stats/2.3.1+galaxy1",
-            "errors": null,
-            "id": 29,
-            "input_connections": {
-                "input": {
-                    "id": 27,
-                    "output_name": "output_file"
-                }
-            },
-            "inputs": [],
-            "label": null,
-            "name": "SeqKit statistics",
-            "outputs": [
-                {
-                    "name": "output",
-                    "type": "txt"
-                }
-            ],
-            "position": {
-                "left": 2781.08318615843,
-                "top": 394.4547435389805
-            },
-            "post_job_actions": {},
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/seqkit_stats/seqkit_stats/2.3.1+galaxy1",
-            "tool_shed_repository": {
-                "changeset_revision": "54a954ee64d4",
-                "name": "seqkit_stats",
-                "owner": "iuc",
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            },
-            "tool_state": "{\"all\": false, \"basename\": false, \"input\": {\"__class__\": \"ConnectedValue\"}, \"skip_err\": false, \"tabular\": true, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "2.3.1+galaxy1",
-            "type": "tool",
-            "uuid": "f35225fe-b908-44d3-a98e-ce62c6e3c70e",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "30": {
-            "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/fastq_info/fastq_info/0.25.1+Galaxy0",
-            "errors": null,
-            "id": 30,
-            "input_connections": {
-                "input_option|fastq_1": {
-                    "id": 27,
-                    "output_name": "output_file"
-                }
-            },
-            "inputs": [],
-            "label": null,
-            "name": "FASTQ info",
-            "outputs": [
-                {
-                    "name": "output",
-                    "type": "txt"
-                }
-            ],
-            "position": {
-                "left": 2778.5999755859375,
-                "top": 520.354463538982
-            },
-            "post_job_actions": {},
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/fastq_info/fastq_info/0.25.1+Galaxy0",
-            "tool_shed_repository": {
-                "changeset_revision": "7a821cd57b43",
-                "name": "fastq_info",
-                "owner": "bgruening",
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            },
-            "tool_state": "{\"input_option\": {\"input_type\": \"single\", \"__current_case__\": 0, \"fastq_1\": {\"__class__\": \"ConnectedValue\"}}, \"q\": true, \"r\": false, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "0.25.1+Galaxy0",
-            "type": "tool",
-            "uuid": "c38e5e3d-5d4e-4c1e-96d9-a7aa5d5adf20",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "31": {
-            "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/fasta_stats/fasta-stats/2.0",
-            "errors": null,
-            "id": 31,
-            "input_connections": {
-                "fasta": {
-                    "id": 28,
-                    "output_name": "output"
-                }
-            },
-            "inputs": [],
-            "label": null,
-            "name": "Fasta Statistics",
-            "outputs": [
-                {
-                    "name": "stats_output",
-                    "type": "tabular"
-                }
-            ],
-            "position": {
-                "left": 2832.08318615843,
-                "top": 944.354463538982
-            },
-            "post_job_actions": {},
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/fasta_stats/fasta-stats/2.0",
-            "tool_shed_repository": {
-                "changeset_revision": "0dbb995c7d35",
-                "name": "fasta_stats",
-                "owner": "iuc",
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            },
-            "tool_state": "{\"fasta\": {\"__class__\": \"ConnectedValue\"}, \"gaps_option\": false, \"genome_size\": null, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "2.0",
-            "type": "tool",
-            "uuid": "d2d786ef-03a9-489f-914c-eaa6a833d979",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "32": {
-            "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/seqkit_stats/seqkit_stats/2.3.1+galaxy1",
-            "errors": null,
-            "id": 32,
-            "input_connections": {
-                "input": {
-                    "id": 28,
-                    "output_name": "output"
-                }
-            },
-            "inputs": [],
-            "label": null,
-            "name": "SeqKit statistics",
-            "outputs": [
-                {
-                    "name": "output",
-                    "type": "txt"
-                }
-            ],
-            "position": {
-                "left": 2841.5878097454515,
-                "top": 1066.6999937088437
-            },
-            "post_job_actions": {},
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/seqkit_stats/seqkit_stats/2.3.1+galaxy1",
-            "tool_shed_repository": {
-                "changeset_revision": "54a954ee64d4",
-                "name": "seqkit_stats",
-                "owner": "iuc",
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            },
-            "tool_state": "{\"all\": false, \"basename\": false, \"input\": {\"__class__\": \"ConnectedValue\"}, \"skip_err\": false, \"tabular\": true, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "2.3.1+galaxy1",
-            "type": "tool",
-            "uuid": "6d1de487-1e2b-42c0-bef8-168e17a31832",
-            "when": null,
-            "workflow_outputs": []
         }
     },
     "tags": [
         "MGnify_Amplicon"
     ],
-    "uuid": "eaccc575-c6c9-47ad-9adf-214bd0e9279f",
-    "version": 51
+    "uuid": "ee121680-fcb5-4ec7-b602-5f1f98ef8c5c",
+    "version": 57
 }

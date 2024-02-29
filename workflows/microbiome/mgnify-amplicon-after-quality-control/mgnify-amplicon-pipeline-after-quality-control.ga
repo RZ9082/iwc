@@ -261,7 +261,7 @@
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"add_to_database\": {\"withdb\": {\"__class__\": \"RuntimeValue\"}}, \"addqueries\": {\"queries\": [{\"__index__\": 0, \"sqlquery\": \"select c1, c9, c8\\nfrom t1\\nwhere c3 like 'SSU%' and c8 > c9;\", \"query_result\": {\"header\": \"no\", \"__current_case__\": 1}}, {\"__index__\": 1, \"sqlquery\": \"\", \"query_result\": {\"header\": \"no\", \"__current_case__\": 1}}, {\"__index__\": 2, \"sqlquery\": \"select c1, c8, c9\\nfrom t1\\nwhere c3 like 'LSU%' and c8 <= c9;\", \"query_result\": {\"header\": \"no\", \"__current_case__\": 1}}]}, \"modify_database\": {\"sql_stmts\": []}, \"query_result\": {\"header\": \"no\", \"__current_case__\": 1}, \"save_db\": false, \"sqlquery\": \"select c1, c8, c9\\nfrom t1\\nwhere c3 like 'SSU%' and c8 <= c9;\", \"tables\": [{\"__index__\": 0, \"table\": {\"__class__\": \"ConnectedValue\"}, \"input_opts\": {\"linefilters\": []}, \"tbl_opts\": {\"table_name\": \"\", \"column_names_from_first_line\": false, \"col_names\": \"\", \"load_named_columns\": false, \"pkey_autoincr\": \"\", \"indexes\": []}}], \"workdb\": \"workdb.sqlite\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"add_to_database\": {\"withdb\": {\"__class__\": \"RuntimeValue\"}}, \"addqueries\": {\"queries\": [{\"__index__\": 0, \"sqlquery\": \"select c1, c9, c8\\nfrom t1\\nwhere c3 like 'SSU%' and c8 > c9;\", \"query_result\": {\"header\": \"no\", \"__current_case__\": 1}}, {\"__index__\": 1, \"sqlquery\": \"select c1, c8, c9\\nfrom t1\\nwhere c3 like 'LSU%' and c8 <= c9;\", \"query_result\": {\"header\": \"no\", \"__current_case__\": 1}}, {\"__index__\": 2, \"sqlquery\": \"select c1, c9, c8\\nfrom t1\\nwhere c3 like 'LSU%' and c8 > c9;\", \"query_result\": {\"header\": \"no\", \"__current_case__\": 1}}]}, \"modify_database\": {\"sql_stmts\": []}, \"query_result\": {\"header\": \"no\", \"__current_case__\": 1}, \"save_db\": false, \"sqlquery\": \"select c1, c8, c9\\nfrom t1\\nwhere c3 like 'SSU%' and c8 <= c9;\", \"tables\": [{\"__index__\": 0, \"table\": {\"__class__\": \"ConnectedValue\"}, \"input_opts\": {\"linefilters\": []}, \"tbl_opts\": {\"table_name\": \"\", \"column_names_from_first_line\": false, \"col_names\": \"\", \"load_named_columns\": false, \"pkey_autoincr\": \"\", \"indexes\": []}}], \"workdb\": \"workdb.sqlite\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "3.3.1",
             "type": "tool",
             "uuid": "d492bfde-6795-47c3-b393-2bb56dc39113",
@@ -1350,14 +1350,14 @@
             "when": null,
             "workflow_outputs": [
                 {
-                    "label": "OTU LSU SILVA",
-                    "output_name": "otu_tsv",
-                    "uuid": "3afe4d72-6e2e-4ed6-8d7a-67a1f0fbd976"
-                },
-                {
                     "label": "Classifications LSU SILVA",
                     "output_name": "classifications",
                     "uuid": "2c7d061a-7280-49a6-bd49-568767c7448b"
+                },
+                {
+                    "label": "OTU LSU SILVA",
+                    "output_name": "otu_tsv",
+                    "uuid": "3afe4d72-6e2e-4ed6-8d7a-67a1f0fbd976"
                 }
             ]
         },
@@ -1862,14 +1862,14 @@
             "when": null,
             "workflow_outputs": [
                 {
-                    "label": "Classifications ITSonedb",
-                    "output_name": "classifications",
-                    "uuid": "69153ee9-3083-4eb9-9041-0fff3df4d8c1"
-                },
-                {
                     "label": "OTU ITSonedb",
                     "output_name": "otu_tsv",
                     "uuid": "9e512c49-9843-4eef-8827-d405348308d7"
+                },
+                {
+                    "label": "Classifications ITSonedb",
+                    "output_name": "classifications",
+                    "uuid": "69153ee9-3083-4eb9-9041-0fff3df4d8c1"
                 }
             ]
         },
@@ -1963,14 +1963,14 @@
             "when": null,
             "workflow_outputs": [
                 {
-                    "label": "OTU ITS UNITE",
-                    "output_name": "otu_tsv",
-                    "uuid": "047d6cc7-9815-4749-bc3e-c6f1ea0f5075"
-                },
-                {
                     "label": "Classifications ITS UNITE",
                     "output_name": "classifications",
                     "uuid": "aa68b523-a6c7-4711-ac5c-d773f85f95ed"
+                },
+                {
+                    "label": "OTU ITS UNITE",
+                    "output_name": "otu_tsv",
+                    "uuid": "047d6cc7-9815-4749-bc3e-c6f1ea0f5075"
                 }
             ]
         },
@@ -2332,6 +2332,6 @@
     "tags": [
         "MGnify_Amplicon"
     ],
-    "uuid": "a54fe9c5-a8f6-4aad-99a3-3806ffb57206",
-    "version": 6
+    "uuid": "5bcae0d7-ad35-4c85-9e8a-328726114944",
+    "version": 2
 }
