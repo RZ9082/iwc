@@ -1,0 +1,290 @@
+{
+    "a_galaxy_workflow": "true",
+    "annotation": "",
+    "creator": [
+        {
+            "class": "Organization",
+            "name": "EMBL's European Bioinformatics Institute",
+            "url": "https://www.ebi.ac.uk/metagenomics"
+        }
+    ],
+    "format-version": "0.1",
+    "license": "Apache-2.0",
+    "name": "MGnify's amplicon pipeline - after quality control (for testing query_tabular)",
+    "steps": {
+        "0": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 0,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "processed seqs"
+                }
+            ],
+            "label": "processed seqs",
+            "name": "Input dataset collection",
+            "outputs": [],
+            "position": {
+                "left": 0,
+                "top": 88.85308378644118
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"tag\": null, \"collection_type\": \"list\"}",
+            "tool_version": null,
+            "type": "data_collection_input",
+            "uuid": "99e098dd-28af-4697-bf30-b6914359b3cd",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "1": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 1,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "covariance models"
+                }
+            ],
+            "label": "covariance models",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 131.0423524035009,
+                "top": 255.0
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"tag\": null}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "65f3d301-b357-470b-972c-7379eb7d1788",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "2": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 2,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "clan info file"
+                }
+            ],
+            "label": "clan info file",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 345.04235240350044,
+                "top": 0.0
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"tag\": null}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "e2fa36e9-8a79-495d-a94c-caf84b83bb37",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "3": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/infernal/infernal_cmsearch/1.1.4+galaxy0",
+            "errors": null,
+            "id": 3,
+            "input_connections": {
+                "cm_opts|cmfile": {
+                    "id": 1,
+                    "output_name": "output"
+                },
+                "seqdb": {
+                    "id": 0,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "cmsearch",
+            "outputs": [
+                {
+                    "name": "outfile",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "left": 353.04235240350044,
+                "top": 103.0
+            },
+            "post_job_actions": {
+                "HideDatasetActionoutfile": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "outfile"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/infernal/infernal_cmsearch/1.1.4+galaxy0",
+            "tool_shed_repository": {
+                "changeset_revision": "c9e29ac5d099",
+                "name": "infernal",
+                "owner": "bgruening",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"A\": false, \"Z\": null, \"acceleration_huristics\": {\"acceleration_huristics_selector\": \"--default\", \"__current_case__\": 3}, \"acyk\": false, \"anytrunc\": false, \"bottomonly\": false, \"cm_opts\": {\"cm_opts_selector\": \"histdb\", \"__current_case__\": 1, \"cmfile\": {\"__class__\": \"ConnectedValue\"}}, \"cyk\": false, \"g\": false, \"inclusion_thresholds_opts\": {\"inclusion_thresholds_selector\": \"\", \"__current_case__\": 0}, \"model_thresholds\": {\"cut_ga\": false, \"cut_nc\": false, \"cut_tc\": false}, \"mxsize\": \"128.0\", \"noali\": false, \"nonull3\": false, \"notrunc\": false, \"reporting_thresholds_opts\": {\"reporting_thresholds_selector\": \"\", \"__current_case__\": 0}, \"seqdb\": {\"__class__\": \"ConnectedValue\"}, \"smxsize\": \"128.0\", \"toponly\": false, \"verbose\": false, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.1.4+galaxy0",
+            "type": "tool",
+            "uuid": "8e5ab889-28e6-4e83-bbd0-3bc34f79614d",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "4": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/cmsearch_deoverlap/cmsearch_deoverlap/0.08+galaxy0",
+            "errors": null,
+            "id": 4,
+            "input_connections": {
+                "clan_information": {
+                    "id": 2,
+                    "output_name": "output"
+                },
+                "cmsearch_matches": {
+                    "id": 3,
+                    "output_name": "outfile"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "CMsearch deoverlap",
+            "outputs": [
+                {
+                    "name": "deoverlapped_matches",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "left": 627.0423524035004,
+                "top": 93.0
+            },
+            "post_job_actions": {
+                "HideDatasetActiondeoverlapped_matches": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "deoverlapped_matches"
+                },
+                "RenameDatasetActiondeoverlapped_matches": {
+                    "action_arguments": {
+                        "newname": "deoverlapped_matches"
+                    },
+                    "action_type": "RenameDatasetAction",
+                    "output_name": "deoverlapped_matches"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/cmsearch_deoverlap/cmsearch_deoverlap/0.08+galaxy0",
+            "tool_shed_repository": {
+                "changeset_revision": "54b16c794341",
+                "name": "cmsearch_deoverlap",
+                "owner": "rnateam",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"clan_information\": {\"__class__\": \"ConnectedValue\"}, \"cmsearch_matches\": {\"__class__\": \"ConnectedValue\"}, \"dirty\": false, \"maxkeep\": false, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "0.08+galaxy0",
+            "type": "tool",
+            "uuid": "3a810c07-0bfd-4ea7-866d-79ffa95d2af5",
+            "when": null,
+            "workflow_outputs": [
+                {
+                    "label": "deoverlapped_matches",
+                    "output_name": "deoverlapped_matches",
+                    "uuid": "a919a554-236c-4c3b-a560-1a6534b74049"
+                }
+            ]
+        },
+        "5": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/query_tabular/query_tabular/3.3.1",
+            "errors": null,
+            "id": 5,
+            "input_connections": {
+                "tables_0|table": {
+                    "id": 4,
+                    "output_name": "deoverlapped_matches"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Query Tabular",
+                    "name": "add_to_database"
+                }
+            ],
+            "label": null,
+            "name": "Query Tabular",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "tabular"
+                },
+                {
+                    "name": "output1",
+                    "type": "tabular"
+                },
+                {
+                    "name": "output2",
+                    "type": "tabular"
+                },
+                {
+                    "name": "output3",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "left": 947.7324324034817,
+                "top": 154.0
+            },
+            "post_job_actions": {
+                "HideDatasetActionoutput": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "output"
+                },
+                "HideDatasetActionoutput1": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "output1"
+                },
+                "HideDatasetActionoutput2": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "output2"
+                },
+                "HideDatasetActionoutput3": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "output3"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/query_tabular/query_tabular/3.3.1",
+            "tool_shed_repository": {
+                "changeset_revision": "3a6b78c39dca",
+                "name": "query_tabular",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"add_to_database\": {\"withdb\": {\"__class__\": \"RuntimeValue\"}}, \"addqueries\": {\"queries\": [{\"__index__\": 0, \"sqlquery\": \"select c1, c9, c8\\nfrom t1\\nwhere c3 like 'SSU%' and c8 > c9;\", \"query_result\": {\"header\": \"no\", \"__current_case__\": 1}}, {\"__index__\": 1, \"sqlquery\": \"select c1, c8, c9\\nfrom t1\\nwhere c3 like 'LSU%' and c8 <= c9;\", \"query_result\": {\"header\": \"no\", \"__current_case__\": 1}}, {\"__index__\": 2, \"sqlquery\": \"select c1, c9, c8\\nfrom t1\\nwhere c3 like 'LSU%' and c8 > c9;\", \"query_result\": {\"header\": \"no\", \"__current_case__\": 1}}]}, \"modify_database\": {\"sql_stmts\": []}, \"query_result\": {\"header\": \"no\", \"__current_case__\": 1}, \"save_db\": false, \"sqlquery\": \"select c1, c8, c9\\nfrom t1\\nwhere c3 like 'SSU%' and c8 <= c9;\", \"tables\": [{\"__index__\": 0, \"table\": {\"__class__\": \"ConnectedValue\"}, \"input_opts\": {\"linefilters\": []}, \"tbl_opts\": {\"table_name\": \"\", \"column_names_from_first_line\": false, \"col_names\": \"\", \"load_named_columns\": false, \"pkey_autoincr\": \"\", \"indexes\": []}}], \"workdb\": \"workdb.sqlite\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "3.3.1",
+            "type": "tool",
+            "uuid": "5b371e43-6af6-4492-ae63-2c1e20ab39d4",
+            "when": null,
+            "workflow_outputs": []
+        }
+    },
+    "tags": [
+        "MGnify_Amplicon"
+    ],
+    "uuid": "015967a3-948c-4d51-b493-0ccb933a226b",
+    "version": 3
+}
