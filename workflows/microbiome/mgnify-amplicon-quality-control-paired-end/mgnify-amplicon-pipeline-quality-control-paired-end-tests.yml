@@ -23,6 +23,11 @@
             has_text:
               text: "FastQC	all_sections	DRR218540_ambiguity_filtering"
     MultiQC_report:
-      path: test-data/MultiQC_report/MultiQC_report.html
-      compare: diff
-      lines_diff: 4
+      asserts:
+        has_text:
+          text: |
+            "<th class="rowheader" data-original-sn="DRR218540_ambiguous_base_filtering">DRR218540_ambiguous_base_filtering</th>"
+            "<th class="rowheader" data-original-sn="DRR218540_initial_reads">DRR218540_initial_reads</th>"
+            "<th class="rowheader" data-original-sn="DRR218540_length_filtering">DRR218540_length_filtering</th>"
+            "<th class="rowheader" data-original-sn="DRR218540_trimming">DRR218540_trimming</th>"
+            "<span class="val">83.0%</span>"

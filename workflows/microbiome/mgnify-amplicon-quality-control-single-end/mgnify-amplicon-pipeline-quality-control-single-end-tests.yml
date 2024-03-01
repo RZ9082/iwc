@@ -20,9 +20,20 @@
             has_text:
               text: "FastQC	all_sections	DRR011051_trimming"
     MultiQC_report:
-      path: test-data/MultiQC_report/MultiQC_report.html
-      compare: diff
-      lines_diff: 8
+      asserts:
+        has_text:
+          text: |
+            "<th class="rowheader" data-original-sn="DRR010705_ambiguous_base_filtering">DRR010705_ambiguous_base_filtering</th>"
+            "<span class="val">81.0%</span>"
+            "<th class="rowheader" data-original-sn="DRR010705_initial_reads">DRR010705_initial_reads</th>"
+            "<span class="val">81.1%</span>"
+            "<th class="rowheader" data-original-sn="DRR010705_length_filtering">DRR010705_length_filtering</th>"
+            "<th class="rowheader" data-original-sn="DRR010705_trimming">DRR010705_trimming</th>"
+            "<th class="rowheader" data-original-sn="DRR011051_ambiguous_base_filtering">DRR011051_ambiguous_base_filtering</th>"
+            "<span class="val">82.2%</span>"
+            "<th class="rowheader" data-original-sn="DRR011051_initial_reads">DRR011051_initial_reads</th>"
+            "<th class="rowheader" data-original-sn="DRR011051_length_filtering">DRR011051_length_filtering</th>"
+            "<th class="rowheader" data-original-sn="DRR011051_trimming">DRR011051_trimming</th>"
     processed_FASTA:
       element_tests:
         DRR010705:
