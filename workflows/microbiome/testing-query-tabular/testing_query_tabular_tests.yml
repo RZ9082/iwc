@@ -7,9 +7,6 @@
       - class: File
         identifier: DRR010481_FASTQ.fasta
         path: test-data/sequences/DRR010481_FASTQ.fasta
-      - class: File
-        identifier: ERR2715528_MERGED_FASTQ.fasta
-        path: test-data/sequences/ERR2715528_MERGED_FASTQ.fasta
     clan info file:
       class: File
       path: test-data/ribo.claninfo
@@ -20,14 +17,6 @@
     deoverlapped_matches:
       element_tests:
         DRR010481_FASTQ.fasta:
-          asserts:
-            - that: has_n_columns
-              n: 18
-            - that: has_n_lines
-              n: 30
-        ERR2715528_MERGED_FASTQ.fasta:
-          asserts:
-            - that: has_n_columns
-              n: 18
-            - that: has_n_lines
-              n: 4406
+          path: test-data/deoverlapped_matches.tabular
+          compare: diff
+          lines_diff: 0
