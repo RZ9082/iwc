@@ -144,7 +144,7 @@
         },
         "4": {
             "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/cmsearch_deoverlap/cmsearch_deoverlap/0.08+galaxy1",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/cmsearch_deoverlap/cmsearch_deoverlap/0.08+galaxy2",
             "errors": null,
             "id": 4,
             "input_connections": {
@@ -177,15 +177,15 @@
                     "output_name": "deoverlapped_matches"
                 }
             },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/cmsearch_deoverlap/cmsearch_deoverlap/0.08+galaxy1",
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/cmsearch_deoverlap/cmsearch_deoverlap/0.08+galaxy2",
             "tool_shed_repository": {
-                "changeset_revision": "54b16c794341",
+                "changeset_revision": "874ad23526a0",
                 "name": "cmsearch_deoverlap",
                 "owner": "rnateam",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
             "tool_state": "{\"clan_information\": {\"__class__\": \"ConnectedValue\"}, \"cmsearch_matches\": {\"__class__\": \"ConnectedValue\"}, \"dirty\": false, \"maxkeep\": false, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "0.08+galaxy1",
+            "tool_version": "0.08+galaxy2",
             "type": "tool",
             "uuid": "c9998782-f1fe-4b1b-88cd-88110603ff14",
             "when": null,
@@ -2332,6 +2332,6 @@
     "tags": [
         "MGnify_Amplicon"
     ],
-    "uuid": "c541393a-4ee5-46fc-968f-9b99b15170e2",
-    "version": 5
+    "uuid": "dc166a2f-b3b7-43ff-b4bf-855a7e1901bc",
+    "version": 7
 }
