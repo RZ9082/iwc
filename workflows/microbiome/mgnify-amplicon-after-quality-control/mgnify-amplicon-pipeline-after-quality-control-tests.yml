@@ -107,7 +107,7 @@
     Krona SSU SILVA:
       asserts:
             - that: has_text
-              text: "<dataset>ERR2715528_MERGED_FASTQ_fasta</dataset>"
+              text: "ERR2715528_MERGED_FASTQ_fasta"
     HDF5 LSU SILVA:
       element_tests:
         DRR010481_FASTQ.fasta:
@@ -124,7 +124,7 @@
     Krona LSU SILVA:
       asserts:
             - that: has_text
-              text: "<dataset>DRR010481_FASTQ_fasta</dataset>"
+              text: "DRR010481_FASTQ_fasta"
     Classifications ITSonedb:
       element_tests:
         DRR010481_FASTQ.fasta:
@@ -254,9 +254,9 @@
     Krona ITSonedb:
       asserts:
         - that: has_text
-          text: "<dataset>DRR010481_FASTQ_fasta</dataset>"
+          text: "DRR010481_FASTQ_fasta"
         - that: has_text
-          text: "<dataset>ERR2715528_MERGED_FASTQ_fasta</dataset>"
+          text: "ERR2715528_MERGED_FASTQ_fasta"
     HDF5 ITS UNITE:
       element_tests:
         DRR010481_FASTQ.fasta:
@@ -282,6 +282,6 @@
     Krona ITS UNITE:
      asserts:
             - that: has_text
-              text: "<dataset>DRR010481_FASTQ_fasta</dataset>"
+              text: "DRR010481_FASTQ_fasta"
             - that: has_text
-              text: "<dataset>ERR2715528_MERGED_FASTQ_fasta</dataset>"
+              text: "ERR2715528_MERGED_FASTQ_fasta"
