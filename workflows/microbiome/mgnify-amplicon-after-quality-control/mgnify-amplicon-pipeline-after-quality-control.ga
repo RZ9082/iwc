@@ -1,6 +1,6 @@
 {
     "a_galaxy_workflow": "true",
-    "annotation": "",
+    "annotation": "Post quality control subworkflow.\nIncluding the classification and visualization steps of SSU, LSU, and IT.",
     "creator": [
         {
             "class": "Organization",
@@ -13,18 +13,18 @@
     "name": "MGnify's amplicon pipeline - after quality control",
     "steps": {
         "0": {
-            "annotation": "",
+            "annotation": "Post quality control.",
             "content_id": null,
             "errors": null,
             "id": 0,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "",
-                    "name": "processed seqs"
+                    "description": "Post quality control.",
+                    "name": "Processed sequences"
                 }
             ],
-            "label": "processed seqs",
+            "label": "Processed sequences",
             "name": "Input dataset collection",
             "outputs": [],
             "position": {
@@ -40,18 +40,18 @@
             "workflow_outputs": []
         },
         "1": {
-            "annotation": "",
+            "annotation": "This file lists which models belong to the same clan.",
             "content_id": null,
             "errors": null,
             "id": 1,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "",
-                    "name": "clan info file"
+                    "description": "This file lists which models belong to the same clan.",
+                    "name": "Clan information file"
                 }
             ],
-            "label": "clan info file",
+            "label": "Clan information file",
             "name": "Input dataset",
             "outputs": [],
             "position": {
@@ -67,23 +67,23 @@
             "workflow_outputs": []
         },
         "2": {
-            "annotation": "",
+            "annotation": "Covariance models.",
             "content_id": null,
             "errors": null,
             "id": 2,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "",
-                    "name": "covariance models"
+                    "description": "Covariance models.",
+                    "name": "Covariance models"
                 }
             ],
-            "label": "covariance models",
+            "label": "Covariance models",
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 131.0423524035009,
-                "top": 496.89316449738465
+                "left": 131.04998779296875,
+                "top": 497.9000244140625
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"tag\": null}",
@@ -168,7 +168,7 @@
             ],
             "position": {
                 "left": 627.0499877929688,
-                "top": 335.8999938964844
+                "top": 337.8999938964844
             },
             "post_job_actions": {
                 "HideDatasetActiondeoverlapped_matches": {
@@ -1948,8 +1948,8 @@
                 }
             ],
             "position": {
-                "left": 2288.4280707267703,
-                "top": 1905.9267260985428
+                "left": 2288.4327276017743,
+                "top": 1907.1107452189153
             },
             "post_job_actions": {
                 "ChangeDatatypeActionclassifications": {
@@ -2388,6 +2388,6 @@
     "tags": [
         "MGnify_Amplicon"
     ],
-    "uuid": "e1ea3ea8-2e9a-4c7a-ad9d-0f68b33bfe71",
-    "version": 8
+    "uuid": "27d291a0-adff-4ac9-a57e-4b7c14727129",
+    "version": 12
 }
