@@ -1,7 +1,0 @@
-# mapseq v1.2.6 (Jan 20 2023)
-#query	dbhit	bitscore	identity	matches	mismatches	gaps	query_start	query_end	dbhit_start	dbhit_end	strand		SILVA	
-DRR010481.1-HUMWT9A01C6SDL-4:235-414	APWS01000525.105.3780	99	0.8960000276565552	112	13	0	0	125	315	440	+		sk__Eukaryota;k__Fungi;p__Ascomycota;c__Eurotiomycetes	
-DRR010481.13-HUMWT9A01CWWE7-4:236-408	APWS01000525.105.3780	99	0.8960000276565552	112	13	0	0	125	315	440	+		sk__Eukaryota;k__Fungi;p__Ascomycota	
-DRR010481.15-HUMWT9A01C6KQE-4:312-365	AYUK01000002.1610616.1614250	53	1	53	0	0	0	53	361	414	+		sk__Eukaryota;k__Fungi	
-DRR010481.16-HUMWT9A01BP5YQ-4:312-366	AYUK01000002.1610616.1614250	54	1	54	0	0	0	54	361	415	+		sk__Eukaryota;k__Fungi	
-DRR010481.17-HUMWT9A01CLKK7-4:235-291	APWS01000525.105.3780	46	0.9107142686843872	51	5	0	0	56	315	371	+		sk__Eukaryota;k__Fungi;p__Ascomycota;c__Eurotiomycetes;o__Verrucariales;f__Verrucariaceae	

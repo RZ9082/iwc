@@ -1196,6 +1196,20 @@
                 "top": 224.79762381566786
             },
             "post_job_actions": {
+                "ChangeDatatypeActionclassifications": {
+                    "action_arguments": {
+                        "newtype": "tsv"
+                    },
+                    "action_type": "ChangeDatatypeAction",
+                    "output_name": "classifications"
+                },
+                "ChangeDatatypeActionotu_tsv": {
+                    "action_arguments": {
+                        "newtype": "tsv"
+                    },
+                    "action_type": "ChangeDatatypeAction",
+                    "output_name": "otu_tsv"
+                },
                 "HideDatasetActionkrona_format": {
                     "action_arguments": {},
                     "action_type": "HideDatasetAction",
@@ -1297,6 +1311,20 @@
                 "top": 716.7077042055058
             },
             "post_job_actions": {
+                "ChangeDatatypeActionclassifications": {
+                    "action_arguments": {
+                        "newtype": "tsv"
+                    },
+                    "action_type": "ChangeDatatypeAction",
+                    "output_name": "classifications"
+                },
+                "ChangeDatatypeActionotu_tsv": {
+                    "action_arguments": {
+                        "newtype": "tsv"
+                    },
+                    "action_type": "ChangeDatatypeAction",
+                    "output_name": "otu_tsv"
+                },
                 "HideDatasetActionkrona_format": {
                     "action_arguments": {},
                     "action_type": "HideDatasetAction",
@@ -1350,14 +1378,14 @@
             "when": null,
             "workflow_outputs": [
                 {
-                    "label": "Classifications LSU SILVA",
-                    "output_name": "classifications",
-                    "uuid": "2c7d061a-7280-49a6-bd49-568767c7448b"
-                },
-                {
                     "label": "OTU LSU SILVA",
                     "output_name": "otu_tsv",
                     "uuid": "3afe4d72-6e2e-4ed6-8d7a-67a1f0fbd976"
+                },
+                {
+                    "label": "Classifications LSU SILVA",
+                    "output_name": "classifications",
+                    "uuid": "2c7d061a-7280-49a6-bd49-568767c7448b"
                 }
             ]
         },
@@ -1809,6 +1837,20 @@
                 "top": 1396.2063928217476
             },
             "post_job_actions": {
+                "ChangeDatatypeActionclassifications": {
+                    "action_arguments": {
+                        "newtype": "tsv"
+                    },
+                    "action_type": "ChangeDatatypeAction",
+                    "output_name": "classifications"
+                },
+                "ChangeDatatypeActionotu_tsv": {
+                    "action_arguments": {
+                        "newtype": "tsv"
+                    },
+                    "action_type": "ChangeDatatypeAction",
+                    "output_name": "otu_tsv"
+                },
                 "HideDatasetActionkrona_format": {
                     "action_arguments": {},
                     "action_type": "HideDatasetAction",
@@ -1906,10 +1948,24 @@
                 }
             ],
             "position": {
-                "left": 2289.8067892194463,
-                "top": 1905.9293287364244
+                "left": 2288.4280707267703,
+                "top": 1905.9267260985428
             },
             "post_job_actions": {
+                "ChangeDatatypeActionclassifications": {
+                    "action_arguments": {
+                        "newtype": "tsv"
+                    },
+                    "action_type": "ChangeDatatypeAction",
+                    "output_name": "classifications"
+                },
+                "ChangeDatatypeActionotu_tsv": {
+                    "action_arguments": {
+                        "newtype": "tsv"
+                    },
+                    "action_type": "ChangeDatatypeAction",
+                    "output_name": "otu_tsv"
+                },
                 "HideDatasetActionkrona_format": {
                     "action_arguments": {},
                     "action_type": "HideDatasetAction",
@@ -1963,14 +2019,14 @@
             "when": null,
             "workflow_outputs": [
                 {
-                    "label": "Classifications ITS UNITE",
-                    "output_name": "classifications",
-                    "uuid": "aa68b523-a6c7-4711-ac5c-d773f85f95ed"
-                },
-                {
                     "label": "OTU ITS UNITE",
                     "output_name": "otu_tsv",
                     "uuid": "047d6cc7-9815-4749-bc3e-c6f1ea0f5075"
+                },
+                {
+                    "label": "Classifications ITS UNITE",
+                    "output_name": "classifications",
+                    "uuid": "aa68b523-a6c7-4711-ac5c-d773f85f95ed"
                 }
             ]
         },
@@ -2332,6 +2388,6 @@
     "tags": [
         "MGnify_Amplicon"
     ],
-    "uuid": "dc166a2f-b3b7-43ff-b4bf-855a7e1901bc",
-    "version": 7
+    "uuid": "e1ea3ea8-2e9a-4c7a-ad9d-0f68b33bfe71",
+    "version": 8
 }
