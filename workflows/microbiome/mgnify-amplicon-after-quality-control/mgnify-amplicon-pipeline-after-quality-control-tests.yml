@@ -1,6 +1,6 @@
 - doc: Test outline for mgnify-amplicon-pipeline-after-quality-control.ga
   job:
-    processed seqs:
+    Processed sequences:
       class: Collection
       collection_type: list
       elements:
@@ -10,10 +10,10 @@
       - class: File
         identifier: ERR2715528_MERGED_FASTQ.fasta
         path: test-data/sequences/ERR2715528_MERGED_FASTQ.fasta
-    clan info file:
+    Clan information file:
       class: File
       path: test-data/ribo.claninfo
-    covariance models:
+    Covariance models:
       class: File
       location: "ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/pipeline-5.0/ref-dbs/rfam_models/ribosomal_models/ribo.cm"
   outputs:
