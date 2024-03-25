@@ -1,6 +1,6 @@
 {
     "a_galaxy_workflow": "true",
-    "annotation": "Post quality control subworkflow.\nIncluding the classification and visualization steps of SSU, LSU, and IT.",
+    "annotation": "Post quality control subworkflow.\nIncluding the classification and visualization steps of SSU, LSU, and ITS.",
     "comments": [],
     "creator": [
         {
@@ -36,7 +36,7 @@
             "tool_state": "{\"optional\": false, \"tag\": null, \"collection_type\": \"list\"}",
             "tool_version": null,
             "type": "data_collection_input",
-            "uuid": "e4ce837b-482c-473d-8340-f289d02a6714",
+            "uuid": "4ddc6490-b2f3-4b9f-9a71-2da0c8857457",
             "when": null,
             "workflow_outputs": []
         },
@@ -63,7 +63,7 @@
             "tool_state": "{\"optional\": false, \"tag\": null}",
             "tool_version": null,
             "type": "data_input",
-            "uuid": "2eb10068-17a0-4851-bed6-683c177c7ba7",
+            "uuid": "e981bbe9-5515-4d95-aacf-7047f052f5ef",
             "when": null,
             "workflow_outputs": []
         },
@@ -90,7 +90,7 @@
             "tool_state": "{\"optional\": false, \"tag\": null}",
             "tool_version": null,
             "type": "data_input",
-            "uuid": "f5ad53af-5844-4088-bfa6-07c81ef5af33",
+            "uuid": "ccbbcc88-de12-4bf6-86c4-13ce812160bb",
             "when": null,
             "workflow_outputs": []
         },
@@ -144,7 +144,7 @@
             "tool_state": "{\"A\": false, \"Z\": null, \"acceleration_huristics\": {\"acceleration_huristics_selector\": \"--default\", \"__current_case__\": 3}, \"acyk\": false, \"anytrunc\": false, \"bottomonly\": false, \"cm_opts\": {\"cm_opts_selector\": \"histdb\", \"__current_case__\": 1, \"cmfile\": {\"__class__\": \"ConnectedValue\"}}, \"cyk\": false, \"g\": false, \"inclusion_thresholds_opts\": {\"inclusion_thresholds_selector\": \"\", \"__current_case__\": 0}, \"model_thresholds\": {\"cut_ga\": false, \"cut_nc\": false, \"cut_tc\": false}, \"mxsize\": \"128.0\", \"noali\": false, \"nonull3\": false, \"notrunc\": false, \"reporting_thresholds_opts\": {\"reporting_thresholds_selector\": \"\", \"__current_case__\": 0}, \"seqdb\": {\"__class__\": \"ConnectedValue\"}, \"smxsize\": \"128.0\", \"toponly\": false, \"verbose\": false, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.1.4+galaxy0",
             "type": "tool",
-            "uuid": "5c763952-d8de-4cc2-b6a0-4999e391256f",
+            "uuid": "3c4422a0-7d9e-4cc0-97ab-86a6005314c3",
             "when": null,
             "workflow_outputs": []
         },
@@ -193,7 +193,7 @@
             "tool_state": "{\"clan_information\": {\"__class__\": \"ConnectedValue\"}, \"cmsearch_matches\": {\"__class__\": \"ConnectedValue\"}, \"dirty\": false, \"maxkeep\": false, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.08+galaxy2",
             "type": "tool",
-            "uuid": "c9998782-f1fe-4b1b-88cd-88110603ff14",
+            "uuid": "6500ab8a-8bcc-4c40-be3d-ba61769c7ed8",
             "when": null,
             "workflow_outputs": []
         },
@@ -270,7 +270,7 @@
             "tool_state": "{\"add_to_database\": {\"withdb\": {\"__class__\": \"RuntimeValue\"}}, \"addqueries\": {\"queries\": [{\"__index__\": 0, \"sqlquery\": \"select c1, c9, c8\\nfrom t1\\nwhere c3 like 'SSU%' and c8 > c9;\", \"query_result\": {\"header\": \"no\", \"__current_case__\": 1}}, {\"__index__\": 1, \"sqlquery\": \"select c1, c8, c9\\nfrom t1\\nwhere c3 like 'LSU%' and c8 <= c9;\", \"query_result\": {\"header\": \"no\", \"__current_case__\": 1}}, {\"__index__\": 2, \"sqlquery\": \"select c1, c9, c8\\nfrom t1\\nwhere c3 like 'LSU%' and c8 > c9;\", \"query_result\": {\"header\": \"no\", \"__current_case__\": 1}}]}, \"modify_database\": {\"sql_stmts\": []}, \"query_result\": {\"header\": \"no\", \"__current_case__\": 1}, \"save_db\": false, \"sqlquery\": \"select c1, c8, c9\\nfrom t1\\nwhere c3 like 'SSU%' and c8 <= c9;\", \"tables\": [{\"__index__\": 0, \"table\": {\"__class__\": \"ConnectedValue\"}, \"input_opts\": {\"linefilters\": []}, \"tbl_opts\": {\"table_name\": \"\", \"column_names_from_first_line\": false, \"col_names\": \"\", \"load_named_columns\": false, \"pkey_autoincr\": \"\", \"indexes\": []}}], \"workdb\": \"workdb.sqlite\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "3.3.1",
             "type": "tool",
-            "uuid": "d492bfde-6795-47c3-b393-2bb56dc39113",
+            "uuid": "691d3274-8f28-417f-b4c6-4b52c6581caa",
             "when": null,
             "workflow_outputs": []
         },
@@ -322,7 +322,7 @@
             "tool_state": "{\"code\": \"'BEGIN {OFS=\\\"\\\\t\\\"} {print $1, $2 - 1, $3, \\\"forward\\\", \\\"1\\\", \\\"+\\\"}'\", \"infile\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "9.3+galaxy0",
             "type": "tool",
-            "uuid": "b8104904-896a-48da-8535-fb2bbf964c67",
+            "uuid": "49102ad6-550d-46ae-bc61-d02e7a2cd4b1",
             "when": null,
             "workflow_outputs": []
         },
@@ -374,7 +374,7 @@
             "tool_state": "{\"code\": \"'BEGIN {OFS=\\\"\\\\t\\\"} {print $1, $2 - 1, $3, \\\"reverse\\\", \\\"1\\\", \\\"-\\\"}'\", \"infile\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "9.3+galaxy0",
             "type": "tool",
-            "uuid": "305efb9a-0e11-4da8-9631-67472cdbdea5",
+            "uuid": "b6ab449c-691d-43f2-bc4b-136a530805ab",
             "when": null,
             "workflow_outputs": []
         },
@@ -426,7 +426,7 @@
             "tool_state": "{\"code\": \"'BEGIN {OFS=\\\"\\\\t\\\"} {print $1, $2 - 1, $3, \\\"forward\\\", \\\"1\\\", \\\"+\\\"}'\", \"infile\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "9.3+galaxy0",
             "type": "tool",
-            "uuid": "f201881c-8595-4bf9-bfa3-6aa6cafe2f67",
+            "uuid": "52b15892-3864-439a-8526-f520a1f3e048",
             "when": null,
             "workflow_outputs": []
         },
@@ -478,7 +478,7 @@
             "tool_state": "{\"code\": \"'BEGIN {OFS=\\\"\\\\t\\\"} {print $1, $2 - 1, $3, \\\"reverse\\\", \\\"1\\\", \\\"-\\\"}'\", \"infile\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "9.3+galaxy0",
             "type": "tool",
-            "uuid": "18797f49-902a-41a3-91fe-9752634bde51",
+            "uuid": "2dc2caf9-8607-42a9-a73d-d570de075554",
             "when": null,
             "workflow_outputs": []
         },
@@ -534,7 +534,7 @@
             "tool_state": "{\"input1\": {\"__class__\": \"ConnectedValue\"}, \"input2\": {\"__class__\": \"ConnectedValue\"}, \"sameformat\": true, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.0.1",
             "type": "tool",
-            "uuid": "93180771-c66a-48f8-a0b2-76bb11a66048",
+            "uuid": "f72fb224-f211-4059-9ee5-9a10efdc0c28",
             "when": null,
             "workflow_outputs": []
         },
@@ -590,7 +590,7 @@
             "tool_state": "{\"input1\": {\"__class__\": \"ConnectedValue\"}, \"input2\": {\"__class__\": \"ConnectedValue\"}, \"sameformat\": true, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.0.1",
             "type": "tool",
-            "uuid": "1f174c39-7ea5-42f4-b876-e0fec02ce7d2",
+            "uuid": "802aedfc-dd96-4e90-a31d-b4a5e0c0324c",
             "when": null,
             "workflow_outputs": []
         },
@@ -629,7 +629,7 @@
             "tool_state": "{\"input\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.0.0",
             "type": "tool",
-            "uuid": "c5d90c3b-cf66-4b6f-a07b-b0639c1d38cd",
+            "uuid": "a3fafb37-f848-4c6f-9257-99d9d6cc5607",
             "when": null,
             "workflow_outputs": []
         },
@@ -668,7 +668,7 @@
             "tool_state": "{\"input\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.0.0",
             "type": "tool",
-            "uuid": "f6ffb6f4-4194-436b-944a-2151510b5e77",
+            "uuid": "fc4e1062-e37e-4fda-b064-555d23cc2a67",
             "when": null,
             "workflow_outputs": []
         },
@@ -717,7 +717,7 @@
             "tool_state": "{\"input1\": {\"__class__\": \"ConnectedValue\"}, \"input2\": {\"__class__\": \"ConnectedValue\"}, \"sameformat\": true, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.0.1",
             "type": "tool",
-            "uuid": "1a8ecb38-1fa2-4a35-b17a-9c59cfd26b9f",
+            "uuid": "0108d0c3-5224-45ee-aaea-1c14370c44cf",
             "when": null,
             "workflow_outputs": []
         },
@@ -762,7 +762,7 @@
             "tool_state": "{\"input_collection\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.0.2",
             "type": "tool",
-            "uuid": "cddae1d1-3fa1-47b5-9005-6b1658e5b127",
+            "uuid": "80a5e054-f163-4e90-b40f-f0c281add51b",
             "when": null,
             "workflow_outputs": []
         },
@@ -807,7 +807,7 @@
             "tool_state": "{\"input_collection\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.0.2",
             "type": "tool",
-            "uuid": "14df46b5-1871-4d0f-81a0-2da1a132b7fd",
+            "uuid": "3082ec60-c7f2-44fd-8289-27c3aaba02f6",
             "when": null,
             "workflow_outputs": []
         },
@@ -846,7 +846,7 @@
             "tool_state": "{\"input\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.0.0",
             "type": "tool",
-            "uuid": "3f006a55-b1d2-47d0-be4c-e21d64b4f898",
+            "uuid": "85b4e860-a20a-4dfa-8831-26a0819975d8",
             "when": null,
             "workflow_outputs": []
         },
@@ -903,7 +903,7 @@
             "tool_state": "{\"how\": {\"how_filter\": \"remove_if_absent\", \"__current_case__\": 0, \"filter_source\": {\"__class__\": \"ConnectedValue\"}}, \"input\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.0.0",
             "type": "tool",
-            "uuid": "3e81276a-ec55-4088-be44-7e80cce86bc2",
+            "uuid": "83193908-189b-425b-bf16-a40e35f04fd1",
             "when": null,
             "workflow_outputs": []
         },
@@ -960,7 +960,7 @@
             "tool_state": "{\"how\": {\"how_filter\": \"remove_if_absent\", \"__current_case__\": 0, \"filter_source\": {\"__class__\": \"ConnectedValue\"}}, \"input\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.0.0",
             "type": "tool",
-            "uuid": "a53772e0-aecf-47ab-a899-f1ad478cb0cd",
+            "uuid": "b07075b5-c465-4bb7-9480-38436e5d42fe",
             "when": null,
             "workflow_outputs": []
         },
@@ -1005,7 +1005,7 @@
             "tool_state": "{\"input_collection\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.0.2",
             "type": "tool",
-            "uuid": "7e7ca35e-c415-423e-b011-6225fd740501",
+            "uuid": "9a909506-5071-466a-8f5b-63cd2bb81254",
             "when": null,
             "workflow_outputs": []
         },
@@ -1061,13 +1061,13 @@
             "tool_state": "{\"fasta_source\": {\"fasta_source_selector\": \"history\", \"__current_case__\": 0, \"fasta\": {\"__class__\": \"ConnectedValue\"}}, \"input\": {\"__class__\": \"ConnectedValue\"}, \"name\": false, \"nameOnly\": false, \"split\": false, \"strand\": false, \"tab\": false, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "2.30.0+galaxy1",
             "type": "tool",
-            "uuid": "4b2b0778-9c6b-43d8-bcf9-964e99cbf80d",
+            "uuid": "5ba0a701-dd95-4e11-afdd-4cb20e4a8169",
             "when": null,
             "workflow_outputs": [
                 {
                     "label": "SSU FASTA",
                     "output_name": "output",
-                    "uuid": "a5c7f83b-a4b6-49a4-be8f-65fcf35e372f"
+                    "uuid": "77afe933-a931-4e0a-a0f0-04875db2c213"
                 }
             ]
         },
@@ -1123,13 +1123,13 @@
             "tool_state": "{\"fasta_source\": {\"fasta_source_selector\": \"history\", \"__current_case__\": 0, \"fasta\": {\"__class__\": \"ConnectedValue\"}}, \"input\": {\"__class__\": \"ConnectedValue\"}, \"name\": false, \"nameOnly\": false, \"split\": false, \"strand\": false, \"tab\": false, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "2.30.0+galaxy1",
             "type": "tool",
-            "uuid": "1245443e-98ad-4297-b19b-4df9d8ca3305",
+            "uuid": "2e79af1d-62d7-49ed-bfe1-e2f3a78faced",
             "when": null,
             "workflow_outputs": [
                 {
                     "label": "LSU FASTA",
                     "output_name": "output",
-                    "uuid": "112a3521-c153-4489-95c7-2213c1be193f"
+                    "uuid": "2176f222-8c2b-4a45-a096-f169de83d696"
                 }
             ]
         },
@@ -1186,7 +1186,7 @@
             "tool_state": "{\"how\": {\"how_filter\": \"remove_if_absent\", \"__current_case__\": 0, \"filter_source\": {\"__class__\": \"ConnectedValue\"}}, \"input\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.0.0",
             "type": "tool",
-            "uuid": "bef15b70-7aa5-469d-a47e-14a44705bc67",
+            "uuid": "25bbbc01-9c16-484c-925a-6758ac7e8c08",
             "when": null,
             "workflow_outputs": []
         },
@@ -1290,18 +1290,18 @@
             "tool_state": "{\"minid1\": \"1\", \"minid2\": \"1\", \"minscore\": \"30\", \"otulim\": \"50\", \"outfmt\": \"simple\", \"ref_db\": {\"db_source\": \"cached\", \"__current_case__\": 0, \"db_cached\": \"mgnify_ssu_from_2023-09-26\", \"mapseq2biom\": {\"mapseq2biom\": \"yes\", \"__current_case__\": 0, \"krona_input\": true}}, \"sequences\": {\"__class__\": \"ConnectedValue\"}, \"tophits\": \"80\", \"topotus\": \"40\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "2.1.1+galaxy0",
             "type": "tool",
-            "uuid": "8846a7b2-e553-4202-9c82-09ff312029ba",
+            "uuid": "786e29b6-b447-4705-beee-1fbbd6cc64c8",
             "when": null,
             "workflow_outputs": [
                 {
                     "label": "Classifications SSU SILVA",
                     "output_name": "classifications",
-                    "uuid": "8a6d1d36-2394-4755-8559-e32560477cb1"
+                    "uuid": "c34f067e-0203-499f-a781-29aa29ba7a1d"
                 },
                 {
                     "label": "OTU SSU SILVA",
                     "output_name": "otu_tsv",
-                    "uuid": "b8f7db09-5958-497f-8f96-2f3c6d6295e9"
+                    "uuid": "fbb61b99-a4d0-43e1-9bc3-c951f98bb9cb"
                 }
             ]
         },
@@ -1405,18 +1405,18 @@
             "tool_state": "{\"minid1\": \"1\", \"minid2\": \"1\", \"minscore\": \"30\", \"otulim\": \"50\", \"outfmt\": \"simple\", \"ref_db\": {\"db_source\": \"cached\", \"__current_case__\": 0, \"db_cached\": \"mgnify_lsu_from_2023-09-26\", \"mapseq2biom\": {\"mapseq2biom\": \"yes\", \"__current_case__\": 0, \"krona_input\": true}}, \"sequences\": {\"__class__\": \"ConnectedValue\"}, \"tophits\": \"80\", \"topotus\": \"40\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "2.1.1+galaxy0",
             "type": "tool",
-            "uuid": "1ec292b6-8774-4f2a-b178-f8c2e8180c5a",
+            "uuid": "89474568-b342-4376-a52d-20878582d5db",
             "when": null,
             "workflow_outputs": [
                 {
                     "label": "OTU LSU SILVA",
                     "output_name": "otu_tsv",
-                    "uuid": "3afe4d72-6e2e-4ed6-8d7a-67a1f0fbd976"
+                    "uuid": "9141e343-9b8a-4be2-a269-38070ee9940e"
                 },
                 {
                     "label": "Classifications LSU SILVA",
                     "output_name": "classifications",
-                    "uuid": "2c7d061a-7280-49a6-bd49-568767c7448b"
+                    "uuid": "57e6a704-be65-4323-9146-917ea7fb2323"
                 }
             ]
         },
@@ -1467,13 +1467,13 @@
             "tool_state": "{\"fasta\": {\"__class__\": \"ConnectedValue\"}, \"fullheader\": false, \"input\": {\"__class__\": \"ConnectedValue\"}, \"mc\": \"N\", \"soft\": false, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "2.30.0",
             "type": "tool",
-            "uuid": "ba23b8c2-02e9-4156-ae0b-4b7a3cdcab0c",
+            "uuid": "7448f5ef-6091-4e73-91fb-dfb97b657aa2",
             "when": null,
             "workflow_outputs": [
                 {
                     "label": "ITS FASTA",
                     "output_name": "output",
-                    "uuid": "16ca55b3-f918-4732-a68e-7905883abd94"
+                    "uuid": "19bd6842-2e12-49af-b0f1-9a787ce555c1"
                 }
             ]
         },
@@ -1533,13 +1533,13 @@
             "tool_state": "{\"input\": {\"type_selector\": \"tsv\", \"__current_case__\": 0, \"input_fp\": {\"__class__\": \"ConnectedValue\"}, \"process_obs_metadata\": \"taxonomy\"}, \"output\": {\"type_selector\": \"biom\", \"__current_case__\": 1, \"table_type\": \"OTU table\", \"biom_type\": {\"selector\": \"hdf5\", \"__current_case__\": 1, \"collapsed_observations\": false, \"collapsed_samples\": false}, \"sample_metadata_fp\": {\"__class__\": \"RuntimeValue\"}, \"observation_metadata_fp\": {\"__class__\": \"RuntimeValue\"}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "2.1.15+galaxy1",
             "type": "tool",
-            "uuid": "59dbfd3e-641f-4581-9231-720c7c29b47f",
+            "uuid": "26c1df0e-7c23-4a6f-8859-420a2787dee0",
             "when": null,
             "workflow_outputs": [
                 {
                     "label": "HDF5 SSU SILVA",
                     "output_name": "output_fp",
-                    "uuid": "d558e095-b29f-4fae-9ebf-bb6eef65aa8b"
+                    "uuid": "2554b72b-cae5-4146-9723-2aa5fcc04aa5"
                 }
             ]
         },
@@ -1599,13 +1599,13 @@
             "tool_state": "{\"input\": {\"type_selector\": \"tsv\", \"__current_case__\": 0, \"input_fp\": {\"__class__\": \"ConnectedValue\"}, \"process_obs_metadata\": \"taxonomy\"}, \"output\": {\"type_selector\": \"biom\", \"__current_case__\": 1, \"table_type\": \"OTU table\", \"biom_type\": {\"selector\": \"json\", \"__current_case__\": 0}, \"sample_metadata_fp\": {\"__class__\": \"RuntimeValue\"}, \"observation_metadata_fp\": {\"__class__\": \"RuntimeValue\"}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "2.1.15+galaxy1",
             "type": "tool",
-            "uuid": "f81d88a2-745f-491a-a432-cf59709d5375",
+            "uuid": "879dd786-fbb9-4054-9bc4-42eb4a9b1193",
             "when": null,
             "workflow_outputs": [
                 {
                     "label": "JSON SSU SILVA",
                     "output_name": "output_fp",
-                    "uuid": "ac6524b1-3233-4ab4-8af9-cc7bdd870201"
+                    "uuid": "c6f72abc-c95b-4a8b-babf-37f439ee42d5"
                 }
             ]
         },
@@ -1657,13 +1657,13 @@
             "tool_state": "{\"combine_inputs\": false, \"root_name\": \"Root\", \"type_of_data\": {\"type_of_data_selector\": \"text\", \"__current_case__\": 1, \"input\": {\"__class__\": \"ConnectedValue\"}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "2.7.1+galaxy0",
             "type": "tool",
-            "uuid": "96417777-5d75-4e2c-84bf-15a9a65eacfa",
+            "uuid": "1da968ab-cec0-4db1-b53a-ebe6f035c2fe",
             "when": null,
             "workflow_outputs": [
                 {
                     "label": "Krona SSU SILVA",
                     "output_name": "output",
-                    "uuid": "11787f66-c928-4462-8365-6ebdf7990d7e"
+                    "uuid": "14c78f00-c1db-41f0-bb58-67fc843753d6"
                 }
             ]
         },
@@ -1723,13 +1723,13 @@
             "tool_state": "{\"input\": {\"type_selector\": \"tsv\", \"__current_case__\": 0, \"input_fp\": {\"__class__\": \"ConnectedValue\"}, \"process_obs_metadata\": \"taxonomy\"}, \"output\": {\"type_selector\": \"biom\", \"__current_case__\": 1, \"table_type\": \"OTU table\", \"biom_type\": {\"selector\": \"hdf5\", \"__current_case__\": 1, \"collapsed_observations\": false, \"collapsed_samples\": false}, \"sample_metadata_fp\": {\"__class__\": \"RuntimeValue\"}, \"observation_metadata_fp\": {\"__class__\": \"RuntimeValue\"}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "2.1.15+galaxy1",
             "type": "tool",
-            "uuid": "d9ba51e7-3f42-48e4-af6b-b38b8305255d",
+            "uuid": "0429ca95-6661-4467-9585-56e4310d7a05",
             "when": null,
             "workflow_outputs": [
                 {
                     "label": "HDF5 LSU SILVA",
                     "output_name": "output_fp",
-                    "uuid": "1adf2062-d665-48f7-9ccb-8b4d6756553a"
+                    "uuid": "384abc90-288c-4f3a-b757-961c9e778253"
                 }
             ]
         },
@@ -1789,13 +1789,13 @@
             "tool_state": "{\"input\": {\"type_selector\": \"tsv\", \"__current_case__\": 0, \"input_fp\": {\"__class__\": \"ConnectedValue\"}, \"process_obs_metadata\": \"taxonomy\"}, \"output\": {\"type_selector\": \"biom\", \"__current_case__\": 1, \"table_type\": \"OTU table\", \"biom_type\": {\"selector\": \"json\", \"__current_case__\": 0}, \"sample_metadata_fp\": {\"__class__\": \"RuntimeValue\"}, \"observation_metadata_fp\": {\"__class__\": \"RuntimeValue\"}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "2.1.15+galaxy1",
             "type": "tool",
-            "uuid": "55818a69-bb33-4183-a8c4-503f2bdee804",
+            "uuid": "850a6179-db1c-4865-a689-0e7dd4b471f0",
             "when": null,
             "workflow_outputs": [
                 {
                     "label": "JSON LSU SILVA",
                     "output_name": "output_fp",
-                    "uuid": "341737e3-ab4f-4681-9e27-2a7eee456644"
+                    "uuid": "216687a6-5d10-49f0-a7cc-046bc8aa2ed8"
                 }
             ]
         },
@@ -1847,13 +1847,13 @@
             "tool_state": "{\"combine_inputs\": false, \"root_name\": \"Root\", \"type_of_data\": {\"type_of_data_selector\": \"text\", \"__current_case__\": 1, \"input\": {\"__class__\": \"ConnectedValue\"}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "2.7.1+galaxy0",
             "type": "tool",
-            "uuid": "8fb8d9c7-0acf-4bb2-8870-26b189e9cc1c",
+            "uuid": "a6de961c-2f40-478a-9ae6-6c33fd9e28bc",
             "when": null,
             "workflow_outputs": [
                 {
                     "label": "Krona LSU SILVA",
                     "output_name": "output",
-                    "uuid": "71900e0a-7545-48ac-ae96-324d12090807"
+                    "uuid": "4c9e8d17-dcb5-4623-ad43-ec8fca8742b6"
                 }
             ]
         },
@@ -1957,18 +1957,18 @@
             "tool_state": "{\"minid1\": \"1\", \"minid2\": \"1\", \"minscore\": \"30\", \"otulim\": \"50\", \"outfmt\": \"simple\", \"ref_db\": {\"db_source\": \"cached\", \"__current_case__\": 0, \"db_cached\": \"mgnify_its_unite_from_2023-09-26\", \"mapseq2biom\": {\"mapseq2biom\": \"yes\", \"__current_case__\": 0, \"krona_input\": true}}, \"sequences\": {\"__class__\": \"ConnectedValue\"}, \"tophits\": \"80\", \"topotus\": \"40\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "2.1.1+galaxy0",
             "type": "tool",
-            "uuid": "99b78f6b-61ab-47cf-8f43-16b0dd15c2cf",
+            "uuid": "8ba4b427-6376-44b4-b77a-8cb07dd7daef",
             "when": null,
             "workflow_outputs": [
                 {
                     "label": "OTU ITSonedb",
                     "output_name": "otu_tsv",
-                    "uuid": "9e512c49-9843-4eef-8827-d405348308d7"
+                    "uuid": "ab0e7049-8845-4e02-91d8-53a9be5dcfb6"
                 },
                 {
                     "label": "Classifications ITSonedb",
                     "output_name": "classifications",
-                    "uuid": "69153ee9-3083-4eb9-9041-0fff3df4d8c1"
+                    "uuid": "13958106-10bd-4374-98f1-cbc67e311348"
                 }
             ]
         },
@@ -2072,18 +2072,18 @@
             "tool_state": "{\"minid1\": \"1\", \"minid2\": \"1\", \"minscore\": \"30\", \"otulim\": \"50\", \"outfmt\": \"simple\", \"ref_db\": {\"db_source\": \"cached\", \"__current_case__\": 0, \"db_cached\": \"mgnify_its_itsonedb_from_2023-09-26\", \"mapseq2biom\": {\"mapseq2biom\": \"yes\", \"__current_case__\": 0, \"krona_input\": true}}, \"sequences\": {\"__class__\": \"ConnectedValue\"}, \"tophits\": \"80\", \"topotus\": \"40\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "2.1.1+galaxy0",
             "type": "tool",
-            "uuid": "a8ebb38a-a198-4671-bc77-758c7d513a14",
+            "uuid": "5978536f-8c00-49a7-b426-8120f23a3875",
             "when": null,
             "workflow_outputs": [
                 {
                     "label": "OTU ITS UNITE",
                     "output_name": "otu_tsv",
-                    "uuid": "047d6cc7-9815-4749-bc3e-c6f1ea0f5075"
+                    "uuid": "e3d9b513-e5d9-4089-a3fb-e28eceac1796"
                 },
                 {
                     "label": "Classifications ITS UNITE",
                     "output_name": "classifications",
-                    "uuid": "aa68b523-a6c7-4711-ac5c-d773f85f95ed"
+                    "uuid": "efdb6c5a-3ea0-42b5-a3b8-7726a39bf944"
                 }
             ]
         },
@@ -2143,13 +2143,13 @@
             "tool_state": "{\"input\": {\"type_selector\": \"tsv\", \"__current_case__\": 0, \"input_fp\": {\"__class__\": \"ConnectedValue\"}, \"process_obs_metadata\": \"taxonomy\"}, \"output\": {\"type_selector\": \"biom\", \"__current_case__\": 1, \"table_type\": \"OTU table\", \"biom_type\": {\"selector\": \"hdf5\", \"__current_case__\": 1, \"collapsed_observations\": false, \"collapsed_samples\": false}, \"sample_metadata_fp\": {\"__class__\": \"RuntimeValue\"}, \"observation_metadata_fp\": {\"__class__\": \"RuntimeValue\"}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "2.1.15+galaxy1",
             "type": "tool",
-            "uuid": "6a6afdab-2c06-4d10-95d9-e9b294d9385d",
+            "uuid": "41a033f9-248d-46b6-8ac0-043b7d95d1df",
             "when": null,
             "workflow_outputs": [
                 {
                     "label": "HDF5 ITSonedb",
                     "output_name": "output_fp",
-                    "uuid": "2ffb36f6-907c-4b01-b1d8-aa2f5bda995e"
+                    "uuid": "09863e72-73a9-4a6a-b41a-e12783c14e3e"
                 }
             ]
         },
@@ -2209,13 +2209,13 @@
             "tool_state": "{\"input\": {\"type_selector\": \"tsv\", \"__current_case__\": 0, \"input_fp\": {\"__class__\": \"ConnectedValue\"}, \"process_obs_metadata\": \"taxonomy\"}, \"output\": {\"type_selector\": \"biom\", \"__current_case__\": 1, \"table_type\": \"OTU table\", \"biom_type\": {\"selector\": \"json\", \"__current_case__\": 0}, \"sample_metadata_fp\": {\"__class__\": \"RuntimeValue\"}, \"observation_metadata_fp\": {\"__class__\": \"RuntimeValue\"}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "2.1.15+galaxy1",
             "type": "tool",
-            "uuid": "2000b2b1-58cb-4261-a14e-16b064faa9f1",
+            "uuid": "7b86eed5-628f-4a38-ae64-d664e76ce54f",
             "when": null,
             "workflow_outputs": [
                 {
                     "label": "JSON ITSonedb",
                     "output_name": "output_fp",
-                    "uuid": "62f919cf-a08c-4efa-8190-82f1ea902d6a"
+                    "uuid": "4dc86099-f9fd-4c55-9cac-2bbbf84d3835"
                 }
             ]
         },
@@ -2267,13 +2267,13 @@
             "tool_state": "{\"combine_inputs\": false, \"root_name\": \"Root\", \"type_of_data\": {\"type_of_data_selector\": \"text\", \"__current_case__\": 1, \"input\": {\"__class__\": \"ConnectedValue\"}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "2.7.1+galaxy0",
             "type": "tool",
-            "uuid": "fc083a57-b1f0-4f9f-847c-e6f947e0b642",
+            "uuid": "d8f34e02-6822-443b-b4b4-938c06209006",
             "when": null,
             "workflow_outputs": [
                 {
                     "label": "Krona ITSonedb",
                     "output_name": "output",
-                    "uuid": "7a9aaf67-2bbf-468b-ac1c-2484a032e889"
+                    "uuid": "9b6fc27f-b531-4b49-8894-3d7019edea89"
                 }
             ]
         },
@@ -2333,13 +2333,13 @@
             "tool_state": "{\"input\": {\"type_selector\": \"tsv\", \"__current_case__\": 0, \"input_fp\": {\"__class__\": \"ConnectedValue\"}, \"process_obs_metadata\": \"taxonomy\"}, \"output\": {\"type_selector\": \"biom\", \"__current_case__\": 1, \"table_type\": \"OTU table\", \"biom_type\": {\"selector\": \"hdf5\", \"__current_case__\": 1, \"collapsed_observations\": false, \"collapsed_samples\": false}, \"sample_metadata_fp\": {\"__class__\": \"RuntimeValue\"}, \"observation_metadata_fp\": {\"__class__\": \"RuntimeValue\"}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "2.1.15+galaxy1",
             "type": "tool",
-            "uuid": "56501b62-aaaf-4477-9d5c-2310ee07cc73",
+            "uuid": "5ae011cb-274f-48a9-90c5-b570d2893eb2",
             "when": null,
             "workflow_outputs": [
                 {
                     "label": "HDF5 ITS UNITE",
                     "output_name": "output_fp",
-                    "uuid": "977137c3-954c-4094-acd1-eb5828b99683"
+                    "uuid": "d56cef0d-1a38-45d2-97b1-8f7f3e6cef6e"
                 }
             ]
         },
@@ -2399,13 +2399,13 @@
             "tool_state": "{\"input\": {\"type_selector\": \"tsv\", \"__current_case__\": 0, \"input_fp\": {\"__class__\": \"ConnectedValue\"}, \"process_obs_metadata\": \"taxonomy\"}, \"output\": {\"type_selector\": \"biom\", \"__current_case__\": 1, \"table_type\": \"OTU table\", \"biom_type\": {\"selector\": \"json\", \"__current_case__\": 0}, \"sample_metadata_fp\": {\"__class__\": \"RuntimeValue\"}, \"observation_metadata_fp\": {\"__class__\": \"RuntimeValue\"}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "2.1.15+galaxy1",
             "type": "tool",
-            "uuid": "d84be458-11b7-46f6-a65a-ebab6ec0b87e",
+            "uuid": "d70deaeb-19f3-4323-8553-688d95be40fd",
             "when": null,
             "workflow_outputs": [
                 {
                     "label": "JSON ITS UNITE",
                     "output_name": "output_fp",
-                    "uuid": "678b5080-e873-4008-a30d-31774f8cddaf"
+                    "uuid": "27d56c3b-c7c3-4762-bfcb-02c1f8e7e358"
                 }
             ]
         },
@@ -2457,13 +2457,13 @@
             "tool_state": "{\"combine_inputs\": false, \"root_name\": \"Root\", \"type_of_data\": {\"type_of_data_selector\": \"text\", \"__current_case__\": 1, \"input\": {\"__class__\": \"ConnectedValue\"}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "2.7.1+galaxy0",
             "type": "tool",
-            "uuid": "a1a98c2f-55c6-4c44-af52-14c6fab2aebc",
+            "uuid": "526509f4-006f-4c4c-938b-f40d883fe7d2",
             "when": null,
             "workflow_outputs": [
                 {
                     "label": "Krona ITS UNITE",
                     "output_name": "output",
-                    "uuid": "3943dda3-de84-4293-ba64-9a8af2b1c986"
+                    "uuid": "31997def-f68d-450c-bfd5-49aed01de6f5"
                 }
             ]
         }
@@ -2471,6 +2471,6 @@
     "tags": [
         "MGnify_Amplicon"
     ],
-    "uuid": "27d291a0-adff-4ac9-a57e-4b7c14727129",
-    "version": 12
+    "uuid": "784f7761-6a7b-4c9a-aa01-f6678a5aa30e",
+    "version": 2
 }
