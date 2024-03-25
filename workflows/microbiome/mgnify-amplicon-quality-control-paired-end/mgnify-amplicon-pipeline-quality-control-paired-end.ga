@@ -701,7 +701,7 @@
                     "name": "readtype"
                 }
             ],
-            "label": "Quality filtering",
+            "label": "Trimming",
             "name": "Trimmomatic",
             "outputs": [
                 {
@@ -1505,6 +1505,6 @@
     "tags": [
         "MGnify_Amplicon"
     ],
-    "uuid": "00884ab8-b2f4-4fa4-96f5-5deb6641eaad",
-    "version": 7
+    "uuid": "d2953d4f-0d57-473f-af0a-dfbcf83e4935",
+    "version": 8
 }
