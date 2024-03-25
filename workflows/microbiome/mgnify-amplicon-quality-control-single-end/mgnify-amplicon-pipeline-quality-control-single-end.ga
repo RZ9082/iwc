@@ -14,14 +14,14 @@
     "name": "MGnify's amplicon pipeline - Quality control SE",
     "steps": {
         "0": {
-            "annotation": "Download and extract single-end reads from NCBI SRA via corresponding accession number.",
+            "annotation": "Download and extract single-end reads from NCBI SRA via corresponding accession IDs.",
             "content_id": null,
             "errors": null,
             "id": 0,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "Download and extract single-end reads from NCBI SRA via corresponding accession number.",
+                    "description": "Download and extract single-end reads from NCBI SRA via corresponding accession IDs.",
                     "name": "Accession"
                 }
             ],
@@ -1131,14 +1131,14 @@
             "when": null,
             "workflow_outputs": [
                 {
-                    "label": "MultiQC_stats",
-                    "output_name": "stats",
-                    "uuid": "7a4c4fee-6f2d-4cad-8a81-f4eb151a8368"
-                },
-                {
                     "label": "MultiQC_report",
                     "output_name": "html_report",
                     "uuid": "b26fd12c-f1e8-46d3-9fba-03b9969877be"
+                },
+                {
+                    "label": "MultiQC_stats",
+                    "output_name": "stats",
+                    "uuid": "7a4c4fee-6f2d-4cad-8a81-f4eb151a8368"
                 }
             ]
         }
@@ -1146,6 +1146,6 @@
     "tags": [
         "MGnify_Amplicon"
     ],
-    "uuid": "1398f61f-309a-4eac-8edb-ebe598dcea90",
-    "version": 3
+    "uuid": "d0fbac09-b1c9-415a-84bb-2b749a61a0c0",
+    "version": 5
 }
