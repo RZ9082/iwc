@@ -22,10 +22,10 @@
             "inputs": [
                 {
                     "description": "Download and extract single-end reads from NCBI SRA via corresponding accession number.",
-                    "name": "Accesion"
+                    "name": "Accession"
                 }
             ],
-            "label": "Accesion",
+            "label": "Accession",
             "name": "Input parameter",
             "outputs": [],
             "position": {
@@ -1146,6 +1146,6 @@
     "tags": [
         "MGnify_Amplicon"
     ],
-    "uuid": "bf72a0af-bed3-4bda-bfeb-a561d7f339d6",
-    "version": 2
+    "uuid": "1398f61f-309a-4eac-8edb-ebe598dcea90",
+    "version": 3
 }

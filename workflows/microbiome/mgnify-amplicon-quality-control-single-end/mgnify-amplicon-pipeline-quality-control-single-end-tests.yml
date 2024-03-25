@@ -1,6 +1,6 @@
 - doc: Test outline for mgnify-amplicon-pipeline-quality-control-single-end.ga
   job:
-    Accesion: 'DRR011051, DRR010705'
+    Accession: 'DRR011051, DRR010705'
   outputs:
     MultiQC_stats:
       element_tests:
