@@ -1,6 +1,7 @@
 {
     "a_galaxy_workflow": "true",
     "annotation": "Post quality control subworkflow.\nIncluding the classification and visualization steps of SSU, LSU, and IT.",
+    "comments": [],
     "creator": [
         {
             "class": "Organization",
@@ -108,7 +109,12 @@
                     "output_name": "output"
                 }
             },
-            "inputs": [],
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool cmsearch",
+                    "name": "cm_opts"
+                }
+            ],
             "label": null,
             "name": "cmsearch",
             "outputs": [
@@ -859,7 +865,12 @@
                     "output_name": "output"
                 }
             },
-            "inputs": [],
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Filter collection",
+                    "name": "how"
+                }
+            ],
             "label": null,
             "name": "Filter collection",
             "outputs": [
@@ -911,7 +922,12 @@
                     "output_name": "output"
                 }
             },
-            "inputs": [],
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Filter collection",
+                    "name": "how"
+                }
+            ],
             "label": null,
             "name": "Filter collection",
             "outputs": [
@@ -1008,7 +1024,12 @@
                     "output_name": "output"
                 }
             },
-            "inputs": [],
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool bedtools getfasta",
+                    "name": "fasta_source"
+                }
+            ],
             "label": null,
             "name": "bedtools getfasta",
             "outputs": [
@@ -1065,7 +1086,12 @@
                     "output_name": "output"
                 }
             },
-            "inputs": [],
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool bedtools getfasta",
+                    "name": "fasta_source"
+                }
+            ],
             "label": null,
             "name": "bedtools getfasta",
             "outputs": [
@@ -1122,7 +1148,12 @@
                     "output_name": "output"
                 }
             },
-            "inputs": [],
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Filter collection",
+                    "name": "how"
+                }
+            ],
             "label": null,
             "name": "Filter collection",
             "outputs": [
@@ -1460,6 +1491,10 @@
             "inputs": [
                 {
                     "description": "runtime parameter for tool Convert",
+                    "name": "input"
+                },
+                {
+                    "description": "runtime parameter for tool Convert",
                     "name": "output"
                 },
                 {
@@ -1522,6 +1557,10 @@
             "inputs": [
                 {
                     "description": "runtime parameter for tool Convert",
+                    "name": "input"
+                },
+                {
+                    "description": "runtime parameter for tool Convert",
                     "name": "output"
                 },
                 {
@@ -1581,7 +1620,12 @@
                     "output_name": "krona_format"
                 }
             },
-            "inputs": [],
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Krona pie chart",
+                    "name": "type_of_data"
+                }
+            ],
             "label": "Krona SSU SILVA",
             "name": "Krona pie chart",
             "outputs": [
@@ -1635,6 +1679,10 @@
                 }
             },
             "inputs": [
+                {
+                    "description": "runtime parameter for tool Convert",
+                    "name": "input"
+                },
                 {
                     "description": "runtime parameter for tool Convert",
                     "name": "output"
@@ -1699,6 +1747,10 @@
             "inputs": [
                 {
                     "description": "runtime parameter for tool Convert",
+                    "name": "input"
+                },
+                {
+                    "description": "runtime parameter for tool Convert",
                     "name": "output"
                 },
                 {
@@ -1758,7 +1810,12 @@
                     "output_name": "krona_format"
                 }
             },
-            "inputs": [],
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Krona pie chart",
+                    "name": "type_of_data"
+                }
+            ],
             "label": "Krona LSU SILVA",
             "name": "Krona pie chart",
             "outputs": [
@@ -2044,6 +2101,10 @@
             "inputs": [
                 {
                     "description": "runtime parameter for tool Convert",
+                    "name": "input"
+                },
+                {
+                    "description": "runtime parameter for tool Convert",
                     "name": "output"
                 },
                 {
@@ -2106,6 +2167,10 @@
             "inputs": [
                 {
                     "description": "runtime parameter for tool Convert",
+                    "name": "input"
+                },
+                {
+                    "description": "runtime parameter for tool Convert",
                     "name": "output"
                 },
                 {
@@ -2165,7 +2230,12 @@
                     "output_name": "krona_format"
                 }
             },
-            "inputs": [],
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Krona pie chart",
+                    "name": "type_of_data"
+                }
+            ],
             "label": "Krona ITSonedb",
             "name": "Krona pie chart",
             "outputs": [
@@ -2219,6 +2289,10 @@
                 }
             },
             "inputs": [
+                {
+                    "description": "runtime parameter for tool Convert",
+                    "name": "input"
+                },
                 {
                     "description": "runtime parameter for tool Convert",
                     "name": "output"
@@ -2283,6 +2357,10 @@
             "inputs": [
                 {
                     "description": "runtime parameter for tool Convert",
+                    "name": "input"
+                },
+                {
+                    "description": "runtime parameter for tool Convert",
                     "name": "output"
                 },
                 {
@@ -2342,7 +2420,12 @@
                     "output_name": "krona_format"
                 }
             },
-            "inputs": [],
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Krona pie chart",
+                    "name": "type_of_data"
+                }
+            ],
             "label": "Krona ITS UNITE",
             "name": "Krona pie chart",
             "outputs": [

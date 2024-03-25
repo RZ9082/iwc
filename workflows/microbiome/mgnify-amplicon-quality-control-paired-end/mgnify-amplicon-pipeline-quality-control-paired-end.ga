@@ -1,6 +1,7 @@
 {
     "a_galaxy_workflow": "true",
-    "annotation": "",
+    "annotation": "Quality control subworkflow for paired-end reads. ",
+    "comments": [],
     "creator": [
         {
             "class": "Organization",
@@ -13,14 +14,14 @@
     "name": "MGnify's amplicon pipeline - Quality control PE",
     "steps": {
         "0": {
-            "annotation": "",
+            "annotation": "Download and extract single-end reads from NCBI SRA via corresponding accession number.",
             "content_id": null,
             "errors": null,
             "id": 0,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "",
+                    "description": "Download and extract single-end reads from NCBI SRA via corresponding accession number.",
                     "name": "Accession"
                 }
             ],
@@ -35,23 +36,23 @@
             "tool_state": "{\"parameter_type\": \"text\", \"optional\": false}",
             "tool_version": null,
             "type": "parameter_input",
-            "uuid": "faf0d1a2-de6f-462b-b3b4-72a28c243351",
+            "uuid": "66260261-a5a9-43e4-abaf-c441c8385beb",
             "when": null,
             "workflow_outputs": []
         },
         "1": {
-            "annotation": "",
+            "annotation": " Enable base correction in overlapped regions.",
             "content_id": null,
             "errors": null,
             "id": 1,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "",
-                    "name": "fastp - Enable base correction (-c)"
+                    "description": " Enable base correction in overlapped regions.",
+                    "name": "fastp - Enable base correction"
                 }
             ],
-            "label": "fastp - Enable base correction (-c)",
+            "label": "fastp - Enable base correction",
             "name": "Input parameter",
             "outputs": [],
             "position": {
@@ -62,23 +63,23 @@
             "tool_state": "{\"default\": false, \"parameter_type\": \"boolean\", \"optional\": true}",
             "tool_version": null,
             "type": "parameter_input",
-            "uuid": "df19cceb-a5b9-4e99-b6ad-489bda8e8ed9",
+            "uuid": "2bc60689-5a15-4def-a43e-67b6b93595fc",
             "when": null,
             "workflow_outputs": []
         },
         "2": {
-            "annotation": "",
+            "annotation": "The quality value that a base is qualified.",
             "content_id": null,
             "errors": null,
             "id": 2,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "",
-                    "name": "fastp - qualified_phred_quality (-q)"
+                    "description": "The quality value that a base is qualified.",
+                    "name": "fastp - Qualified quality phred"
                 }
             ],
-            "label": "fastp - qualified_phred_quality (-q)",
+            "label": "fastp - Qualified quality phred",
             "name": "Input parameter",
             "outputs": [],
             "position": {
@@ -89,23 +90,23 @@
             "tool_state": "{\"default\": 20, \"parameter_type\": \"integer\", \"optional\": true}",
             "tool_version": null,
             "type": "parameter_input",
-            "uuid": "658c628f-ea5b-4b55-b767-39b73fd534f8",
+            "uuid": "4c03bda3-73af-47e2-86e9-da494a477e73",
             "when": null,
             "workflow_outputs": []
         },
         "3": {
-            "annotation": "",
+            "annotation": "How many percents of bases are allowed to be unqualified (0~100).",
             "content_id": null,
             "errors": null,
             "id": 3,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "",
-                    "name": "fastp - unqualified_phred_quality (-u)"
+                    "description": "How many percents of bases are allowed to be unqualified (0~100).",
+                    "name": "fastp - Unqualified percent limit "
                 }
             ],
-            "label": "fastp - unqualified_phred_quality (-u)",
+            "label": "fastp - Unqualified percent limit ",
             "name": "Input parameter",
             "outputs": [],
             "position": {
@@ -116,23 +117,23 @@
             "tool_state": "{\"default\": 20, \"parameter_type\": \"integer\", \"optional\": true}",
             "tool_version": null,
             "type": "parameter_input",
-            "uuid": "f06f4948-5913-4b9c-93a7-b8464a27a2bd",
+            "uuid": "3bb8ecb1-d7a2-40e8-99f4-65bff0130025",
             "when": null,
             "workflow_outputs": []
         },
         "4": {
-            "annotation": "",
+            "annotation": "Reads shorter than this value will be discarded.",
             "content_id": null,
             "errors": null,
             "id": 4,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "",
-                    "name": "fastp - length_required (-l)"
+                    "description": "Reads shorter than this value will be discarded.",
+                    "name": "fastp - Length required"
                 }
             ],
-            "label": "fastp - length_required (-l)",
+            "label": "fastp - Length required",
             "name": "Input parameter",
             "outputs": [],
             "position": {
@@ -143,19 +144,19 @@
             "tool_state": "{\"default\": 70, \"parameter_type\": \"integer\", \"optional\": true}",
             "tool_version": null,
             "type": "parameter_input",
-            "uuid": "caf7fa5e-917d-42c8-ad86-45555e836486",
+            "uuid": "0be381ba-cd5f-4ff4-bfd5-f4e1a9654d72",
             "when": null,
             "workflow_outputs": []
         },
         "5": {
-            "annotation": "",
+            "annotation": "Number of bases to average across.",
             "content_id": null,
             "errors": null,
             "id": 5,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "",
+                    "description": "Number of bases to average across.",
                     "name": "Trimmomatic - SLIDINGWINDOW - Number of bases to average across"
                 }
             ],
@@ -170,19 +171,19 @@
             "tool_state": "{\"default\": 4, \"parameter_type\": \"integer\", \"optional\": true}",
             "tool_version": null,
             "type": "parameter_input",
-            "uuid": "c9f27a73-b125-4d36-a48d-1cf9f65f1286",
+            "uuid": "4246e605-a042-468f-ab9f-6be49f308a06",
             "when": null,
             "workflow_outputs": []
         },
         "6": {
-            "annotation": "",
+            "annotation": "Average quality required.",
             "content_id": null,
             "errors": null,
             "id": 6,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "",
+                    "description": "Average quality required.",
                     "name": "Trimmomatic - SLIDINGWINDOW - Average quality required"
                 }
             ],
@@ -197,19 +198,19 @@
             "tool_state": "{\"default\": 15, \"parameter_type\": \"integer\", \"optional\": true}",
             "tool_version": null,
             "type": "parameter_input",
-            "uuid": "4b605379-44f0-4e09-83d9-5569ea97dc6e",
+            "uuid": "86293692-a468-4054-ad0b-cf4ea6129bfc",
             "when": null,
             "workflow_outputs": []
         },
         "7": {
-            "annotation": "",
+            "annotation": "Minimum quality required to keep a base.",
             "content_id": null,
             "errors": null,
             "id": 7,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "",
+                    "description": "Minimum quality required to keep a base.",
                     "name": "Trimmomatic - LEADING"
                 }
             ],
@@ -224,19 +225,19 @@
             "tool_state": "{\"default\": 3, \"parameter_type\": \"integer\", \"optional\": true}",
             "tool_version": null,
             "type": "parameter_input",
-            "uuid": "0db2e998-6cc2-46ee-aa3e-3fb5e821d42a",
+            "uuid": "e4c10580-3fd8-4897-b0c8-c8f88c2c0a50",
             "when": null,
             "workflow_outputs": []
         },
         "8": {
-            "annotation": "",
+            "annotation": "Minimum quality required to keep a base.",
             "content_id": null,
             "errors": null,
             "id": 8,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "",
+                    "description": "Minimum quality required to keep a base.",
                     "name": "Trimmomatic - TRAILING"
                 }
             ],
@@ -251,19 +252,19 @@
             "tool_state": "{\"default\": 3, \"parameter_type\": \"integer\", \"optional\": true}",
             "tool_version": null,
             "type": "parameter_input",
-            "uuid": "4c15391b-da30-4f89-8ad9-9814a4c0cd2a",
+            "uuid": "96fa1ee7-f644-4590-91ae-557145543d7c",
             "when": null,
             "workflow_outputs": []
         },
         "9": {
-            "annotation": "",
+            "annotation": "Minimum length of reads to be kept.",
             "content_id": null,
             "errors": null,
             "id": 9,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "",
+                    "description": "Minimum length of reads to be kept.",
                     "name": "Trimmomatic - MINLEN"
                 }
             ],
@@ -278,19 +279,19 @@
             "tool_state": "{\"default\": 100, \"parameter_type\": \"integer\", \"optional\": true}",
             "tool_version": null,
             "type": "parameter_input",
-            "uuid": "5b35dfb1-8a9b-4074-a388-ac6420dd7c3c",
+            "uuid": "7baa64fd-f912-47b9-9441-9e3d875a635b",
             "when": null,
             "workflow_outputs": []
         },
         "10": {
-            "annotation": "",
+            "annotation": "The phred+64 encoding works the same as the phred+33 encoding, except you add 64 to the phred score to determine the ascii code of the quality character.",
             "content_id": null,
             "errors": null,
             "id": 10,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "",
+                    "description": "The phred+64 encoding works the same as the phred+33 encoding, except you add 64 to the phred score to determine the ascii code of the quality character.",
                     "name": "Trimmomatic - Quality score encoding"
                 }
             ],
@@ -305,19 +306,19 @@
             "tool_state": "{\"default\": \"-phred33\", \"restrictOnConnections\": true, \"parameter_type\": \"text\", \"optional\": true}",
             "tool_version": null,
             "type": "parameter_input",
-            "uuid": "a4d07769-83fe-4085-b488-e023c4b8ec62",
+            "uuid": "30c1a932-9032-4ddf-80cd-b7917931b305",
             "when": null,
             "workflow_outputs": []
         },
         "11": {
-            "annotation": "",
+            "annotation": "Minimum sequence length.",
             "content_id": null,
             "errors": null,
             "id": 11,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "",
+                    "description": "Minimum sequence length.",
                     "name": "Length filtering - Minimum size"
                 }
             ],
@@ -332,19 +333,19 @@
             "tool_state": "{\"default\": 100, \"parameter_type\": \"integer\", \"optional\": true}",
             "tool_version": null,
             "type": "parameter_input",
-            "uuid": "c5552d01-ef22-4566-999f-b519f41861da",
+            "uuid": "39262004-bb1d-4b72-9152-179575d16a6d",
             "when": null,
             "workflow_outputs": []
         },
         "12": {
-            "annotation": "",
+            "annotation": "Maximal N percentage threshold to conserve sequences.",
             "content_id": null,
             "errors": null,
             "id": 12,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "",
+                    "description": "Maximal N percentage threshold to conserve sequences.",
                     "name": "Ambiguity filtering - Maximal N percentage threshold to conserve sequences"
                 }
             ],
@@ -359,7 +360,7 @@
             "tool_state": "{\"default\": 10, \"parameter_type\": \"integer\", \"optional\": true}",
             "tool_version": null,
             "type": "parameter_input",
-            "uuid": "38d8a7fc-ee47-4ff7-9690-3053e3febd4b",
+            "uuid": "fac95059-c138-478b-adca-a3c690833bb3",
             "when": null,
             "workflow_outputs": []
         },
@@ -374,7 +375,12 @@
                     "output_name": "output"
                 }
             },
-            "inputs": [],
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Download and Extract Reads in FASTQ",
+                    "name": "input"
+                }
+            ],
             "label": null,
             "name": "Download and Extract Reads in FASTQ",
             "outputs": [
@@ -413,7 +419,7 @@
             "tool_state": "{\"adv\": {\"defline_seq\": \"@$ac.$si-$sn-$ri\", \"minID\": null, \"maxID\": null, \"minlen\": null, \"split\": true, \"alignments\": \"both\", \"region\": null, \"matepairDist\": null, \"readfilter\": \"\", \"spotgroups\": null, \"clip\": false, \"skip_technical\": true, \"table\": \"\"}, \"input\": {\"input_select\": \"accession_number\", \"__current_case__\": 0, \"accession\": {\"__class__\": \"ConnectedValue\"}}, \"outputformat\": \"fastqsanger.gz\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "3.0.8+galaxy1",
             "type": "tool",
-            "uuid": "863c5bac-d0a9-4316-9fed-348e10735a0d",
+            "uuid": "d5242395-3878-470c-ad31-a2c3dd9019a2",
             "when": null,
             "workflow_outputs": []
         },
@@ -475,7 +481,7 @@
             "tool_state": "{\"input\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.0.0",
             "type": "tool",
-            "uuid": "5e00d925-a76a-4aa3-a213-3fb590e8b274",
+            "uuid": "7b0f6225-a82b-4e7c-bec9-2eb125f40a9f",
             "when": null,
             "workflow_outputs": []
         },
@@ -510,7 +516,16 @@
                     "output_name": "reverse"
                 }
             },
-            "inputs": [],
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool fastp",
+                    "name": "single_paired"
+                },
+                {
+                    "description": "runtime parameter for tool fastp",
+                    "name": "single_paired"
+                }
+            ],
             "label": "fastp filtering",
             "name": "fastp",
             "outputs": [
@@ -567,7 +582,7 @@
             "tool_state": "{\"filter_options\": {\"quality_filtering_options\": {\"disable_quality_filtering\": false, \"qualified_quality_phred\": {\"__class__\": \"ConnectedValue\"}, \"unqualified_percent_limit\": {\"__class__\": \"ConnectedValue\"}, \"n_base_limit\": null}, \"length_filtering_options\": {\"disable_length_filtering\": false, \"length_required\": {\"__class__\": \"ConnectedValue\"}, \"length_limit\": null}, \"low_complexity_filter\": {\"enable_low_complexity_filter\": false, \"complexity_threshold\": null}}, \"output_options\": {\"report_html\": true, \"report_json\": true}, \"overrepresented_sequence_analysis\": {\"overrepresentation_analysis\": false, \"overrepresentation_sampling\": null}, \"read_mod_options\": {\"polyg_tail_trimming\": {\"trimming_select\": \"\", \"__current_case__\": 1, \"poly_g_min_len\": null}, \"polyx_tail_trimming\": {\"polyx_trimming_select\": \"\", \"__current_case__\": 1}, \"umi_processing\": {\"umi\": false, \"umi_loc\": null, \"umi_len\": null, \"umi_prefix\": null}, \"cutting_by_quality_options\": {\"cut_by_quality5\": false, \"cut_by_quality3\": false, \"cut_window_size\": null, \"cut_mean_quality\": null}, \"base_correction_options\": {\"correction\": {\"__class__\": \"ConnectedValue\"}}}, \"single_paired\": {\"single_paired_selector\": \"paired\", \"__current_case__\": 1, \"in1\": {\"__class__\": \"ConnectedValue\"}, \"in2\": {\"__class__\": \"ConnectedValue\"}, \"adapter_trimming_options\": {\"disable_adapter_trimming\": false, \"adapter_sequence1\": null, \"adapter_sequence2\": null}, \"global_trimming_options\": {\"trim_front1\": null, \"trim_tail1\": null, \"trim_front2\": null, \"trim_tail2\": null}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.23.2+galaxy0",
             "type": "tool",
-            "uuid": "770fc5a5-eea0-4a7e-9d05-3466b7e66966",
+            "uuid": "e3a0ed7a-5a2d-42ff-8d9f-536a7e87ee68",
             "when": null,
             "workflow_outputs": []
         },
@@ -641,7 +656,7 @@
             "tool_state": "{\"general_options\": {\"first_read_discarded\": null, \"second_read_discarded\": null, \"phred64\": false, \"quality_cutoff\": \"13\", \"min_length\": \"30\"}, \"input1\": {\"__class__\": \"ConnectedValue\"}, \"input2\": {\"__class__\": \"ConnectedValue\"}, \"merge_reads\": true, \"merging_options\": {\"maximum_quality_score\": null, \"print_overhang\": false, \"min_base_pair_overlap\": \"15\", \"max_mismatch_fraction\": \"0.02\", \"min_match_fraction\": \"0.9\"}, \"trimming_options\": {\"adapter_a\": \"AGATCGGAAGAGCGGTTCAG\", \"adapter_b\": \"AGATCGGAAGAGCGTCGTGT\", \"adapter_overlap\": \"10\", \"max_mismatch_fraction\": \"0.02\", \"min_match_fraction\": \"0.87\", \"adapter_bandwidth\": \"50\", \"gap_open\": \"8\", \"gap_extend\": \"2\", \"gap_end\": \"2\", \"local_alignment_score\": \"26\", \"read_alignment_bandwidth\": \"50\", \"read_alignment_gap_open\": \"26\", \"read_alignment_gap_extend\": \"9\", \"read_alignment_gap_end\": \"5\", \"read_alignment_max_gap_fraction\": \"0.125\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.3.2+galaxy0",
             "type": "tool",
-            "uuid": "7b7a81c1-bd25-4ad6-bad9-276146172ff1",
+            "uuid": "4c31d85b-f315-4333-852a-6a00c87b3d8c",
             "when": null,
             "workflow_outputs": []
         },
@@ -680,7 +695,12 @@
                     "output_name": "merged"
                 }
             },
-            "inputs": [],
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Trimmomatic",
+                    "name": "readtype"
+                }
+            ],
             "label": "Quality filtering",
             "name": "Trimmomatic",
             "outputs": [
@@ -710,7 +730,7 @@
             "tool_state": "{\"illuminaclip\": {\"do_illuminaclip\": \"no\", \"__current_case__\": 1}, \"operations\": [{\"__index__\": 0, \"operation\": {\"name\": \"SLIDINGWINDOW\", \"__current_case__\": 0, \"window_size\": {\"__class__\": \"ConnectedValue\"}, \"required_quality\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"operation\": {\"name\": \"LEADING\", \"__current_case__\": 2, \"leading\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 2, \"operation\": {\"name\": \"TRAILING\", \"__current_case__\": 3, \"trailing\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 3, \"operation\": {\"name\": \"MINLEN\", \"__current_case__\": 1, \"minlen\": {\"__class__\": \"ConnectedValue\"}}}], \"output_err\": false, \"output_logs\": false, \"quality_score\": {\"__class__\": \"ConnectedValue\"}, \"readtype\": {\"single_or_paired\": \"se\", \"__current_case__\": 0, \"fastq_in\": {\"__class__\": \"ConnectedValue\"}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.39+galaxy2",
             "type": "tool",
-            "uuid": "8d8a8f65-4a3f-493c-8c23-fd465b1f7752",
+            "uuid": "6b1a01fe-1f75-46d3-b80b-ddca8ba8cc87",
             "when": null,
             "workflow_outputs": []
         },
@@ -784,7 +804,7 @@
             "tool_state": "{\"adapters\": {\"__class__\": \"RuntimeValue\"}, \"contaminants\": {\"__class__\": \"RuntimeValue\"}, \"input_file\": {\"__class__\": \"ConnectedValue\"}, \"kmers\": \"7\", \"limits\": {\"__class__\": \"RuntimeValue\"}, \"min_length\": null, \"nogroup\": false, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.74+galaxy0",
             "type": "tool",
-            "uuid": "5b44b6e7-76b2-4e93-adf1-7bc67743089b",
+            "uuid": "eaadc47f-f2be-4667-b8ab-87495b7df435",
             "when": null,
             "workflow_outputs": []
         },
@@ -833,7 +853,7 @@
             "tool_state": "{\"fastq_filters\": [], \"input_file\": {\"__class__\": \"ConnectedValue\"}, \"max_num_deviants\": \"0\", \"max_quality\": \"0.0\", \"max_size\": \"0\", \"min_quality\": \"0.0\", \"min_size\": {\"__class__\": \"ConnectedValue\"}, \"paired_end\": false, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.1.5",
             "type": "tool",
-            "uuid": "8a554592-a154-43fd-88b5-4c3bea9297de",
+            "uuid": "5e56d207-0527-48fb-9dd7-c6559ead1a7e",
             "when": null,
             "workflow_outputs": []
         },
@@ -907,7 +927,7 @@
             "tool_state": "{\"adapters\": {\"__class__\": \"RuntimeValue\"}, \"contaminants\": {\"__class__\": \"RuntimeValue\"}, \"input_file\": {\"__class__\": \"ConnectedValue\"}, \"kmers\": \"7\", \"limits\": {\"__class__\": \"RuntimeValue\"}, \"min_length\": null, \"nogroup\": false, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.74+galaxy0",
             "type": "tool",
-            "uuid": "ad6233d3-cc91-4caa-b5be-2c6419704c32",
+            "uuid": "59a83313-15a1-437f-9772-c09e0c479993",
             "when": null,
             "workflow_outputs": []
         },
@@ -952,7 +972,7 @@
             "tool_state": "{\"find_and_replace\": [{\"__index__\": 0, \"find_pattern\": \"\\\\t(.*?)\\\\.gz\", \"replace_pattern\": \"\\\\t$1_initial_reads\", \"is_regex\": true, \"global\": true, \"caseinsensitive\": false, \"wholewords\": false, \"skip_first_line\": false, \"searchwhere\": {\"searchwhere_select\": \"line\", \"__current_case__\": 0}}], \"infile\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.1.4",
             "type": "tool",
-            "uuid": "4d0043e1-1a8a-43ba-a764-fb3607ac8224",
+            "uuid": "0e9bc2ee-7014-440e-86cd-fad739dade48",
             "when": null,
             "workflow_outputs": []
         },
@@ -1026,7 +1046,7 @@
             "tool_state": "{\"adapters\": {\"__class__\": \"RuntimeValue\"}, \"contaminants\": {\"__class__\": \"RuntimeValue\"}, \"input_file\": {\"__class__\": \"ConnectedValue\"}, \"kmers\": \"7\", \"limits\": {\"__class__\": \"RuntimeValue\"}, \"min_length\": null, \"nogroup\": false, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.74+galaxy0",
             "type": "tool",
-            "uuid": "5e25d13c-aa48-4dfc-a146-780dfa870085",
+            "uuid": "98d8bf6f-1b59-47b6-bdf7-8b05375febb2",
             "when": null,
             "workflow_outputs": []
         },
@@ -1045,7 +1065,12 @@
                     "output_name": "output_file"
                 }
             },
-            "inputs": [],
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool PRINSEQ",
+                    "name": "seq_type"
+                }
+            ],
             "label": "Ambiguity filtering",
             "name": "PRINSEQ",
             "outputs": [
@@ -1084,7 +1109,7 @@
             "tool_state": "{\"filter_treatments\": {\"apply_filter_treatments\": \"true\", \"__current_case__\": 0, \"length_filter_treatments\": {\"apply_length_filter_treatments\": \"false\", \"__current_case__\": 1}, \"quality_filter_treatments\": {\"apply_quality_filter_treatments\": \"false\", \"__current_case__\": 1}, \"base_content_filter_treatments\": {\"apply_base_content_filter_treatments\": \"true\", \"__current_case__\": 0, \"GC_perc_content_filter_treatments\": {\"apply_GC_perc_content_filter_treatments\": \"false\", \"__current_case__\": 1}, \"N_number_content_filter_treatments\": {\"apply_N_number_content_filter_treatments\": \"false\", \"__current_case__\": 1}, \"N_percentage_content_filter_treatments\": {\"apply_N_percentage_content_filter_treatments\": \"true\", \"__current_case__\": 0, \"N_percentage_content_filter_treatment_value\": {\"__class__\": \"ConnectedValue\"}}, \"apply_other_base_content_filter_treatments\": true}, \"complexity_filter_treatments\": {\"apply_complexity_filter_treatments\": \"false\", \"__current_case__\": 1}}, \"seq_type\": {\"seq_type_opt\": \"single\", \"__current_case__\": 0, \"input_singles\": {\"__class__\": \"ConnectedValue\"}}, \"trimming_treatments\": {\"apply_trimming_treatments\": \"false\", \"__current_case__\": 1}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.20.4+galaxy2",
             "type": "tool",
-            "uuid": "983a79c3-8036-4fba-a823-061636e861fc",
+            "uuid": "1b774ae0-238c-446d-a76a-2262d6306720",
             "when": null,
             "workflow_outputs": []
         },
@@ -1129,7 +1154,7 @@
             "tool_state": "{\"find_and_replace\": [{\"__index__\": 0, \"find_pattern\": \"\\\\t(.*?)\\\\.gz\", \"replace_pattern\": \"\\\\t$1_trimming\", \"is_regex\": true, \"global\": true, \"caseinsensitive\": false, \"wholewords\": false, \"skip_first_line\": false, \"searchwhere\": {\"searchwhere_select\": \"line\", \"__current_case__\": 0}}], \"infile\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.1.4",
             "type": "tool",
-            "uuid": "0be04ebb-2bad-4023-8a3d-2a443517187a",
+            "uuid": "33d2c778-71df-4683-9ad6-ef8e846ff7f1",
             "when": null,
             "workflow_outputs": []
         },
@@ -1174,7 +1199,7 @@
             "tool_state": "{\"find_and_replace\": [{\"__index__\": 0, \"find_pattern\": \"\\\\t(.*?)\\\\.gz\", \"replace_pattern\": \"\\\\t$1_length_filtering\", \"is_regex\": true, \"global\": true, \"caseinsensitive\": false, \"wholewords\": false, \"skip_first_line\": false, \"searchwhere\": {\"searchwhere_select\": \"line\", \"__current_case__\": 0}}], \"infile\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.1.4",
             "type": "tool",
-            "uuid": "5f416d10-e192-4e09-9532-f8904b79c2e9",
+            "uuid": "10178ec2-57cb-4433-aa08-9f7b38962668",
             "when": null,
             "workflow_outputs": []
         },
@@ -1219,7 +1244,7 @@
             "tool_state": "{\"input_file\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.1.5",
             "type": "tool",
-            "uuid": "fe887848-bda4-48de-ad64-6a0881d1f743",
+            "uuid": "8aaa1bbe-ff39-4c2c-9426-3994df60d07d",
             "when": null,
             "workflow_outputs": []
         },
@@ -1293,7 +1318,7 @@
             "tool_state": "{\"adapters\": {\"__class__\": \"RuntimeValue\"}, \"contaminants\": {\"__class__\": \"RuntimeValue\"}, \"input_file\": {\"__class__\": \"ConnectedValue\"}, \"kmers\": \"7\", \"limits\": {\"__class__\": \"RuntimeValue\"}, \"min_length\": null, \"nogroup\": false, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.74+galaxy0",
             "type": "tool",
-            "uuid": "d3ad3cf2-5f15-401e-afa0-97468b9a7ea1",
+            "uuid": "5e4ef5e9-ef6a-4cd7-bb5c-51141b8c513e",
             "when": null,
             "workflow_outputs": []
         },
@@ -1340,13 +1365,13 @@
             "tool_state": "{\"input\": {\"__class__\": \"ConnectedValue\"}, \"width\": \"0\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.0.1+galaxy2",
             "type": "tool",
-            "uuid": "7cdf84f4-89c8-42ce-ad22-3fd58f3d082f",
+            "uuid": "75e9510b-b0b9-423a-befa-d35282cc95df",
             "when": null,
             "workflow_outputs": [
                 {
                     "label": "processed_FASTA",
                     "output_name": "output",
-                    "uuid": "92f3c23f-61f1-4799-8e72-180f6118a5b4"
+                    "uuid": "5f5df7ac-13e4-4bd8-9628-d919ab40e6cb"
                 }
             ]
         },
@@ -1391,7 +1416,7 @@
             "tool_state": "{\"find_and_replace\": [{\"__index__\": 0, \"find_pattern\": \"\\\\t(.*?)\\\\.gz\", \"replace_pattern\": \"\\\\t$1_ambiguous_base_filtering\", \"is_regex\": true, \"global\": true, \"caseinsensitive\": false, \"wholewords\": false, \"skip_first_line\": false, \"searchwhere\": {\"searchwhere_select\": \"line\", \"__current_case__\": 0}}], \"infile\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.1.4",
             "type": "tool",
-            "uuid": "dab9469f-4982-4da4-bb43-b87cc9541a0a",
+            "uuid": "c2d031cf-f2ec-468d-b7cb-a0a02c859784",
             "when": null,
             "workflow_outputs": []
         },
@@ -1461,18 +1486,18 @@
             "tool_state": "{\"comment\": \"\", \"export\": false, \"flat\": false, \"results\": [{\"__index__\": 0, \"software_cond\": {\"software\": \"fastqc\", \"__current_case__\": 8, \"output\": [{\"__index__\": 0, \"type\": \"data\", \"input\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 1, \"type\": \"data\", \"input\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 2, \"type\": \"data\", \"input\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 3, \"type\": \"data\", \"input\": {\"__class__\": \"ConnectedValue\"}}]}}], \"saveLog\": false, \"title\": \"\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.11+galaxy1",
             "type": "tool",
-            "uuid": "9b835f3d-5122-43b0-9c17-5ba4a3e49a51",
+            "uuid": "70c1b08e-f6a1-4755-a63b-5885c83a81a9",
             "when": null,
             "workflow_outputs": [
                 {
                     "label": "MultiQC_report",
                     "output_name": "html_report",
-                    "uuid": "2940220f-d6dd-43d6-9923-953e32945cdf"
+                    "uuid": "d4a38387-86da-4919-ae5d-c40333e15917"
                 },
                 {
                     "label": "MultiQC_stats",
                     "output_name": "stats",
-                    "uuid": "48c39e88-24aa-4df0-9daa-6b7a942530e7"
+                    "uuid": "a7ec1f46-492a-44a5-8f15-1c1611d6e914"
                 }
             ]
         }
@@ -1480,6 +1505,6 @@
     "tags": [
         "MGnify_Amplicon"
     ],
-    "uuid": "a342f0d2-7845-4036-86fa-a46cbc179179",
-    "version": 5
+    "uuid": "e516af54-2ce1-42c5-98e7-5f5d371621ad",
+    "version": 4
 }
