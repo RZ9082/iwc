@@ -89,7 +89,7 @@
             ],
             "position": {
                 "left": 730.4937643933138,
-                "top": 0.0
+                "top": 0
             },
             "post_job_actions": {
                 "HideDatasetActionoutput": {
@@ -128,7 +128,7 @@
             ],
             "position": {
                 "left": 187.50176439331375,
-                "top": 291.0
+                "top": 291
             },
             "post_job_actions": {
                 "HideDatasetActionoutput": {
@@ -276,7 +276,12 @@
                     "output_name": "output"
                 }
             },
-            "inputs": [],
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool MAPseq",
+                    "name": "sequences"
+                }
+            ],
             "label": null,
             "name": "MAPseq",
             "outputs": [
@@ -298,8 +303,8 @@
                 }
             ],
             "position": {
-                "left": 1071.4024587286365,
-                "top": 226.36178122479146
+                "left": 1071.4000244140625,
+                "top": 226.36666870117188
             },
             "post_job_actions": {
                 "ChangeDatatypeActionclassifications": {
@@ -362,7 +367,7 @@
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"minid1\": \"1\", \"minid2\": \"1\", \"minscore\": \"30\", \"otulim\": \"50\", \"outfmt\": \"simple\", \"ref_db\": {\"db_source\": \"cached\", \"__current_case__\": 0, \"db_cached\": \"mgnify_its_unite_from_2023-09-26\", \"mapseq2biom\": {\"mapseq2biom\": \"yes\", \"__current_case__\": 0, \"krona_input\": true}}, \"sequences\": {\"__class__\": \"ConnectedValue\"}, \"tophits\": \"80\", \"topotus\": \"40\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"minid1\": \"1\", \"minid2\": \"1\", \"minscore\": \"30\", \"otulim\": \"50\", \"outfmt\": \"simple\", \"ref_db\": {\"db_source\": \"cached\", \"__current_case__\": 0, \"db_cached\": \"mgnify_its_itsonedb_from_2023-09-26\", \"mapseq2biom\": {\"mapseq2biom\": \"yes\", \"__current_case__\": 0, \"krona_input\": true}}, \"sequences\": {\"__class__\": \"RuntimeValue\"}, \"tophits\": \"80\", \"topotus\": \"40\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "2.1.1+galaxy0",
             "type": "tool",
             "uuid": "8ba4b427-6376-44b4-b77a-8cb07dd7daef",
@@ -391,7 +396,12 @@
                     "output_name": "output"
                 }
             },
-            "inputs": [],
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool MAPseq",
+                    "name": "sequences"
+                }
+            ],
             "label": null,
             "name": "MAPseq",
             "outputs": [
@@ -477,7 +487,7 @@
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"minid1\": \"1\", \"minid2\": \"1\", \"minscore\": \"30\", \"otulim\": \"50\", \"outfmt\": \"simple\", \"ref_db\": {\"db_source\": \"cached\", \"__current_case__\": 0, \"db_cached\": \"mgnify_its_itsonedb_from_2023-09-26\", \"mapseq2biom\": {\"mapseq2biom\": \"yes\", \"__current_case__\": 0, \"krona_input\": true}}, \"sequences\": {\"__class__\": \"ConnectedValue\"}, \"tophits\": \"80\", \"topotus\": \"40\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"minid1\": \"1\", \"minid2\": \"1\", \"minscore\": \"30\", \"otulim\": \"50\", \"outfmt\": \"simple\", \"ref_db\": {\"db_source\": \"cached\", \"__current_case__\": 0, \"db_cached\": \"mgnify_its_unite_from_2023-09-26\", \"mapseq2biom\": {\"mapseq2biom\": \"yes\", \"__current_case__\": 0, \"krona_input\": true}}, \"sequences\": {\"__class__\": \"RuntimeValue\"}, \"tophits\": \"80\", \"topotus\": \"40\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "2.1.1+galaxy0",
             "type": "tool",
             "uuid": "5978536f-8c00-49a7-b426-8120f23a3875",
@@ -879,6 +889,6 @@
     "tags": [
         "MGnify_Amplicon"
     ],
-    "uuid": "6d0c9174-44da-4012-b9c8-5bcc4aa14758",
-    "version": 8
+    "uuid": "96e50deb-1ee1-4db0-94e7-da634357f71b",
+    "version": 9
 }

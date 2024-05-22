@@ -536,13 +536,7 @@
             "type": "tool",
             "uuid": "f72fb224-f211-4059-9ee5-9a10efdc0c28",
             "when": null,
-            "workflow_outputs": [
-                {
-                    "label": "SSU_BED",
-                    "output_name": "output",
-                    "uuid": "f10f4857-067d-45fc-ba1b-ad676cbec22c"
-                }
-            ]
+            "workflow_outputs": []
         },
         "11": {
             "annotation": "",
@@ -598,13 +592,7 @@
             "type": "tool",
             "uuid": "802aedfc-dd96-4e90-a31d-b4a5e0c0324c",
             "when": null,
-            "workflow_outputs": [
-                {
-                    "label": "LSU_BED",
-                    "output_name": "output",
-                    "uuid": "6dbb0d19-3803-4c59-a101-da5e9d4b598c"
-                }
-            ]
+            "workflow_outputs": []
         },
         "12": {
             "annotation": "",
@@ -699,16 +687,7 @@
                     "output_name": "output"
                 }
             },
-            "inputs": [
-                {
-                    "description": "runtime parameter for tool Concatenate",
-                    "name": "input1"
-                },
-                {
-                    "description": "runtime parameter for tool Concatenate",
-                    "name": "input2"
-                }
-            ],
+            "inputs": [],
             "label": null,
             "name": "Concatenate",
             "outputs": [
@@ -737,7 +716,7 @@
                 "owner": "devteam",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"input1\": {\"__class__\": \"RuntimeValue\"}, \"input2\": {\"__class__\": \"RuntimeValue\"}, \"sameformat\": true, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"input1\": {\"__class__\": \"ConnectedValue\"}, \"input2\": {\"__class__\": \"ConnectedValue\"}, \"sameformat\": true, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.0.1",
             "type": "tool",
             "uuid": "975d4e12-b21c-46ce-b0eb-f9ac7b26f699",
@@ -1297,14 +1276,14 @@
             "when": null,
             "workflow_outputs": [
                 {
-                    "label": "Classifications_LSU_SILVA",
-                    "output_name": "classifications",
-                    "uuid": "57a3fd72-893a-4433-8fc6-774ca30e8f5a"
-                },
-                {
                     "label": "OTU_LSU_SILVA",
                     "output_name": "otu_tsv",
                     "uuid": "6d348251-8d79-4264-8745-c288f1af3a85"
+                },
+                {
+                    "label": "Classifications_LSU_SILVA",
+                    "output_name": "classifications",
+                    "uuid": "57a3fd72-893a-4433-8fc6-774ca30e8f5a"
                 }
             ]
         },
@@ -1692,6 +1671,6 @@
     "tags": [
         "MGnify_Amplicon"
     ],
-    "uuid": "df214a5d-1e25-4097-a258-4c164f615e15",
-    "version": 5
+    "uuid": "0ab8eea2-4103-4b34-b892-688e3c3e13cf",
+    "version": 6
 }
