@@ -26,26 +26,6 @@
         ERR2715528_MERGED_FASTQ.fasta:
           path: test-data/LSU_SSU_BED/ERR2715528_MERGED_FASTQ.fasta.bed
           compare: diff
-          lines_diff: 0     
-    SSU_BED:
-      element_tests:
-        ERR2715528_MERGED_FASTQ.fasta:
-          path: test-data/SSU_BED/ERR2715528_MERGED_FASTQ.fasta.bed
-          compare: diff
-          lines_diff: 0
-        DRR010481_FASTQ.fasta:
-          path: test-data/SSU_BED/DRR010481_FASTQ.fasta.bed
-          compare: diff
-          lines_diff: 0
-    LSU_BED:
-      element_tests:
-        ERR2715528_MERGED_FASTQ.fasta:
-          path: test-data/LSU_BED/ERR2715528_MERGED_FASTQ.fasta.bed
-          compare: diff
-          lines_diff: 0
-        DRR010481_FASTQ.fasta:
-          path: test-data/LSU_BED/DRR010481_FASTQ.fasta.bed
-          compare: diff
           lines_diff: 0
     SSU_FASTA:
       element_tests:

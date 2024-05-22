@@ -1898,14 +1898,14 @@
             "when": null,
             "workflow_outputs": [
                 {
-                    "label": "SE_QC_processed_FASTA",
-                    "output_name": "SE_QC_processed_FASTA",
-                    "uuid": "ae5b4ae6-6702-4e80-ad34-3544850c4137"
-                },
-                {
                     "label": "SE_MultiQC_stats",
                     "output_name": "SE_MultiQC_stats",
                     "uuid": "f2e55c40-cb6b-4021-aff7-3291badc26d2"
+                },
+                {
+                    "label": "SE_QC_processed_FASTA",
+                    "output_name": "SE_QC_processed_FASTA",
+                    "uuid": "ae5b4ae6-6702-4e80-ad34-3544850c4137"
                 },
                 {
                     "label": "SE_MultiQC_report",
@@ -3518,11 +3518,6 @@
             "when": null,
             "workflow_outputs": [
                 {
-                    "label": "PE_MultiQC_report",
-                    "output_name": "PE_MultiQC_report",
-                    "uuid": "47e12ce9-504b-475c-81d7-085a88fa4742"
-                },
-                {
                     "label": "PE_QC_processed_FASTA",
                     "output_name": "PE_QC_processed_FASTA",
                     "uuid": "1ee98b7a-34f4-4586-8bb7-f40c05d07e32"
@@ -3531,6 +3526,11 @@
                     "label": "PE_MultiQC_stats",
                     "output_name": "PE_MultiQC_stats",
                     "uuid": "24595c40-28ba-4803-8aed-0942fe479dba"
+                },
+                {
+                    "label": "PE_MultiQC_report",
+                    "output_name": "PE_MultiQC_report",
+                    "uuid": "47e12ce9-504b-475c-81d7-085a88fa4742"
                 }
             ]
         },
@@ -5278,6 +5278,36 @@
             "when": null,
             "workflow_outputs": [
                 {
+                    "label": "Krona_SSU_SILVA",
+                    "output_name": "Krona_SSU_SILVA",
+                    "uuid": "d152e643-dede-48bc-9f36-7afb20cf4228"
+                },
+                {
+                    "label": "OTU_SSU_SILVA",
+                    "output_name": "OTU_SSU_SILVA",
+                    "uuid": "50c52df6-c0bd-4140-8c92-6899e401b0dc"
+                },
+                {
+                    "label": "OTU_LSU_SILVA",
+                    "output_name": "OTU_LSU_SILVA",
+                    "uuid": "98e9f17e-09cd-4395-bbd6-904347cd3835"
+                },
+                {
+                    "label": "LSU_SSU_BED",
+                    "output_name": "LSU_SSU_BED",
+                    "uuid": "73c6cefb-03c6-40b4-8b39-3513c9285a92"
+                },
+                {
+                    "label": "Classifications_LSU_SILVA",
+                    "output_name": "Classifications_LSU_SILVA",
+                    "uuid": "e775b1fa-6d76-47fb-be2f-df22b4c9df63"
+                },
+                {
+                    "label": "SSU_FASTA",
+                    "output_name": "SSU_FASTA",
+                    "uuid": "18bb038c-93d4-49e6-821e-11671202ad8a"
+                },
+                {
                     "label": "Krona_LSU_SILVA",
                     "output_name": "Krona_LSU_SILVA",
                     "uuid": "c4f09ca6-319b-43d8-a7ed-aa7c6012f6b3"
@@ -5311,31 +5341,6 @@
                     "label": "JSON_LSU_SILVA",
                     "output_name": "JSON_LSU_SILVA",
                     "uuid": "8bfcd55f-e7f2-441a-83ea-89fbf813fac9"
-                },
-                {
-                    "label": "Classifications_LSU_SILVA",
-                    "output_name": "Classifications_LSU_SILVA",
-                    "uuid": "e775b1fa-6d76-47fb-be2f-df22b4c9df63"
-                },
-                {
-                    "label": "SSU_FASTA",
-                    "output_name": "SSU_FASTA",
-                    "uuid": "18bb038c-93d4-49e6-821e-11671202ad8a"
-                },
-                {
-                    "label": "Krona_SSU_SILVA",
-                    "output_name": "Krona_SSU_SILVA",
-                    "uuid": "d152e643-dede-48bc-9f36-7afb20cf4228"
-                },
-                {
-                    "label": "OTU_SSU_SILVA",
-                    "output_name": "OTU_SSU_SILVA",
-                    "uuid": "50c52df6-c0bd-4140-8c92-6899e401b0dc"
-                },
-                {
-                    "label": "OTU_LSU_SILVA",
-                    "output_name": "OTU_LSU_SILVA",
-                    "uuid": "98e9f17e-09cd-4395-bbd6-904347cd3835"
                 }
             ]
         },
@@ -6259,16 +6264,6 @@
             "when": null,
             "workflow_outputs": [
                 {
-                    "label": "HDF5_ITS_UNITE",
-                    "output_name": "HDF5_ITS_UNITE",
-                    "uuid": "9fd723cc-d000-400f-ad33-eec91b12feb6"
-                },
-                {
-                    "label": "Krona_ITS_UNITE",
-                    "output_name": "Krona_ITS_UNITE",
-                    "uuid": "6ed0bf8a-e95f-4620-8215-59c9b33f8969"
-                },
-                {
                     "label": "JSON_ITS_UNITE",
                     "output_name": "JSON_ITS_UNITE",
                     "uuid": "56357d75-20f8-417c-a677-190ed6cbbc3f"
@@ -6312,6 +6307,16 @@
                     "label": "JSON_ITSonedb",
                     "output_name": "JSON_ITSonedb",
                     "uuid": "7426a566-ea5a-41c7-9f62-298a4953b741"
+                },
+                {
+                    "label": "Krona_ITS_UNITE",
+                    "output_name": "Krona_ITS_UNITE",
+                    "uuid": "6ed0bf8a-e95f-4620-8215-59c9b33f8969"
+                },
+                {
+                    "label": "HDF5_ITS_UNITE",
+                    "output_name": "HDF5_ITS_UNITE",
+                    "uuid": "9fd723cc-d000-400f-ad33-eec91b12feb6"
                 }
             ]
         }
@@ -6319,6 +6324,6 @@
     "tags": [
         "MGnify_Amplicon"
     ],
-    "uuid": "d58c9015-9148-499d-b454-d04d657334b5",
-    "version": 29
+    "uuid": "38459787-1173-4678-86e7-f152c9e5104d",
+    "version": 30
 }
