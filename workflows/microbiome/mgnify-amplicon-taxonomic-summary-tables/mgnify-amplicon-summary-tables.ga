@@ -1,7 +1,40 @@
 {
     "a_galaxy_workflow": "true",
-    "annotation": "",
-    "comments": [],
+    "annotation": "This workflow creates taxonomic summery tables out of the amplicon pipeline results. ",
+    "comments": [
+        {
+            "color": "turquoise",
+            "data": {
+                "text": "phylum summary table"
+            },
+            "id": 1,
+            "position": [
+                270.9406915224165,
+                260.6
+            ],
+            "size": [
+                1353,
+                243
+            ],
+            "type": "markdown"
+        },
+        {
+            "color": "green",
+            "data": {
+                "text": "taxonomic summary table"
+            },
+            "id": 0,
+            "position": [
+                272.3406915224165,
+                0
+            ],
+            "size": [
+                909,
+                241
+            ],
+            "type": "markdown"
+        }
+    ],
     "creator": [
         {
             "class": "Person",
@@ -10,6 +43,7 @@
         }
     ],
     "format-version": "0.1",
+    "license": "MIT",
     "name": "MGnify amplicon summary tables",
     "steps": {
         "0": {
@@ -29,7 +63,7 @@
             "outputs": [],
             "position": {
                 "left": 0,
-                "top": 171.72155011981738
+                "top": 217.34022644605105
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"tag\": null, \"collection_type\": \"list\"}",
@@ -66,7 +100,7 @@
             ],
             "position": {
                 "left": 298.42962390165496,
-                "top": 0.7027332572309248
+                "top": 46.3214095834646
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/query_tabular/query_tabular/3.3.1",
@@ -105,7 +139,7 @@
             ],
             "position": {
                 "left": 292.7278335508603,
-                "top": 260.5869938358175
+                "top": 306.2056701620512
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/9.3+galaxy1",
@@ -144,7 +178,7 @@
             ],
             "position": {
                 "left": 523.9070991902965,
-                "top": 1.7177844637871118
+                "top": 47.33646079002079
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/9.3+galaxy1",
@@ -183,7 +217,7 @@
             ],
             "position": {
                 "left": 513.5768930139466,
-                "top": 261.9587271244081
+                "top": 307.5774034506418
             },
             "post_job_actions": {},
             "tool_id": "Grouping1",
@@ -216,7 +250,7 @@
             ],
             "position": {
                 "left": 743.2357210275393,
-                "top": 0.3318512245949137
+                "top": 45.95052755082859
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/collection_column_join/collection_column_join/0.0.3",
@@ -255,7 +289,7 @@
             ],
             "position": {
                 "left": 738.5411523428047,
-                "top": 261.9587271244081
+                "top": 307.5774034506418
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/filter_tabular/filter_tabular/3.3.0",
@@ -294,7 +328,7 @@
             ],
             "position": {
                 "left": 967.0539580644554,
-                "top": 0.0
+                "top": 45.618676326233675
             },
             "post_job_actions": {
                 "RenameDatasetActionoutfile": {
@@ -347,7 +381,7 @@
             ],
             "position": {
                 "left": 959.3902118058909,
-                "top": 260.5869938358175
+                "top": 306.2056701620512
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/9.3+galaxy1",
@@ -386,7 +420,7 @@
             ],
             "position": {
                 "left": 1180.2392712689773,
-                "top": 259.21526054722693
+                "top": 304.83393687346063
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/collection_column_join/collection_column_join/0.0.3",
@@ -425,7 +459,7 @@
             ],
             "position": {
                 "left": 1407.9469971750166,
-                "top": 257.8435272586363
+                "top": 303.46220358487
             },
             "post_job_actions": {
                 "RenameDatasetActionoutfile": {
@@ -460,6 +494,6 @@
     "tags": [
         "MGnify_Amplicon"
     ],
-    "uuid": "f0cabe13-6912-4856-a5e1-d85a14bf0e1c",
-    "version": 1
+    "uuid": "218a40bc-ff4a-4f5e-a236-390d71ac5cc9",
+    "version": 48
 }
