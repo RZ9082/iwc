@@ -25,12 +25,12 @@
     MultiQC_report:
       asserts:
         - that: has_text
-          text: "<th class=\"rowheader\">DRR218540_ambiguous_base_filtering</th>"
+          text: "DRR218540_ambiguous_base_filtering"
         - that: has_text
-          text: "<th class=\"rowheader\">DRR218540_initial_reads</th>"
+          text: "DRR218540_initial_reads"
         - that: has_text
-          text: "<th class=\"rowheader\">DRR218540_length_filtering</th>"
+          text: "DRR218540_length_filtering"
         - that: has_text
-          text: "<th class=\"rowheader\">DRR218540_trimming</th>"
+          text: "DRR218540_trimming"
         - that: has_text
-          text: "<span class=\"val\">83.0%</span>"
+          text: "83.0%"

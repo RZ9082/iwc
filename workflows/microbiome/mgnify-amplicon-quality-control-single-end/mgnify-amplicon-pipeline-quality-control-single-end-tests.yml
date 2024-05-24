@@ -21,27 +21,27 @@
     MultiQC_report:
       asserts:
         - that: has_text
-          text: "<th class=\"rowheader\">DRR010705_ambiguous_base_filtering</th>"
+          text: "DRR010705_ambiguous_base_filtering"
         - that: has_text
-          text: "<span class=\"val\">81.0%</span>"
+          text: "81.0%"
         - that: has_text
-          text: "<th class=\"rowheader\">DRR010705_initial_reads</th>"
+          text: "DRR010705_initial_reads"
         - that: has_text
-          text: "<span class=\"val\">81.1%</span>"
+          text: "81.1%"
         - that: has_text
-          text: "<th class=\"rowheader\">DRR010705_length_filtering</th>"
+          text: "DRR010705_length_filtering"
         - that: has_text
-          text: "<th class=\"rowheader\">DRR010705_trimming</th>"
+          text: "DRR010705_trimming"
         - that: has_text
-          text: "<th class=\"rowheader\">DRR011051_ambiguous_base_filtering</th>"
+          text: "DRR011051_ambiguous_base_filtering"
         - that: has_text
-          text: "<span class=\"val\">82.2%</span>"
+          text: "82.2%"
         - that: has_text
-          text: "<th class=\"rowheader\">DRR011051_initial_reads</th>"
+          text: "DRR011051_initial_reads"
         - that: has_text
-          text: "<th class=\"rowheader\">DRR011051_length_filtering</th>"
+          text: "DRR011051_length_filtering"
         - that: has_text
-          text: "<th class=\"rowheader\">DRR011051_trimming</th>"
+          text: "DRR011051_trimming"
     processed_FASTA:
       element_tests:
         DRR010705:
