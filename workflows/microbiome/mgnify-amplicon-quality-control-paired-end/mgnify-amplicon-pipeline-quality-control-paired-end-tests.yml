@@ -33,4 +33,4 @@
         - that: has_text
           text: "DRR218540_trimming"
         - that: has_text
-          text: "83.0%"
+          text: "81.2%"

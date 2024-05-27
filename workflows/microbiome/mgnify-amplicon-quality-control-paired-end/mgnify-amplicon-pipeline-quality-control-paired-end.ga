@@ -588,7 +588,7 @@
         },
         "16": {
             "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/seqprep/seqprep/1.3.2+galaxy0",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/mgnify_seqprep/mgnify_seqprep/1.2+galaxy0",
             "errors": null,
             "id": 16,
             "input_connections": {
@@ -603,7 +603,7 @@
             },
             "inputs": [],
             "label": null,
-            "name": "Merging paired-end Illumina reads (SeqPrep)",
+            "name": "Merging paired-end Illumina reads (SeqPrep, modified for use with MGnify piplines)",
             "outputs": [
                 {
                     "name": "output1",
@@ -646,15 +646,15 @@
                     "output_name": "output2"
                 }
             },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/seqprep/seqprep/1.3.2+galaxy0",
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/mgnify_seqprep/mgnify_seqprep/1.2+galaxy0",
             "tool_shed_repository": {
-                "changeset_revision": "8a0aa44e1e5b",
-                "name": "seqprep",
-                "owner": "iuc",
+                "changeset_revision": "76ea9d4604bc",
+                "name": "mgnify_seqprep",
+                "owner": "bgruening",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
             "tool_state": "{\"general_options\": {\"first_read_discarded\": null, \"second_read_discarded\": null, \"phred64\": false, \"quality_cutoff\": \"13\", \"min_length\": \"30\"}, \"input1\": {\"__class__\": \"ConnectedValue\"}, \"input2\": {\"__class__\": \"ConnectedValue\"}, \"merge_reads\": true, \"merging_options\": {\"maximum_quality_score\": null, \"print_overhang\": false, \"min_base_pair_overlap\": \"15\", \"max_mismatch_fraction\": \"0.02\", \"min_match_fraction\": \"0.9\"}, \"trimming_options\": {\"adapter_a\": \"AGATCGGAAGAGCGGTTCAG\", \"adapter_b\": \"AGATCGGAAGAGCGTCGTGT\", \"adapter_overlap\": \"10\", \"max_mismatch_fraction\": \"0.02\", \"min_match_fraction\": \"0.87\", \"adapter_bandwidth\": \"50\", \"gap_open\": \"8\", \"gap_extend\": \"2\", \"gap_end\": \"2\", \"local_alignment_score\": \"26\", \"read_alignment_bandwidth\": \"50\", \"read_alignment_gap_open\": \"26\", \"read_alignment_gap_extend\": \"9\", \"read_alignment_gap_end\": \"5\", \"read_alignment_max_gap_fraction\": \"0.125\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "1.3.2+galaxy0",
+            "tool_version": "1.2+galaxy0",
             "type": "tool",
             "uuid": "4c31d85b-f315-4333-852a-6a00c87b3d8c",
             "when": null,
