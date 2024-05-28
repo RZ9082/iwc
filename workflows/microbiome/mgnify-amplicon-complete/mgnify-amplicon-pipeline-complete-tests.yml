@@ -198,7 +198,7 @@
           path: test-data/LSU_SSU_BED/ERR2715528.bed
           compare: diff
           lines_diff: 0
-    Classifications_ITSonedb:
+    Classifications_ITSoneDB:
       element_tests:
         DRR010481:
           asserts:
@@ -254,13 +254,13 @@
             - that: has_size
               value: 72000
               delta: 10000
-    Krona_ITSonedb:
+    Krona_ITSoneDB:
       asserts:
         - that: has_text
           text: "DRR010481"
         - that: has_text
           text: "ERR2715528"
-    JSON_ITSonedb:
+    JSON_ITSoneDB:
       element_tests:
         DRR010481:
           asserts:
@@ -270,7 +270,7 @@
           asserts:
             - that: has_text
               text: "\"type\": \"OTU table\""
-    HDF5_ITSonedb:
+    HDF5_ITSoneDB:
       element_tests:
         DRR010481:
           asserts:
@@ -334,7 +334,7 @@
             - that: has_n_columns
               comment: "#"
               n: 4
-    OTU_ITSonedb:
+    OTU_ITSoneDB:
       element_tests:
         DRR010481:
           asserts:
@@ -366,3 +366,35 @@
             - that: has_n_columns
               comment: "#"
               n: 4
+    ITSoneDB_phylum_taxonomic_summary_table:
+      path: test-data/ITSoneDB_phylum_taxonomic_summary_table.tabular
+      compare: diff
+      lines_diff: 0
+    ITSoneDB_taxonomic_summary_table:
+      path: test-data/ITSoneDB_taxonomic_summary_table.tabular
+      compare: diff
+      lines_diff: 0
+    LSU_phylum_taxonomic_summary_table:
+      path: test-data/LSU_phylum_taxonomic_summary_table.tabular
+      compare: diff
+      lines_diff: 0
+    LSU_taxonomic_summary_table:
+      path: test-data/LSU_taxonomic_summary_table.tabular
+      compare: diff
+      lines_diff: 0
+    SSU_phylum_taxonomic_summary_table:
+      path: test-data/SSU_phylum_taxonomic_summary_table.tabular
+      compare: diff
+      lines_diff: 0
+    SSU_taxonomic_summary_table:
+      path: test-data/SSU_taxonomic_summary_table.tabular
+      compare: diff
+      lines_diff: 0
+    UNITE_phylum_taxonomic_summary_table:
+      path: test-data/UNITE_phylum_taxonomic_summary_table.tabular
+      compare: diff
+      lines_diff: 0
+    UNITE_taxonomic_summary_table:
+      path: test-data/UNITE_taxonomic_summary_table.tabular
+      compare: diff
+      lines_diff: 0
