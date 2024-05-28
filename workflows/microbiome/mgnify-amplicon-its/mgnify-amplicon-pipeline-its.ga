@@ -276,12 +276,7 @@
                     "output_name": "output"
                 }
             },
-            "inputs": [
-                {
-                    "description": "runtime parameter for tool MAPseq",
-                    "name": "sequences"
-                }
-            ],
+            "inputs": [],
             "label": null,
             "name": "MAPseq",
             "outputs": [
@@ -333,7 +328,7 @@
                 },
                 "RenameDatasetActionclassifications": {
                     "action_arguments": {
-                        "newname": "Classifications_ITSonedb"
+                        "newname": "Classifications_ITSoneDB"
                     },
                     "action_type": "RenameDatasetAction",
                     "output_name": "classifications"
@@ -347,7 +342,7 @@
                 },
                 "RenameDatasetActionotu_tsv": {
                     "action_arguments": {
-                        "newname": "OTU_ITSonedb"
+                        "newname": "OTU_ITSoneDB"
                     },
                     "action_type": "RenameDatasetAction",
                     "output_name": "otu_tsv"
@@ -367,21 +362,21 @@
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"minid1\": \"1\", \"minid2\": \"1\", \"minscore\": \"30\", \"otulim\": \"50\", \"outfmt\": \"simple\", \"ref_db\": {\"db_source\": \"cached\", \"__current_case__\": 0, \"db_cached\": \"mgnify_its_itsonedb_from_2023-09-26\", \"mapseq2biom\": {\"mapseq2biom\": \"yes\", \"__current_case__\": 0, \"krona_input\": true}}, \"sequences\": {\"__class__\": \"RuntimeValue\"}, \"tophits\": \"80\", \"topotus\": \"40\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"minid1\": \"1\", \"minid2\": \"1\", \"minscore\": \"30\", \"otulim\": \"50\", \"outfmt\": \"simple\", \"ref_db\": {\"db_source\": \"cached\", \"__current_case__\": 0, \"db_cached\": \"mgnify_its_itsonedb_from_2023-09-26\", \"mapseq2biom\": {\"mapseq2biom\": \"yes\", \"__current_case__\": 0, \"krona_input\": true}}, \"sequences\": {\"__class__\": \"ConnectedValue\"}, \"tophits\": \"80\", \"topotus\": \"40\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "2.1.1+galaxy0",
             "type": "tool",
             "uuid": "8ba4b427-6376-44b4-b77a-8cb07dd7daef",
             "when": null,
             "workflow_outputs": [
                 {
-                    "label": "OTU_ITSonedb",
-                    "output_name": "otu_tsv",
-                    "uuid": "93ab6fc7-578c-4134-81ac-0ce9b16fe781"
+                    "label": "Classifications_ITSoneDB",
+                    "output_name": "classifications",
+                    "uuid": "1646cfde-72f3-4896-a31a-391c5c14e959"
                 },
                 {
-                    "label": "Classifications_ITSonedb",
-                    "output_name": "classifications",
-                    "uuid": "5ee4e3d8-d112-42a9-af6a-d8274e899134"
+                    "label": "OTU_ITSoneDB",
+                    "output_name": "otu_tsv",
+                    "uuid": "605d65cf-01c3-4574-983f-92cfe0bed799"
                 }
             ]
         },
@@ -396,12 +391,7 @@
                     "output_name": "output"
                 }
             },
-            "inputs": [
-                {
-                    "description": "runtime parameter for tool MAPseq",
-                    "name": "sequences"
-                }
-            ],
+            "inputs": [],
             "label": null,
             "name": "MAPseq",
             "outputs": [
@@ -487,7 +477,7 @@
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"minid1\": \"1\", \"minid2\": \"1\", \"minscore\": \"30\", \"otulim\": \"50\", \"outfmt\": \"simple\", \"ref_db\": {\"db_source\": \"cached\", \"__current_case__\": 0, \"db_cached\": \"mgnify_its_unite_from_2023-09-26\", \"mapseq2biom\": {\"mapseq2biom\": \"yes\", \"__current_case__\": 0, \"krona_input\": true}}, \"sequences\": {\"__class__\": \"RuntimeValue\"}, \"tophits\": \"80\", \"topotus\": \"40\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"minid1\": \"1\", \"minid2\": \"1\", \"minscore\": \"30\", \"otulim\": \"50\", \"outfmt\": \"simple\", \"ref_db\": {\"db_source\": \"cached\", \"__current_case__\": 0, \"db_cached\": \"mgnify_its_unite_from_2023-09-26\", \"mapseq2biom\": {\"mapseq2biom\": \"yes\", \"__current_case__\": 0, \"krona_input\": true}}, \"sequences\": {\"__class__\": \"ConnectedValue\"}, \"tophits\": \"80\", \"topotus\": \"40\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "2.1.1+galaxy0",
             "type": "tool",
             "uuid": "5978536f-8c00-49a7-b426-8120f23a3875",
@@ -530,7 +520,7 @@
                     "name": "output"
                 }
             ],
-            "label": "HDF5 ITSonedb",
+            "label": "HDF5 ITSoneDB",
             "name": "Convert",
             "outputs": [
                 {
@@ -545,7 +535,7 @@
             "post_job_actions": {
                 "RenameDatasetActionoutput_fp": {
                     "action_arguments": {
-                        "newname": "HDF5_ITSonedb"
+                        "newname": "HDF5_ITSoneDB"
                     },
                     "action_type": "RenameDatasetAction",
                     "output_name": "output_fp"
@@ -565,9 +555,9 @@
             "when": null,
             "workflow_outputs": [
                 {
-                    "label": "HDF5_ITSonedb",
+                    "label": "HDF5_ITSoneDB",
                     "output_name": "output_fp",
-                    "uuid": "2eed24d5-0727-4049-822c-925f8620636c"
+                    "uuid": "5263ebcb-67e4-433e-912b-3a3575d9c2fd"
                 }
             ]
         },
@@ -596,7 +586,7 @@
                     "name": "output"
                 }
             ],
-            "label": "JSON ITSonedb",
+            "label": "JSON ITSoneDB",
             "name": "Convert",
             "outputs": [
                 {
@@ -611,7 +601,7 @@
             "post_job_actions": {
                 "RenameDatasetActionoutput_fp": {
                     "action_arguments": {
-                        "newname": "JSON_ITSonedb"
+                        "newname": "JSON_ITSoneDB"
                     },
                     "action_type": "RenameDatasetAction",
                     "output_name": "output_fp"
@@ -631,9 +621,9 @@
             "when": null,
             "workflow_outputs": [
                 {
-                    "label": "JSON_ITSonedb",
+                    "label": "JSON_ITSoneDB",
                     "output_name": "output_fp",
-                    "uuid": "e6954d14-3e73-497b-836d-563330ae7695"
+                    "uuid": "806e14cf-9136-433f-9577-00c232201334"
                 }
             ]
         },
@@ -654,7 +644,7 @@
                     "name": "type_of_data"
                 }
             ],
-            "label": "Krona ITSonedb",
+            "label": "Krona ITSoneDB",
             "name": "Krona pie chart",
             "outputs": [
                 {
@@ -669,7 +659,7 @@
             "post_job_actions": {
                 "RenameDatasetActionoutput": {
                     "action_arguments": {
-                        "newname": "Krona_ITSonedb"
+                        "newname": "Krona_ITSoneDB"
                     },
                     "action_type": "RenameDatasetAction",
                     "output_name": "output"
@@ -689,9 +679,9 @@
             "when": null,
             "workflow_outputs": [
                 {
-                    "label": "Krona_ITSonedb",
+                    "label": "Krona_ITSoneDB",
                     "output_name": "output",
-                    "uuid": "5fdb9d8b-85aa-491c-9ccb-888392912415"
+                    "uuid": "9892be65-3432-441d-9550-3f0d64ee914c"
                 }
             ]
         },
@@ -889,6 +879,6 @@
     "tags": [
         "MGnify_Amplicon"
     ],
-    "uuid": "96e50deb-1ee1-4db0-94e7-da634357f71b",
-    "version": 9
+    "uuid": "8514f3cb-1585-43da-a86c-b68e7b6f0edb",
+    "version": 11
 }

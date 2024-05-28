@@ -29,7 +29,7 @@
         ERR2715528_MERGED_FASTQ.fasta:
           path: test-data/ITS_FASTA/ERR2715528_MERGED_FASTQ.fasta.fasta
           compare: contains
-    OTU_ITSonedb:
+    OTU_ITSoneDB:
       element_tests:
         DRR010481_FASTQ.fasta:
           asserts:
@@ -61,7 +61,7 @@
             - that: has_n_columns
               comment: "#"
               n: 4
-    Classifications_ITSonedb:
+    Classifications_ITSoneDB:
       element_tests:
         DRR010481_FASTQ.fasta:
           asserts:
@@ -133,7 +133,7 @@
             - that: has_n_columns
               comment: "#"
               n: 15
-    HDF5_ITSonedb:
+    HDF5_ITSoneDB:
       element_tests:
         DRR010481_FASTQ.fasta:
           asserts:
@@ -145,7 +145,7 @@
             - that: has_size
               value: 72000
               delta: 10000
-    JSON_ITSonedb:
+    JSON_ITSoneDB:
       element_tests:
         DRR010481_FASTQ.fasta:
           asserts:
@@ -155,7 +155,7 @@
           asserts:
             - that: has_text
               text: "\"type\": \"OTU table\""
-    Krona_ITSonedb:
+    Krona_ITSoneDB:
       asserts:
         - that: has_text
           text: "DRR010481_FASTQ_fasta"
