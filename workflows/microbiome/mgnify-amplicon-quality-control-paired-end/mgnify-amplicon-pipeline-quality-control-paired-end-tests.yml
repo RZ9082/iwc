@@ -2,13 +2,13 @@
   job:
     Accession: 'DRR218540'
   outputs:
-    processed_FASTA:
+    PE_QC_processed_FASTA:
       element_tests:
         DRR218540:
           path: test-data/processed_FASTA/DRR218540.fasta
           compare: diff
           lines_diff: 0
-    MultiQC_stats:
+    PE_MultiQC_stats:
       element_tests:
         fastqc:
           path: test-data/MultiQC_stats/fastqc.tabular
@@ -22,7 +22,7 @@
           assert:
             has_text:
               text: "FastQC	all_sections	DRR218540_ambiguity_filtering"
-    MultiQC_report:
+    PE_MultiQC_report:
       asserts:
         - that: has_text
           text: "DRR218540_ambiguous_base_filtering"

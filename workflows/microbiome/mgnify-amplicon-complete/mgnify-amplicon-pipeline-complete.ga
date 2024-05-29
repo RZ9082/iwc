@@ -481,10 +481,10 @@
             "inputs": [
                 {
                     "description": "specifies the name of SSU taxonomic summary file.",
-                    "name": "SSU_taxonomic_summary_table"
+                    "name": "SSU_taxonomic_summary"
                 }
             ],
-            "label": "SSU_taxonomic_summary_table",
+            "label": "SSU_taxonomic_summary",
             "name": "Input parameter",
             "outputs": [],
             "position": {
@@ -508,10 +508,10 @@
             "inputs": [
                 {
                     "description": "specifies the name of SSU taxonomic summary file, for phylum level.",
-                    "name": "SSU_phylum_taxonomic_summary_table"
+                    "name": "SSU_phylum_taxonomic_summary"
                 }
             ],
-            "label": "SSU_phylum_taxonomic_summary_table",
+            "label": "SSU_phylum_taxonomic_summary",
             "name": "Input parameter",
             "outputs": [],
             "position": {
@@ -562,10 +562,10 @@
             "inputs": [
                 {
                     "description": "specifies the name of LSU taxonomic summary file.",
-                    "name": "LSU_taxonomic_summary_table"
+                    "name": "LSU_taxonomic_summary"
                 }
             ],
-            "label": "LSU_taxonomic_summary_table",
+            "label": "LSU_taxonomic_summary",
             "name": "Input parameter",
             "outputs": [],
             "position": {
@@ -616,15 +616,15 @@
             "inputs": [
                 {
                     "description": "specifies the name of LSU taxonomic summary file, for phylum level.",
-                    "name": "LSU_phylum_taxonomic_summary_table"
+                    "name": "LSU_phylum_taxonomic_summary"
                 }
             ],
-            "label": "LSU_phylum_taxonomic_summary_table",
+            "label": "LSU_phylum_taxonomic_summary",
             "name": "Input parameter",
             "outputs": [],
             "position": {
-                "left": 1784.9582748917685,
-                "top": 1133.8909116562304
+                "left": 1783.9500122070312,
+                "top": 1134.88330078125
             },
             "tool_id": null,
             "tool_state": "{\"default\": \"LSU_phylum_taxonomic_summary_table\", \"parameter_type\": \"text\", \"optional\": true}",
@@ -751,10 +751,10 @@
             "inputs": [
                 {
                     "description": "specifies the name of ITS(ITSoneDB) taxonomic summary file.",
-                    "name": "ITSoneDB_taxonomic_summary_table"
+                    "name": "ITSoneDB_taxonomic_summary"
                 }
             ],
-            "label": "ITSoneDB_taxonomic_summary_table",
+            "label": "ITSoneDB_taxonomic_summary",
             "name": "Input parameter",
             "outputs": [],
             "position": {
@@ -778,10 +778,10 @@
             "inputs": [
                 {
                     "description": "specifies the name of ITS(ITSoneDB) taxonomic summary file, for phylum level.",
-                    "name": "ITSoneDB_phylum_taxonomic_summary_table"
+                    "name": "ITSoneDB_phylum_taxonomic_summary"
                 }
             ],
-            "label": "ITSoneDB_phylum_taxonomic_summary_table",
+            "label": "ITSoneDB_phylum_taxonomic_summary",
             "name": "Input parameter",
             "outputs": [],
             "position": {
@@ -805,10 +805,10 @@
             "inputs": [
                 {
                     "description": "specifies the name of ITS(UNITE) taxonomic summary file.",
-                    "name": "UNITE_taxonomic_summary_table"
+                    "name": "UNITE_taxonomic_summary"
                 }
             ],
-            "label": "UNITE_taxonomic_summary_table",
+            "label": "UNITE_taxonomic_summary",
             "name": "Input parameter",
             "outputs": [],
             "position": {
@@ -832,10 +832,10 @@
             "inputs": [
                 {
                     "description": "specifies the name of ITS(UNITE) taxonomic summary file, for phylum level.",
-                    "name": "UNITE_phylum_taxonomic_summary_table"
+                    "name": "UNITE_phylum_taxonomic_summary"
                 }
             ],
-            "label": "UNITE_phylum_taxonomic_summary_table",
+            "label": "UNITE_phylum_taxonomic_summary",
             "name": "Input parameter",
             "outputs": [],
             "position": {
@@ -3667,14 +3667,14 @@
                     "uuid": "32e860a5-85a9-4797-817e-acdc26261782"
                 },
                 {
-                    "label": "PE_MultiQC_report",
-                    "output_name": "PE_MultiQC_report",
-                    "uuid": "edbdfddb-3960-4901-b50c-87ddd93fb243"
-                },
-                {
                     "label": "PE_MultiQC_stats",
                     "output_name": "PE_MultiQC_stats",
                     "uuid": "34eb6f64-c314-42aa-953c-481edc21072f"
+                },
+                {
+                    "label": "PE_MultiQC_report",
+                    "output_name": "PE_MultiQC_report",
+                    "uuid": "edbdfddb-3960-4901-b50c-87ddd93fb243"
                 }
             ]
         },
@@ -5422,6 +5422,26 @@
             "when": null,
             "workflow_outputs": [
                 {
+                    "label": "OTU_LSU_SILVA",
+                    "output_name": "OTU_LSU_SILVA",
+                    "uuid": "98e9f17e-09cd-4395-bbd6-904347cd3835"
+                },
+                {
+                    "label": "SSU_FASTA",
+                    "output_name": "SSU_FASTA",
+                    "uuid": "18bb038c-93d4-49e6-821e-11671202ad8a"
+                },
+                {
+                    "label": "OTU_SSU_SILVA",
+                    "output_name": "OTU_SSU_SILVA",
+                    "uuid": "50c52df6-c0bd-4140-8c92-6899e401b0dc"
+                },
+                {
+                    "label": "Classifications_LSU_SILVA",
+                    "output_name": "Classifications_LSU_SILVA",
+                    "uuid": "e775b1fa-6d76-47fb-be2f-df22b4c9df63"
+                },
+                {
                     "label": "LSU_FASTA",
                     "output_name": "LSU_FASTA",
                     "uuid": "81f498a0-6565-4c5e-a5bd-06c7f2e95a7b"
@@ -5457,11 +5477,6 @@
                     "uuid": "8bfcd55f-e7f2-441a-83ea-89fbf813fac9"
                 },
                 {
-                    "label": "OTU_SSU_SILVA",
-                    "output_name": "OTU_SSU_SILVA",
-                    "uuid": "50c52df6-c0bd-4140-8c92-6899e401b0dc"
-                },
-                {
                     "label": "Classifications_SSU_SILVA",
                     "output_name": "Classifications_SSU_SILVA",
                     "uuid": "7a1fb8de-8a5a-41b3-afe8-d25f61781406"
@@ -5470,21 +5485,6 @@
                     "label": "Krona_LSU_SILVA",
                     "output_name": "Krona_LSU_SILVA",
                     "uuid": "c4f09ca6-319b-43d8-a7ed-aa7c6012f6b3"
-                },
-                {
-                    "label": "OTU_LSU_SILVA",
-                    "output_name": "OTU_LSU_SILVA",
-                    "uuid": "98e9f17e-09cd-4395-bbd6-904347cd3835"
-                },
-                {
-                    "label": "SSU_FASTA",
-                    "output_name": "SSU_FASTA",
-                    "uuid": "18bb038c-93d4-49e6-821e-11671202ad8a"
-                },
-                {
-                    "label": "Classifications_LSU_SILVA",
-                    "output_name": "Classifications_LSU_SILVA",
-                    "uuid": "e775b1fa-6d76-47fb-be2f-df22b4c9df63"
                 }
             ]
         },
@@ -6403,24 +6403,19 @@
                     "uuid": "6ed0bf8a-e95f-4620-8215-59c9b33f8969"
                 },
                 {
+                    "label": "HDF5_ITS_UNITE",
+                    "output_name": "HDF5_ITS_UNITE",
+                    "uuid": "9fd723cc-d000-400f-ad33-eec91b12feb6"
+                },
+                {
                     "label": "Classifications_ITS_UNITE",
                     "output_name": "Classifications_ITS_UNITE",
                     "uuid": "8a5c3d61-d986-4639-a6ce-9e9660efb242"
                 },
                 {
-                    "label": "HDF5_ITSoneDB",
-                    "output_name": "HDF5_ITSoneDB",
-                    "uuid": "824673a6-20fb-4199-9a7c-d9ba367c1e5d"
-                },
-                {
-                    "label": "JSON_ITS_UNITE",
-                    "output_name": "JSON_ITS_UNITE",
-                    "uuid": "56357d75-20f8-417c-a677-190ed6cbbc3f"
-                },
-                {
-                    "label": "JSON_ITSoneDB",
-                    "output_name": "JSON_ITSoneDB",
-                    "uuid": "9717550d-30f4-41aa-986f-d1c3251549bd"
+                    "label": "Classifications_ITSoneDB",
+                    "output_name": "Classifications_ITSoneDB",
+                    "uuid": "28fcd72f-ae07-4220-ad2b-36132a297ee6"
                 },
                 {
                     "label": "Krona_ITSoneDB",
@@ -6428,9 +6423,19 @@
                     "uuid": "5febf6e9-97d3-42e2-9e3c-7a0d1fbb9f4e"
                 },
                 {
-                    "label": "OTU_ITS_UNITE",
-                    "output_name": "OTU_ITS_UNITE",
-                    "uuid": "f7148b29-03cc-4f30-9478-1d75e191f3d2"
+                    "label": "JSON_ITSoneDB",
+                    "output_name": "JSON_ITSoneDB",
+                    "uuid": "9717550d-30f4-41aa-986f-d1c3251549bd"
+                },
+                {
+                    "label": "JSON_ITS_UNITE",
+                    "output_name": "JSON_ITS_UNITE",
+                    "uuid": "56357d75-20f8-417c-a677-190ed6cbbc3f"
+                },
+                {
+                    "label": "HDF5_ITSoneDB",
+                    "output_name": "HDF5_ITSoneDB",
+                    "uuid": "824673a6-20fb-4199-9a7c-d9ba367c1e5d"
                 },
                 {
                     "label": "ITS_FASTA",
@@ -6438,19 +6443,14 @@
                     "uuid": "4ea2f2de-fb60-489f-8bce-dff5a55d918e"
                 },
                 {
-                    "label": "HDF5_ITS_UNITE",
-                    "output_name": "HDF5_ITS_UNITE",
-                    "uuid": "9fd723cc-d000-400f-ad33-eec91b12feb6"
+                    "label": "OTU_ITS_UNITE",
+                    "output_name": "OTU_ITS_UNITE",
+                    "uuid": "f7148b29-03cc-4f30-9478-1d75e191f3d2"
                 },
                 {
                     "label": "OTU_ITSoneDB",
                     "output_name": "OTU_ITSoneDB",
                     "uuid": "db49b784-1364-47ca-b537-17921764825c"
-                },
-                {
-                    "label": "Classifications_ITSoneDB",
-                    "output_name": "Classifications_ITSoneDB",
-                    "uuid": "28fcd72f-ae07-4220-ad2b-36132a297ee6"
                 }
             ]
         },
@@ -6558,14 +6558,14 @@
                         "workflow_outputs": []
                     },
                     "1": {
-                        "annotation": "",
+                        "annotation": "specifies the name of taxonomic summary file.",
                         "content_id": null,
                         "errors": null,
                         "id": 1,
                         "input_connections": {},
                         "inputs": [
                             {
-                                "description": "",
+                                "description": "specifies the name of taxonomic summary file.",
                                 "name": "taxonomic_summary_table"
                             }
                         ],
@@ -6585,14 +6585,14 @@
                         "workflow_outputs": []
                     },
                     "2": {
-                        "annotation": "",
+                        "annotation": "specifies the name of taxonomic summary file, for phylum level.",
                         "content_id": null,
                         "errors": null,
                         "id": 2,
                         "input_connections": {},
                         "inputs": [
                             {
-                                "description": "",
+                                "description": "specifies the name of taxonomic summary file, for phylum level.",
                                 "name": "phylum_taxonomic_summary_table"
                             }
                         ],
@@ -6927,9 +6927,9 @@
                         "when": null,
                         "workflow_outputs": [
                             {
-                                "label": "taxonomic_summary_table",
+                                "label": "taxonomic_summary",
                                 "output_name": "outfile",
-                                "uuid": "b855ac08-ce6d-482a-b871-87860d737fb8"
+                                "uuid": "15e928bc-22a8-471e-87b3-af2c72002ea5"
                             }
                         ]
                     },
@@ -7070,15 +7070,15 @@
                         "when": null,
                         "workflow_outputs": [
                             {
-                                "label": "phylum_taxonomic_summary_table",
+                                "label": "phylum_taxonomic_summary",
                                 "output_name": "outfile",
-                                "uuid": "c93d42a2-2dbe-400f-a779-833224bd29f3"
+                                "uuid": "2f670be5-cf66-4516-8807-81df2a0724be"
                             }
                         ]
                     }
                 },
                 "tags": "",
-                "uuid": "a2a64a7f-110f-48d3-a6f9-d2a7927a5733"
+                "uuid": "88813b1c-cce8-4e21-8434-6f26acfcdd29"
             },
             "tool_id": null,
             "type": "subworkflow",
@@ -7087,13 +7087,13 @@
             "workflow_outputs": [
                 {
                     "label": "SSU_taxonomic_summary_table",
-                    "output_name": "taxonomic_summary_table",
-                    "uuid": "0f2e99f1-f1c6-4a2b-98b1-5ed3724afe8a"
+                    "output_name": "taxonomic_summary",
+                    "uuid": "acdad6a6-98f2-43ec-ad9f-f7afa5713f1e"
                 },
                 {
                     "label": "SSU_phylum_taxonomic_summary_table",
-                    "output_name": "phylum_taxonomic_summary_table",
-                    "uuid": "0125ad94-fb05-415a-9cc1-1988e0932335"
+                    "output_name": "phylum_taxonomic_summary",
+                    "uuid": "2ba77ee8-0898-47d2-9d76-635959b55c1b"
                 }
             ]
         },
@@ -7201,14 +7201,14 @@
                         "workflow_outputs": []
                     },
                     "1": {
-                        "annotation": "",
+                        "annotation": "specifies the name of taxonomic summary file.",
                         "content_id": null,
                         "errors": null,
                         "id": 1,
                         "input_connections": {},
                         "inputs": [
                             {
-                                "description": "",
+                                "description": "specifies the name of taxonomic summary file.",
                                 "name": "taxonomic_summary_table"
                             }
                         ],
@@ -7228,14 +7228,14 @@
                         "workflow_outputs": []
                     },
                     "2": {
-                        "annotation": "",
+                        "annotation": "specifies the name of taxonomic summary file, for phylum level.",
                         "content_id": null,
                         "errors": null,
                         "id": 2,
                         "input_connections": {},
                         "inputs": [
                             {
-                                "description": "",
+                                "description": "specifies the name of taxonomic summary file, for phylum level.",
                                 "name": "phylum_taxonomic_summary_table"
                             }
                         ],
@@ -7570,9 +7570,9 @@
                         "when": null,
                         "workflow_outputs": [
                             {
-                                "label": "taxonomic_summary_table",
+                                "label": "taxonomic_summary",
                                 "output_name": "outfile",
-                                "uuid": "b855ac08-ce6d-482a-b871-87860d737fb8"
+                                "uuid": "15e928bc-22a8-471e-87b3-af2c72002ea5"
                             }
                         ]
                     },
@@ -7713,15 +7713,15 @@
                         "when": null,
                         "workflow_outputs": [
                             {
-                                "label": "phylum_taxonomic_summary_table",
+                                "label": "phylum_taxonomic_summary",
                                 "output_name": "outfile",
-                                "uuid": "c93d42a2-2dbe-400f-a779-833224bd29f3"
+                                "uuid": "2f670be5-cf66-4516-8807-81df2a0724be"
                             }
                         ]
                     }
                 },
                 "tags": "",
-                "uuid": "a2a64a7f-110f-48d3-a6f9-d2a7927a5733"
+                "uuid": "88813b1c-cce8-4e21-8434-6f26acfcdd29"
             },
             "tool_id": null,
             "type": "subworkflow",
@@ -7730,13 +7730,13 @@
             "workflow_outputs": [
                 {
                     "label": "LSU_taxonomic_summary_table",
-                    "output_name": "taxonomic_summary_table",
-                    "uuid": "e2a2b671-77a4-4f83-99ea-7db1a7ffdb76"
+                    "output_name": "taxonomic_summary",
+                    "uuid": "7b5b3dfb-5105-4eb3-9c65-4874edba5304"
                 },
                 {
                     "label": "LSU_phylum_taxonomic_summary_table",
-                    "output_name": "phylum_taxonomic_summary_table",
-                    "uuid": "dbc1f128-46d8-46f4-a1b7-4f71f233695f"
+                    "output_name": "phylum_taxonomic_summary",
+                    "uuid": "3de8854b-0131-4623-b8a3-3bf54a1547c8"
                 }
             ]
         },
@@ -7849,14 +7849,14 @@
                         "workflow_outputs": []
                     },
                     "1": {
-                        "annotation": "",
+                        "annotation": "specifies the name of taxonomic summary file.",
                         "content_id": null,
                         "errors": null,
                         "id": 1,
                         "input_connections": {},
                         "inputs": [
                             {
-                                "description": "",
+                                "description": "specifies the name of taxonomic summary file.",
                                 "name": "taxonomic_summary_table"
                             }
                         ],
@@ -7876,14 +7876,14 @@
                         "workflow_outputs": []
                     },
                     "2": {
-                        "annotation": "",
+                        "annotation": "specifies the name of taxonomic summary file, for phylum level.",
                         "content_id": null,
                         "errors": null,
                         "id": 2,
                         "input_connections": {},
                         "inputs": [
                             {
-                                "description": "",
+                                "description": "specifies the name of taxonomic summary file, for phylum level.",
                                 "name": "phylum_taxonomic_summary_table"
                             }
                         ],
@@ -8218,9 +8218,9 @@
                         "when": null,
                         "workflow_outputs": [
                             {
-                                "label": "taxonomic_summary_table",
+                                "label": "taxonomic_summary",
                                 "output_name": "outfile",
-                                "uuid": "b855ac08-ce6d-482a-b871-87860d737fb8"
+                                "uuid": "15e928bc-22a8-471e-87b3-af2c72002ea5"
                             }
                         ]
                     },
@@ -8361,15 +8361,15 @@
                         "when": null,
                         "workflow_outputs": [
                             {
-                                "label": "phylum_taxonomic_summary_table",
+                                "label": "phylum_taxonomic_summary",
                                 "output_name": "outfile",
-                                "uuid": "c93d42a2-2dbe-400f-a779-833224bd29f3"
+                                "uuid": "2f670be5-cf66-4516-8807-81df2a0724be"
                             }
                         ]
                     }
                 },
                 "tags": "",
-                "uuid": "a2a64a7f-110f-48d3-a6f9-d2a7927a5733"
+                "uuid": "88813b1c-cce8-4e21-8434-6f26acfcdd29"
             },
             "tool_id": null,
             "type": "subworkflow",
@@ -8378,13 +8378,13 @@
             "workflow_outputs": [
                 {
                     "label": "ITSoneDB_taxonomic_summary_table",
-                    "output_name": "taxonomic_summary_table",
-                    "uuid": "454521f6-0597-4667-a9a5-e806d7e0b42d"
+                    "output_name": "taxonomic_summary",
+                    "uuid": "ac51391a-e7d1-4d65-bb0d-81082f69d3bc"
                 },
                 {
                     "label": "ITSoneDB_phylum_taxonomic_summary_table",
-                    "output_name": "phylum_taxonomic_summary_table",
-                    "uuid": "e3888f52-8fc3-4792-97f6-c850a75845be"
+                    "output_name": "phylum_taxonomic_summary",
+                    "uuid": "70980dab-7f85-476a-a9df-938a55abe711"
                 }
             ]
         },
@@ -8497,14 +8497,14 @@
                         "workflow_outputs": []
                     },
                     "1": {
-                        "annotation": "",
+                        "annotation": "specifies the name of taxonomic summary file.",
                         "content_id": null,
                         "errors": null,
                         "id": 1,
                         "input_connections": {},
                         "inputs": [
                             {
-                                "description": "",
+                                "description": "specifies the name of taxonomic summary file.",
                                 "name": "taxonomic_summary_table"
                             }
                         ],
@@ -8524,14 +8524,14 @@
                         "workflow_outputs": []
                     },
                     "2": {
-                        "annotation": "",
+                        "annotation": "specifies the name of taxonomic summary file, for phylum level.",
                         "content_id": null,
                         "errors": null,
                         "id": 2,
                         "input_connections": {},
                         "inputs": [
                             {
-                                "description": "",
+                                "description": "specifies the name of taxonomic summary file, for phylum level.",
                                 "name": "phylum_taxonomic_summary_table"
                             }
                         ],
@@ -8866,9 +8866,9 @@
                         "when": null,
                         "workflow_outputs": [
                             {
-                                "label": "taxonomic_summary_table",
+                                "label": "taxonomic_summary",
                                 "output_name": "outfile",
-                                "uuid": "b855ac08-ce6d-482a-b871-87860d737fb8"
+                                "uuid": "15e928bc-22a8-471e-87b3-af2c72002ea5"
                             }
                         ]
                     },
@@ -9009,15 +9009,15 @@
                         "when": null,
                         "workflow_outputs": [
                             {
-                                "label": "phylum_taxonomic_summary_table",
+                                "label": "phylum_taxonomic_summary",
                                 "output_name": "outfile",
-                                "uuid": "c93d42a2-2dbe-400f-a779-833224bd29f3"
+                                "uuid": "2f670be5-cf66-4516-8807-81df2a0724be"
                             }
                         ]
                     }
                 },
                 "tags": "",
-                "uuid": "a2a64a7f-110f-48d3-a6f9-d2a7927a5733"
+                "uuid": "88813b1c-cce8-4e21-8434-6f26acfcdd29"
             },
             "tool_id": null,
             "type": "subworkflow",
@@ -9026,13 +9026,13 @@
             "workflow_outputs": [
                 {
                     "label": "UNITE_taxonomic_summary_table",
-                    "output_name": "taxonomic_summary_table",
-                    "uuid": "56352a0e-b030-4ae8-ad05-9944458dd8c4"
+                    "output_name": "taxonomic_summary",
+                    "uuid": "8b131234-5ad8-4fd9-ac1f-94a5b0177626"
                 },
                 {
                     "label": "UNITE_phylum_taxonomic_summary_table",
-                    "output_name": "phylum_taxonomic_summary_table",
-                    "uuid": "9ae8b45e-c6b7-42b2-8730-503a5cb13540"
+                    "output_name": "phylum_taxonomic_summary",
+                    "uuid": "ea1b13b6-8c6d-4012-b5ed-4bebd54bf729"
                 }
             ]
         }
@@ -9040,6 +9040,6 @@
     "tags": [
         "MGnify_Amplicon"
     ],
-    "uuid": "578d57b6-da3d-4c4f-8275-6fecd66e64b1",
-    "version": 54
+    "uuid": "e37d3015-4d4d-459a-a344-d29857d1121d",
+    "version": 58
 }

@@ -2,7 +2,7 @@
   job:
     Accession: 'DRR011051, DRR010705'
   outputs:
-    MultiQC_stats:
+    SE_MultiQC_stats:
       element_tests:
         fastqc:
           path: test-data/MultiQC_stats/fastqc.tabular
@@ -18,7 +18,7 @@
               text: "FastQC	all_sections	DRR010705_trimming"
             - that: has_text
               text: "FastQC	all_sections	DRR011051_trimming"
-    MultiQC_report:
+    SE_MultiQC_report:
       asserts:
         - that: has_text
           text: "DRR010705_ambiguous_base_filtering"
@@ -42,7 +42,7 @@
           text: "DRR011051_length_filtering"
         - that: has_text
           text: "DRR011051_trimming"
-    processed_FASTA:
+    SE_QC_processed_FASTA:
       element_tests:
         DRR010705:
           path: test-data/processed_FASTA/DRR010705.fasta

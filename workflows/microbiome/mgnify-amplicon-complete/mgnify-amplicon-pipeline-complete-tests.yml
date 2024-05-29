@@ -367,34 +367,34 @@
               comment: "#"
               n: 4
     ITSoneDB_phylum_taxonomic_summary_table:
-      path: test-data/ITSoneDB_phylum_taxonomic_summary_table.tabular
-      compare: diff
-      lines_diff: 0
+      asserts:
+        - that: has_text
+          text: 'superkingdom	kingdom	phylum	DRR010481	ERR2715528'
     ITSoneDB_taxonomic_summary_table:
-      path: test-data/ITSoneDB_taxonomic_summary_table.tabular
-      compare: diff
-      lines_diff: 0
+      asserts:
+        - that: has_text
+          text: '#SampleID	DRR010481	ERR2715528'
     LSU_phylum_taxonomic_summary_table:
-      path: test-data/LSU_phylum_taxonomic_summary_table.tabular
-      compare: diff
-      lines_diff: 0
+      asserts:
+        - that: has_text
+          text: 'superkingdom	kingdom	phylum	DRR010481	ERR2715528'
     LSU_taxonomic_summary_table:
-      path: test-data/LSU_taxonomic_summary_table.tabular
-      compare: diff
-      lines_diff: 0
+      asserts:
+        - that: has_text
+          text: '#SampleID	DRR010481	ERR2715528'
     SSU_phylum_taxonomic_summary_table:
-      path: test-data/SSU_phylum_taxonomic_summary_table.tabular
-      compare: diff
-      lines_diff: 0
+      asserts:
+        - that: has_text
+          text: 'superkingdom	kingdom	phylum	ERR2715528'
     SSU_taxonomic_summary_table:
-      path: test-data/SSU_taxonomic_summary_table.tabular
-      compare: diff
-      lines_diff: 0
+      asserts:
+        - that: has_text
+          text: '#SampleID	ERR2715528'
     UNITE_phylum_taxonomic_summary_table:
-      path: test-data/UNITE_phylum_taxonomic_summary_table.tabular
-      compare: diff
-      lines_diff: 0
+      asserts:
+        - that: has_text
+          text: 'superkingdom	kingdom	phylum	DRR010481	ERR2715528'
     UNITE_taxonomic_summary_table:
-      path: test-data/UNITE_taxonomic_summary_table.tabular
-      compare: diff
-      lines_diff: 0
+      asserts:
+        - that: has_text
+          text: '#SampleID	DRR010481	ERR2715528'

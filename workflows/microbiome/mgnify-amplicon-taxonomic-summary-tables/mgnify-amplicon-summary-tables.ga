@@ -74,14 +74,14 @@
             "workflow_outputs": []
         },
         "1": {
-            "annotation": "",
+            "annotation": "specifies the name of taxonomic summary file.",
             "content_id": null,
             "errors": null,
             "id": 1,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "",
+                    "description": "specifies the name of taxonomic summary file.",
                     "name": "taxonomic_summary_table"
                 }
             ],
@@ -101,14 +101,14 @@
             "workflow_outputs": []
         },
         "2": {
-            "annotation": "",
+            "annotation": "specifies the name of taxonomic summary file, for phylum level.",
             "content_id": null,
             "errors": null,
             "id": 2,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "",
+                    "description": "specifies the name of taxonomic summary file, for phylum level.",
                     "name": "phylum_taxonomic_summary_table"
                 }
             ],
@@ -443,9 +443,9 @@
             "when": null,
             "workflow_outputs": [
                 {
-                    "label": "taxonomic_summary_table",
+                    "label": "taxonomic_summary",
                     "output_name": "outfile",
-                    "uuid": "b855ac08-ce6d-482a-b871-87860d737fb8"
+                    "uuid": "15e928bc-22a8-471e-87b3-af2c72002ea5"
                 }
             ]
         },
@@ -586,9 +586,9 @@
             "when": null,
             "workflow_outputs": [
                 {
-                    "label": "phylum_taxonomic_summary_table",
+                    "label": "phylum_taxonomic_summary",
                     "output_name": "outfile",
-                    "uuid": "c93d42a2-2dbe-400f-a779-833224bd29f3"
+                    "uuid": "2f670be5-cf66-4516-8807-81df2a0724be"
                 }
             ]
         }
@@ -596,6 +596,6 @@
     "tags": [
         "MGnify_Amplicon"
     ],
-    "uuid": "a2a64a7f-110f-48d3-a6f9-d2a7927a5733",
-    "version": 63
+    "uuid": "88813b1c-cce8-4e21-8434-6f26acfcdd29",
+    "version": 65
 }
