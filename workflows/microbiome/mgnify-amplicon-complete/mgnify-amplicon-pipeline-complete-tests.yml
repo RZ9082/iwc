@@ -372,6 +372,8 @@
           text: 'superkingdom	kingdom	phylum	DRR010481	ERR2715528'
         - that: has_n_columns
           n: 5
+        - that: has_n_lines
+          n: 6
           delta: 2
     ITSoneDB_taxonomic_summary_table:
       asserts:
@@ -379,6 +381,8 @@
           text: '#SampleID	DRR010481	ERR2715528'
         - that: has_n_columns
           n: 3
+        - that: has_n_lines
+          n: 113
           delta: 17
     LSU_phylum_taxonomic_summary_table:
       asserts:
@@ -386,6 +390,8 @@
           text: 'superkingdom	kingdom	phylum	DRR010481	ERR2715528'
         - that: has_n_columns
           n: 5
+        - that: has_n_lines
+          n: 2
           delta: 1
     LSU_taxonomic_summary_table:
       asserts:
@@ -393,6 +399,8 @@
           text: '#SampleID	DRR010481	ERR2715528'
         - that: has_n_columns
           n: 3
+        - that: has_n_lines
+          n: 4
           delta: 2
     SSU_phylum_taxonomic_summary_table:
       asserts:
@@ -400,6 +408,8 @@
           text: 'superkingdom	kingdom	phylum	ERR2715528'
         - that: has_n_columns
           n: 4
+        - that: has_n_lines
+          n: 8
           delta: 2
     SSU_taxonomic_summary_table:
       asserts:
@@ -407,6 +417,8 @@
           text: '#SampleID	ERR2715528'
         - that: has_n_columns
           n: 2
+        - that: has_n_lines
+          n: 9
           delta: 2
     UNITE_phylum_taxonomic_summary_table:
       asserts:
@@ -414,6 +426,8 @@
           text: 'superkingdom	kingdom	phylum	DRR010481	ERR2715528'
         - that: has_n_columns
           n: 5
+        - that: has_n_lines
+          n: 9
           delta: 2
     UNITE_taxonomic_summary_table:
       asserts:
@@ -421,4 +435,6 @@
           text: '#SampleID	DRR010481	ERR2715528'
         - that: has_n_columns
           n: 3
+        - that: has_n_lines
+          n: 126
           delta: 19
