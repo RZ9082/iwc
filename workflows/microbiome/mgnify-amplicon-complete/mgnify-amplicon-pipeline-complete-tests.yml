@@ -370,31 +370,55 @@
       asserts:
         - that: has_text
           text: 'superkingdom	kingdom	phylum	DRR010481	ERR2715528'
+        - that: has_n_columns
+          n: 5
+          delta: 2
     ITSoneDB_taxonomic_summary_table:
       asserts:
         - that: has_text
           text: '#SampleID	DRR010481	ERR2715528'
+        - that: has_n_columns
+          n: 3
+          delta: 17
     LSU_phylum_taxonomic_summary_table:
       asserts:
         - that: has_text
           text: 'superkingdom	kingdom	phylum	DRR010481	ERR2715528'
+        - that: has_n_columns
+          n: 5
+          delta: 1
     LSU_taxonomic_summary_table:
       asserts:
         - that: has_text
           text: '#SampleID	DRR010481	ERR2715528'
+        - that: has_n_columns
+          n: 3
+          delta: 2
     SSU_phylum_taxonomic_summary_table:
       asserts:
         - that: has_text
           text: 'superkingdom	kingdom	phylum	ERR2715528'
+        - that: has_n_columns
+          n: 4
+          delta: 2
     SSU_taxonomic_summary_table:
       asserts:
         - that: has_text
           text: '#SampleID	ERR2715528'
+        - that: has_n_columns
+          n: 2
+          delta: 2
     UNITE_phylum_taxonomic_summary_table:
       asserts:
         - that: has_text
           text: 'superkingdom	kingdom	phylum	DRR010481	ERR2715528'
+        - that: has_n_columns
+          n: 5
+          delta: 2
     UNITE_taxonomic_summary_table:
       asserts:
         - that: has_text
           text: '#SampleID	DRR010481	ERR2715528'
+        - that: has_n_columns
+          n: 3
+          delta: 19
