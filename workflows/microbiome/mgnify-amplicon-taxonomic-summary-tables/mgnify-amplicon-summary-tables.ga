@@ -233,7 +233,12 @@
                     "output_name": "output"
                 }
             },
-            "inputs": [],
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Text reformatting",
+                    "name": "infile"
+                }
+            ],
             "label": null,
             "name": "Text reformatting",
             "outputs": [
@@ -260,7 +265,7 @@
                 "owner": "bgruening",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"code\": \"NR==1 {\\n    OFS=\\\"\\\\t\\\";\\n    print \\\"#SampleID\\\", $1;\\n}\\nNR>1 {\\n    print $2, $3;\\n}\", \"infile\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"code\": \"NR==1 {\\n    OFS=\\\"\\\\t\\\";\\n    print \\\"#SampleID\\\", $1;\\n}\\nNR>0 {\\n    print $2, $3;\\n}\", \"infile\": {\"__class__\": \"RuntimeValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "9.3+galaxy1",
             "type": "tool",
             "uuid": "41005051-0bae-41c8-a28c-abacd01ebebc",
@@ -487,7 +492,7 @@
                 "owner": "bgruening",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"code\": \"BEGIN {\\n  FS = OFS = \\\"\\\\t\\\"\\n}\\nNR == 1 {\\n  print \\\"taxa\\\", $1\\n}\\nNR > 1 {\\n  print $2, $3\\n}\\n\", \"infile\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"code\": \"BEGIN {\\n  FS = OFS = \\\"\\\\t\\\"\\n}\\nNR == 1 {\\n  print \\\"taxa\\\", $1\\n}\\nNR > 0 {\\n  print $2, $3\\n}\\n\", \"infile\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "9.3+galaxy1",
             "type": "tool",
             "uuid": "b02b2b8c-1968-4e9c-89f0-0e1a26692663",
@@ -596,6 +601,6 @@
     "tags": [
         "MGnify_Amplicon"
     ],
-    "uuid": "88813b1c-cce8-4e21-8434-6f26acfcdd29",
-    "version": 65
+    "uuid": "3960c02a-c130-40e1-a98a-0f40d2a545d5",
+    "version": 67
 }
