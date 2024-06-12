@@ -98,7 +98,13 @@
             "type": "parameter_input",
             "uuid": "98862eac-2fa1-4e7d-95f9-ef4832b40b45",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "eb3a293a-9a4a-4199-aca7-bcc1f8475fab"
+                }
+            ]
         },
         "2": {
             "annotation": "specifies the name of taxonomic summary file, for phylum level.",
@@ -125,7 +131,13 @@
             "type": "parameter_input",
             "uuid": "e948e6d0-a7f3-4d47-a50f-003ee055865a",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "8ff2f67c-8a0e-4cf7-9e24-220480c9c850"
+                }
+            ]
         },
         "3": {
             "annotation": "",

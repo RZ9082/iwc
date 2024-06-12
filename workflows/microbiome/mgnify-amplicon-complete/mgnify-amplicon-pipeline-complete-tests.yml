@@ -373,8 +373,8 @@
         - that: has_n_columns
           n: 5
         - that: has_n_lines
-          n: 6
-          delta: 2
+          n: 10
+          delta: 4
     ITSoneDB_taxonomic_summary_table:
       asserts:
         - that: has_text
@@ -382,7 +382,7 @@
         - that: has_n_columns
           n: 3
         - that: has_n_lines
-          n: 113
+          n: 117
           delta: 17
     LSU_phylum_taxonomic_summary_table:
       asserts:
@@ -391,8 +391,8 @@
         - that: has_n_columns
           n: 5
         - that: has_n_lines
-          n: 2
-          delta: 1
+          n: 6
+          delta: 4
     LSU_taxonomic_summary_table:
       asserts:
         - that: has_text
@@ -400,7 +400,7 @@
         - that: has_n_columns
           n: 3
         - that: has_n_lines
-          n: 4
+          n: 8
           delta: 2
     SSU_phylum_taxonomic_summary_table:
       asserts:
@@ -409,8 +409,8 @@
         - that: has_n_columns
           n: 4
         - that: has_n_lines
-          n: 8
-          delta: 2
+          n: 12
+          delta: 4
     SSU_taxonomic_summary_table:
       asserts:
         - that: has_text
@@ -418,7 +418,7 @@
         - that: has_n_columns
           n: 2
         - that: has_n_lines
-          n: 9
+          n: 13
           delta: 2
     UNITE_phylum_taxonomic_summary_table:
       asserts:
@@ -427,8 +427,8 @@
         - that: has_n_columns
           n: 5
         - that: has_n_lines
-          n: 9
-          delta: 2
+          n: 13
+          delta: 4
     UNITE_taxonomic_summary_table:
       asserts:
         - that: has_text
@@ -436,5 +436,5 @@
         - that: has_n_columns
           n: 3
         - that: has_n_lines
-          n: 126
+          n: 130
           delta: 19

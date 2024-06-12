@@ -7,6 +7,16 @@
             "class": "Organization",
             "name": "MGnify - EMBL",
             "url": "https://www.ebi.ac.uk/metagenomics"
+        },
+        {
+            "class": "Person",
+            "name": "Rand Zoabi",
+            "url": "https://github.com/RZ9082"
+        },
+        {
+            "class": "Person",
+            "name": "Paul Zierep",
+            "url": "https://github.com/paulzierep"
         }
     ],
     "format-version": "0.1",
@@ -14,29 +24,29 @@
     "name": "MGnify's amplicon pipeline - Quality control SE",
     "steps": {
         "0": {
-            "annotation": "Download and extract single-end reads from NCBI SRA via corresponding accession IDs.",
+            "annotation": "Single-end reads.",
             "content_id": null,
             "errors": null,
             "id": 0,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "Download and extract single-end reads from NCBI SRA via corresponding accession IDs.",
-                    "name": "Accession"
+                    "description": "Single-end reads.",
+                    "name": "Single-end reads"
                 }
             ],
-            "label": "Accession",
-            "name": "Input parameter",
+            "label": "Single-end reads",
+            "name": "Input dataset collection",
             "outputs": [],
             "position": {
                 "left": 0,
-                "top": 124.85000610351562
+                "top": 219.5
             },
             "tool_id": null,
-            "tool_state": "{\"parameter_type\": \"text\", \"optional\": false}",
+            "tool_state": "{\"optional\": false, \"tag\": null, \"collection_type\": \"list\"}",
             "tool_version": null,
-            "type": "parameter_input",
-            "uuid": "42eef955-8604-4eb0-bde0-ade39d368281",
+            "type": "data_collection_input",
+            "uuid": "c0102511-2edc-4ba4-9d83-6ec2faec6298",
             "when": null,
             "workflow_outputs": []
         },
@@ -56,26 +66,26 @@
             "name": "Input parameter",
             "outputs": [],
             "position": {
-                "left": 545.8237910552773,
+                "left": 284.8237910552773,
                 "top": 0
             },
             "tool_id": null,
             "tool_state": "{\"default\": 15, \"parameter_type\": \"integer\", \"optional\": true}",
             "tool_version": null,
             "type": "parameter_input",
-            "uuid": "68bdc9c3-0490-4a1c-85fa-55e1764fa9dc",
+            "uuid": "ca12616a-38d0-4e29-a519-aa366574e119",
             "when": null,
             "workflow_outputs": []
         },
         "2": {
-            "annotation": "Minimum quality required to keep a base.",
+            "annotation": "Cut bases off the start of a read, if below a threshold quality.",
             "content_id": null,
             "errors": null,
             "id": 2,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "Minimum quality required to keep a base.",
+                    "description": "Cut bases off the start of a read, if below a threshold quality.",
                     "name": "Trimmomatic - LEADING"
                 }
             ],
@@ -83,49 +93,22 @@
             "name": "Input parameter",
             "outputs": [],
             "position": {
-                "left": 496.82379105527724,
+                "left": 235.82379105527724,
                 "top": 373.00000000000085
             },
             "tool_id": null,
             "tool_state": "{\"default\": 3, \"parameter_type\": \"integer\", \"optional\": true}",
             "tool_version": null,
             "type": "parameter_input",
-            "uuid": "e4040921-5ac7-40a6-89b8-a75aa443830d",
+            "uuid": "e758b85d-5aa5-42f8-b5ab-e956d408197f",
             "when": null,
             "workflow_outputs": []
         },
         "3": {
-            "annotation": "Minimum quality required to keep a base.",
-            "content_id": null,
-            "errors": null,
-            "id": 3,
-            "input_connections": {},
-            "inputs": [
-                {
-                    "description": "Minimum quality required to keep a base.",
-                    "name": "Trimmomatic - TRAILING"
-                }
-            ],
-            "label": "Trimmomatic - TRAILING",
-            "name": "Input parameter",
-            "outputs": [],
-            "position": {
-                "left": 497.21679574468544,
-                "top": 501.2064765902164
-            },
-            "tool_id": null,
-            "tool_state": "{\"default\": 3, \"parameter_type\": \"integer\", \"optional\": true}",
-            "tool_version": null,
-            "type": "parameter_input",
-            "uuid": "577e0325-a8a2-4047-9b18-d48ecb1dbca7",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "4": {
             "annotation": "Number of bases to average across.",
             "content_id": null,
             "errors": null,
-            "id": 4,
+            "id": 3,
             "input_connections": {},
             "inputs": [
                 {
@@ -137,14 +120,41 @@
             "name": "Input parameter",
             "outputs": [],
             "position": {
-                "left": 780.8817910552779,
+                "left": 519.8817910552779,
                 "top": 90.00000000000021
             },
             "tool_id": null,
             "tool_state": "{\"default\": 4, \"parameter_type\": \"integer\", \"optional\": true}",
             "tool_version": null,
             "type": "parameter_input",
-            "uuid": "25036d14-3f94-4124-9e31-b3033f071766",
+            "uuid": "25b64f2e-37f0-46f2-b29b-456a50dc832e",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "4": {
+            "annotation": "Cut bases off the end of a read, if below a threshold quality.",
+            "content_id": null,
+            "errors": null,
+            "id": 4,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "Cut bases off the end of a read, if below a threshold quality.",
+                    "name": "Trimmomatic - TRAILING"
+                }
+            ],
+            "label": "Trimmomatic - TRAILING",
+            "name": "Input parameter",
+            "outputs": [],
+            "position": {
+                "left": 236.21679574468544,
+                "top": 501.2064765902164
+            },
+            "tool_id": null,
+            "tool_state": "{\"default\": 3, \"parameter_type\": \"integer\", \"optional\": true}",
+            "tool_version": null,
+            "type": "parameter_input",
+            "uuid": "394e4fa0-306f-477d-a4f6-58fcfbb6bedb",
             "when": null,
             "workflow_outputs": []
         },
@@ -164,49 +174,22 @@
             "name": "Input parameter",
             "outputs": [],
             "position": {
-                "left": 479.92879574468543,
+                "left": 218.92879574468543,
                 "top": 624.2064765902168
             },
             "tool_id": null,
             "tool_state": "{\"default\": 100, \"parameter_type\": \"integer\", \"optional\": true}",
             "tool_version": null,
             "type": "parameter_input",
-            "uuid": "9b5a0d6c-a459-4045-a900-dd96d1d2f74d",
+            "uuid": "24c1fec3-32db-46a0-93ec-e9743902277c",
             "when": null,
             "workflow_outputs": []
         },
         "6": {
-            "annotation": "The phred+64 encoding works the same as the phred+33 encoding, except you add 64 to the phred score to determine the ascii code of the quality character.",
-            "content_id": null,
-            "errors": null,
-            "id": 6,
-            "input_connections": {},
-            "inputs": [
-                {
-                    "description": "The phred+64 encoding works the same as the phred+33 encoding, except you add 64 to the phred score to determine the ascii code of the quality character.",
-                    "name": "Trimmomatic - Quality score encoding"
-                }
-            ],
-            "label": "Trimmomatic - Quality score encoding",
-            "name": "Input parameter",
-            "outputs": [],
-            "position": {
-                "left": 477.9287957446854,
-                "top": 744.4564765902162
-            },
-            "tool_id": null,
-            "tool_state": "{\"default\": \"-phred33\", \"restrictOnConnections\": true, \"parameter_type\": \"text\", \"optional\": true}",
-            "tool_version": null,
-            "type": "parameter_input",
-            "uuid": "e3c71e5d-6dda-4412-b670-ac5a61e25db7",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "7": {
             "annotation": "Minimum sequence length.",
             "content_id": null,
             "errors": null,
-            "id": 7,
+            "id": 6,
             "input_connections": {},
             "inputs": [
                 {
@@ -218,14 +201,41 @@
             "name": "Input parameter",
             "outputs": [],
             "position": {
-                "left": 995.3396679241868,
+                "left": 734.3396679241868,
                 "top": 219.62078434990826
             },
             "tool_id": null,
             "tool_state": "{\"default\": 100, \"parameter_type\": \"integer\", \"optional\": true}",
             "tool_version": null,
             "type": "parameter_input",
-            "uuid": "280d8149-6e69-4a5f-a690-9ee948f18267",
+            "uuid": "a7511c92-cd33-468d-9586-ea7eb2256339",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "7": {
+            "annotation": "The phred+64 encoding works the same as the phred+33 encoding, except you add 64 to the phred score to determine the ascii code of the quality character.",
+            "content_id": null,
+            "errors": null,
+            "id": 7,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "The phred+64 encoding works the same as the phred+33 encoding, except you add 64 to the phred score to determine the ascii code of the quality character.",
+                    "name": "Trimmomatic - Quality score encoding"
+                }
+            ],
+            "label": "Trimmomatic - Quality score encoding",
+            "name": "Input parameter",
+            "outputs": [],
+            "position": {
+                "left": 216.92879574468537,
+                "top": 744.4564765902162
+            },
+            "tool_id": null,
+            "tool_state": "{\"default\": \"-phred33\", \"restrictOnConnections\": true, \"parameter_type\": \"text\", \"optional\": true}",
+            "tool_version": null,
+            "type": "parameter_input",
+            "uuid": "1a96b6a6-f026-4474-9f56-d648a11b6ecf",
             "when": null,
             "workflow_outputs": []
         },
@@ -245,177 +255,26 @@
             "name": "Input parameter",
             "outputs": [],
             "position": {
-                "left": 1502.4736763919316,
+                "left": 1241.4736763919316,
                 "top": 192.6829501818756
             },
             "tool_id": null,
             "tool_state": "{\"default\": 10, \"parameter_type\": \"integer\", \"optional\": true}",
             "tool_version": null,
             "type": "parameter_input",
-            "uuid": "8c20916a-7120-4e39-af89-d496a04bd545",
+            "uuid": "c00a7955-140d-49a9-abd6-255ee91450a3",
             "when": null,
             "workflow_outputs": []
         },
         "9": {
             "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/sra_tools/fasterq_dump/3.1.0+galaxy1",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.74+galaxy0",
             "errors": null,
             "id": 9,
             "input_connections": {
-                "input|accession": {
+                "input_file": {
                     "id": 0,
                     "output_name": "output"
-                }
-            },
-            "inputs": [
-                {
-                    "description": "runtime parameter for tool Faster Download and Extract Reads in FASTQ",
-                    "name": "input"
-                }
-            ],
-            "label": null,
-            "name": "Faster Download and Extract Reads in FASTQ",
-            "outputs": [
-                {
-                    "name": "list_paired",
-                    "type": "input"
-                },
-                {
-                    "name": "output_collection",
-                    "type": "input"
-                },
-                {
-                    "name": "output_collection_other",
-                    "type": "input"
-                },
-                {
-                    "name": "log",
-                    "type": "txt"
-                }
-            ],
-            "position": {
-                "left": 265,
-                "top": 86.5
-            },
-            "post_job_actions": {
-                "HideDatasetActionlist_paired": {
-                    "action_arguments": {},
-                    "action_type": "HideDatasetAction",
-                    "output_name": "list_paired"
-                },
-                "HideDatasetActionlog": {
-                    "action_arguments": {},
-                    "action_type": "HideDatasetAction",
-                    "output_name": "log"
-                },
-                "HideDatasetActionoutput_collection": {
-                    "action_arguments": {},
-                    "action_type": "HideDatasetAction",
-                    "output_name": "output_collection"
-                },
-                "HideDatasetActionoutput_collection_other": {
-                    "action_arguments": {},
-                    "action_type": "HideDatasetAction",
-                    "output_name": "output_collection_other"
-                }
-            },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/sra_tools/fasterq_dump/3.1.0+galaxy1",
-            "tool_shed_repository": {
-                "changeset_revision": "f8054ea1c365",
-                "name": "sra_tools",
-                "owner": "iuc",
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            },
-            "tool_state": "{\"adv\": {\"seq_defline\": \"@$ac.$si-$sn-$ri\", \"minlen\": null, \"split\": \"--split-3\", \"skip_technical\": true}, \"input\": {\"input_select\": \"accession_number\", \"__current_case__\": 0, \"accession\": {\"__class__\": \"ConnectedValue\"}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "3.1.0+galaxy1",
-            "type": "tool",
-            "uuid": "af415a25-a72a-4dc0-b4b6-2706b755386c",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "10": {
-            "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.39+galaxy2",
-            "errors": null,
-            "id": 10,
-            "input_connections": {
-                "operations_0|operation|required_quality": {
-                    "id": 1,
-                    "output_name": "output"
-                },
-                "operations_0|operation|window_size": {
-                    "id": 4,
-                    "output_name": "output"
-                },
-                "operations_1|operation|leading": {
-                    "id": 2,
-                    "output_name": "output"
-                },
-                "operations_2|operation|trailing": {
-                    "id": 3,
-                    "output_name": "output"
-                },
-                "operations_3|operation|minlen": {
-                    "id": 5,
-                    "output_name": "output"
-                },
-                "quality_score": {
-                    "id": 6,
-                    "output_name": "output"
-                },
-                "readtype|fastq_in": {
-                    "id": 9,
-                    "output_name": "output_collection"
-                }
-            },
-            "inputs": [
-                {
-                    "description": "runtime parameter for tool Trimmomatic",
-                    "name": "readtype"
-                }
-            ],
-            "label": "Trimming",
-            "name": "Trimmomatic",
-            "outputs": [
-                {
-                    "name": "fastq_out",
-                    "type": "input"
-                }
-            ],
-            "position": {
-                "left": 908.7861331470302,
-                "top": 337.8731636019347
-            },
-            "post_job_actions": {
-                "HideDatasetActionfastq_out": {
-                    "action_arguments": {},
-                    "action_type": "HideDatasetAction",
-                    "output_name": "fastq_out"
-                }
-            },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.39+galaxy2",
-            "tool_shed_repository": {
-                "changeset_revision": "b9aaed85cbd1",
-                "name": "trimmomatic",
-                "owner": "pjbriggs",
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            },
-            "tool_state": "{\"illuminaclip\": {\"do_illuminaclip\": \"no\", \"__current_case__\": 1}, \"operations\": [{\"__index__\": 0, \"operation\": {\"name\": \"SLIDINGWINDOW\", \"__current_case__\": 0, \"window_size\": {\"__class__\": \"ConnectedValue\"}, \"required_quality\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"operation\": {\"name\": \"LEADING\", \"__current_case__\": 2, \"leading\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 2, \"operation\": {\"name\": \"TRAILING\", \"__current_case__\": 3, \"trailing\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 3, \"operation\": {\"name\": \"MINLEN\", \"__current_case__\": 1, \"minlen\": {\"__class__\": \"ConnectedValue\"}}}], \"output_err\": false, \"output_logs\": false, \"quality_score\": {\"__class__\": \"ConnectedValue\"}, \"readtype\": {\"single_or_paired\": \"se\", \"__current_case__\": 0, \"fastq_in\": {\"__class__\": \"ConnectedValue\"}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "0.39+galaxy2",
-            "type": "tool",
-            "uuid": "f94c2ab2-18b0-4dc1-8ceb-96693c862c0a",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "11": {
-            "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.74+galaxy0",
-            "errors": null,
-            "id": 11,
-            "input_connections": {
-                "input_file": {
-                    "id": 9,
-                    "output_name": "output_collection"
                 }
             },
             "inputs": [
@@ -445,7 +304,7 @@
                 }
             ],
             "position": {
-                "left": 398.83379001997133,
+                "left": 137.83379001997133,
                 "top": 1070.203938085305
             },
             "post_job_actions": {
@@ -470,7 +329,126 @@
             "tool_state": "{\"adapters\": {\"__class__\": \"RuntimeValue\"}, \"contaminants\": {\"__class__\": \"RuntimeValue\"}, \"input_file\": {\"__class__\": \"ConnectedValue\"}, \"kmers\": \"7\", \"limits\": {\"__class__\": \"RuntimeValue\"}, \"min_length\": null, \"nogroup\": false, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.74+galaxy0",
             "type": "tool",
-            "uuid": "d6931b27-afba-4812-b2dd-1007cd432fc8",
+            "uuid": "3d69c64f-b73b-400a-9411-f3084f9e3205",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "10": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.39+galaxy2",
+            "errors": null,
+            "id": 10,
+            "input_connections": {
+                "operations_0|operation|required_quality": {
+                    "id": 1,
+                    "output_name": "output"
+                },
+                "operations_0|operation|window_size": {
+                    "id": 3,
+                    "output_name": "output"
+                },
+                "operations_1|operation|leading": {
+                    "id": 2,
+                    "output_name": "output"
+                },
+                "operations_2|operation|trailing": {
+                    "id": 4,
+                    "output_name": "output"
+                },
+                "operations_3|operation|minlen": {
+                    "id": 5,
+                    "output_name": "output"
+                },
+                "quality_score": {
+                    "id": 7,
+                    "output_name": "output"
+                },
+                "readtype|fastq_in": {
+                    "id": 0,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Trimmomatic",
+                    "name": "readtype"
+                }
+            ],
+            "label": "Trimming",
+            "name": "Trimmomatic",
+            "outputs": [
+                {
+                    "name": "fastq_out",
+                    "type": "input"
+                }
+            ],
+            "position": {
+                "left": 647.7861331470302,
+                "top": 337.8731636019347
+            },
+            "post_job_actions": {
+                "HideDatasetActionfastq_out": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "fastq_out"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.39+galaxy2",
+            "tool_shed_repository": {
+                "changeset_revision": "b9aaed85cbd1",
+                "name": "trimmomatic",
+                "owner": "pjbriggs",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"illuminaclip\": {\"do_illuminaclip\": \"no\", \"__current_case__\": 1}, \"operations\": [{\"__index__\": 0, \"operation\": {\"name\": \"SLIDINGWINDOW\", \"__current_case__\": 0, \"window_size\": {\"__class__\": \"ConnectedValue\"}, \"required_quality\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"operation\": {\"name\": \"LEADING\", \"__current_case__\": 2, \"leading\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 2, \"operation\": {\"name\": \"TRAILING\", \"__current_case__\": 3, \"trailing\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 3, \"operation\": {\"name\": \"MINLEN\", \"__current_case__\": 1, \"minlen\": {\"__class__\": \"ConnectedValue\"}}}], \"output_err\": false, \"output_logs\": false, \"quality_score\": {\"__class__\": \"ConnectedValue\"}, \"readtype\": {\"single_or_paired\": \"se\", \"__current_case__\": 0, \"fastq_in\": {\"__class__\": \"ConnectedValue\"}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "0.39+galaxy2",
+            "type": "tool",
+            "uuid": "beaf04e0-92dc-4966-bccf-49137b207bc3",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "11": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/9.3+galaxy0",
+            "errors": null,
+            "id": 11,
+            "input_connections": {
+                "infile": {
+                    "id": 9,
+                    "output_name": "text_file"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Replace",
+            "outputs": [
+                {
+                    "name": "outfile",
+                    "type": "input"
+                }
+            ],
+            "position": {
+                "left": 521.8083204698337,
+                "top": 1301.3107808231161
+            },
+            "post_job_actions": {
+                "HideDatasetActionoutfile": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "outfile"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/9.3+galaxy0",
+            "tool_shed_repository": {
+                "changeset_revision": "12615d397df7",
+                "name": "text_processing",
+                "owner": "bgruening",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"find_and_replace\": [{\"__index__\": 0, \"find_pattern\": \"\\\\t(.*?)\\\\.gz\", \"replace_pattern\": \"\\\\t$1_initial_reads\", \"is_regex\": true, \"global\": true, \"caseinsensitive\": false, \"wholewords\": false, \"skip_first_line\": false, \"searchwhere\": {\"searchwhere_select\": \"line\", \"__current_case__\": 0}}], \"infile\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "9.3+galaxy0",
+            "type": "tool",
+            "uuid": "c1d5b341-9824-4c57-b0f4-a033b034cfa0",
             "when": null,
             "workflow_outputs": []
         },
@@ -485,7 +463,7 @@
                     "output_name": "fastq_out"
                 },
                 "min_size": {
-                    "id": 7,
+                    "id": 6,
                     "output_name": "output"
                 }
             },
@@ -499,7 +477,7 @@
                 }
             ],
             "position": {
-                "left": 1152.3091779432864,
+                "left": 891.3091779432864,
                 "top": 370.3116497676374
             },
             "post_job_actions": {
@@ -519,7 +497,7 @@
             "tool_state": "{\"fastq_filters\": [], \"input_file\": {\"__class__\": \"ConnectedValue\"}, \"max_num_deviants\": \"0\", \"max_quality\": \"0.0\", \"max_size\": \"0\", \"min_quality\": \"0.0\", \"min_size\": {\"__class__\": \"ConnectedValue\"}, \"paired_end\": false, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.1.5",
             "type": "tool",
-            "uuid": "b1bc5ea3-7334-4a55-86da-192df3bcbf49",
+            "uuid": "225e7d43-9f0e-40bb-972d-739b816fba83",
             "when": null,
             "workflow_outputs": []
         },
@@ -561,7 +539,7 @@
                 }
             ],
             "position": {
-                "left": 905.4179064261575,
+                "left": 644.4179064261575,
                 "top": 955.8740730752126
             },
             "post_job_actions": {
@@ -586,60 +564,15 @@
             "tool_state": "{\"adapters\": {\"__class__\": \"RuntimeValue\"}, \"contaminants\": {\"__class__\": \"RuntimeValue\"}, \"input_file\": {\"__class__\": \"ConnectedValue\"}, \"kmers\": \"7\", \"limits\": {\"__class__\": \"RuntimeValue\"}, \"min_length\": null, \"nogroup\": false, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.74+galaxy0",
             "type": "tool",
-            "uuid": "51dd88ec-7ba1-4bb6-921f-c918f436f6ca",
+            "uuid": "78f04e10-306c-4fc6-a60f-37c9185442d0",
             "when": null,
             "workflow_outputs": []
         },
         "14": {
             "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/9.3+galaxy0",
-            "errors": null,
-            "id": 14,
-            "input_connections": {
-                "infile": {
-                    "id": 11,
-                    "output_name": "text_file"
-                }
-            },
-            "inputs": [],
-            "label": null,
-            "name": "Replace",
-            "outputs": [
-                {
-                    "name": "outfile",
-                    "type": "input"
-                }
-            ],
-            "position": {
-                "left": 782.8083204698337,
-                "top": 1301.3107808231161
-            },
-            "post_job_actions": {
-                "HideDatasetActionoutfile": {
-                    "action_arguments": {},
-                    "action_type": "HideDatasetAction",
-                    "output_name": "outfile"
-                }
-            },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/9.3+galaxy0",
-            "tool_shed_repository": {
-                "changeset_revision": "12615d397df7",
-                "name": "text_processing",
-                "owner": "bgruening",
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            },
-            "tool_state": "{\"find_and_replace\": [{\"__index__\": 0, \"find_pattern\": \"\\\\t(.*?)\\\\.gz\", \"replace_pattern\": \"\\\\t$1_initial_reads\", \"is_regex\": true, \"global\": true, \"caseinsensitive\": false, \"wholewords\": false, \"skip_first_line\": false, \"searchwhere\": {\"searchwhere_select\": \"line\", \"__current_case__\": 0}}], \"infile\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "9.3+galaxy0",
-            "type": "tool",
-            "uuid": "5d3ed162-685a-4eab-ba3b-a97ec7fe9d6a",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "15": {
-            "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/prinseq/prinseq/0.20.4+galaxy2",
             "errors": null,
-            "id": 15,
+            "id": 14,
             "input_connections": {
                 "filter_treatments|base_content_filter_treatments|N_percentage_content_filter_treatments|N_percentage_content_filter_treatment_value": {
                     "id": 8,
@@ -669,7 +602,7 @@
                 }
             ],
             "position": {
-                "left": 1426.055726007993,
+                "left": 1165.055726007993,
                 "top": 432.1991937304916
             },
             "post_job_actions": {
@@ -694,15 +627,15 @@
             "tool_state": "{\"filter_treatments\": {\"apply_filter_treatments\": \"true\", \"__current_case__\": 0, \"length_filter_treatments\": {\"apply_length_filter_treatments\": \"false\", \"__current_case__\": 1}, \"quality_filter_treatments\": {\"apply_quality_filter_treatments\": \"false\", \"__current_case__\": 1}, \"base_content_filter_treatments\": {\"apply_base_content_filter_treatments\": \"true\", \"__current_case__\": 0, \"GC_perc_content_filter_treatments\": {\"apply_GC_perc_content_filter_treatments\": \"false\", \"__current_case__\": 1}, \"N_number_content_filter_treatments\": {\"apply_N_number_content_filter_treatments\": \"false\", \"__current_case__\": 1}, \"N_percentage_content_filter_treatments\": {\"apply_N_percentage_content_filter_treatments\": \"true\", \"__current_case__\": 0, \"N_percentage_content_filter_treatment_value\": {\"__class__\": \"ConnectedValue\"}}, \"apply_other_base_content_filter_treatments\": true}, \"complexity_filter_treatments\": {\"apply_complexity_filter_treatments\": \"false\", \"__current_case__\": 1}}, \"seq_type\": {\"seq_type_opt\": \"single\", \"__current_case__\": 0, \"input_singles\": {\"__class__\": \"ConnectedValue\"}}, \"trimming_treatments\": {\"apply_trimming_treatments\": \"false\", \"__current_case__\": 1}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.20.4+galaxy2",
             "type": "tool",
-            "uuid": "6cc0733b-ffa3-4045-9e86-f4d6b238af50",
+            "uuid": "bca3147e-d3e3-4b1a-8f69-3d8453607b47",
             "when": null,
             "workflow_outputs": []
         },
-        "16": {
+        "15": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.74+galaxy0",
             "errors": null,
-            "id": 16,
+            "id": 15,
             "input_connections": {
                 "input_file": {
                     "id": 12,
@@ -736,7 +669,7 @@
                 }
             ],
             "position": {
-                "left": 1280.7935387142895,
+                "left": 1019.7935387142895,
                 "top": 800.338235605041
             },
             "post_job_actions": {
@@ -761,15 +694,15 @@
             "tool_state": "{\"adapters\": {\"__class__\": \"RuntimeValue\"}, \"contaminants\": {\"__class__\": \"RuntimeValue\"}, \"input_file\": {\"__class__\": \"ConnectedValue\"}, \"kmers\": \"7\", \"limits\": {\"__class__\": \"RuntimeValue\"}, \"min_length\": null, \"nogroup\": false, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.74+galaxy0",
             "type": "tool",
-            "uuid": "f42646aa-9e8e-4465-a8ee-7f6ffcff5381",
+            "uuid": "6050ddb3-d391-4a83-be37-27c4bcfd2f9f",
             "when": null,
             "workflow_outputs": []
         },
-        "17": {
+        "16": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/9.3+galaxy0",
             "errors": null,
-            "id": 17,
+            "id": 16,
             "input_connections": {
                 "infile": {
                     "id": 13,
@@ -786,7 +719,7 @@
                 }
             ],
             "position": {
-                "left": 1208.4179064261575,
+                "left": 947.4179064261575,
                 "top": 1153.2574043740406
             },
             "post_job_actions": {
@@ -806,18 +739,18 @@
             "tool_state": "{\"find_and_replace\": [{\"__index__\": 0, \"find_pattern\": \"\\\\t(.*?)\\\\.gz\", \"replace_pattern\": \"\\\\t$1_trimming\", \"is_regex\": true, \"global\": true, \"caseinsensitive\": false, \"wholewords\": false, \"skip_first_line\": false, \"searchwhere\": {\"searchwhere_select\": \"line\", \"__current_case__\": 0}}], \"infile\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "9.3+galaxy0",
             "type": "tool",
-            "uuid": "7a7f92a6-ce0b-45ef-8a45-22bf7f5c13c7",
+            "uuid": "b46ebec1-b060-4589-9e27-e56ebeca3300",
             "when": null,
             "workflow_outputs": []
         },
-        "18": {
+        "17": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqtofasta/fastq_to_fasta_python/1.1.5",
             "errors": null,
-            "id": 18,
+            "id": 17,
             "input_connections": {
                 "input_file": {
-                    "id": 15,
+                    "id": 14,
                     "output_name": "good_sequence_file"
                 }
             },
@@ -831,7 +764,7 @@
                 }
             ],
             "position": {
-                "left": 1909.8164640063083,
+                "left": 1648.8164640063083,
                 "top": 634.3621610446716
             },
             "post_job_actions": {
@@ -851,18 +784,18 @@
             "tool_state": "{\"input_file\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.1.5",
             "type": "tool",
-            "uuid": "69c559e3-72f1-43c7-9986-ff1d18ffe288",
+            "uuid": "be46f48b-8945-47a0-b7c0-f84cee8491d8",
             "when": null,
             "workflow_outputs": []
         },
-        "19": {
+        "18": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.74+galaxy0",
             "errors": null,
-            "id": 19,
+            "id": 18,
             "input_connections": {
                 "input_file": {
-                    "id": 15,
+                    "id": 14,
                     "output_name": "good_sequence_file"
                 }
             },
@@ -893,7 +826,7 @@
                 }
             ],
             "position": {
-                "left": 1873.1550210976457,
+                "left": 1612.1550210976457,
                 "top": 812.2383769545825
             },
             "post_job_actions": {
@@ -918,18 +851,18 @@
             "tool_state": "{\"adapters\": {\"__class__\": \"RuntimeValue\"}, \"contaminants\": {\"__class__\": \"RuntimeValue\"}, \"input_file\": {\"__class__\": \"ConnectedValue\"}, \"kmers\": \"7\", \"limits\": {\"__class__\": \"RuntimeValue\"}, \"min_length\": null, \"nogroup\": false, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.74+galaxy0",
             "type": "tool",
-            "uuid": "a0802e66-7e05-4fd5-8f10-924945f5ac90",
+            "uuid": "e33919ed-adc5-4344-8622-81731c5e138c",
             "when": null,
             "workflow_outputs": []
         },
-        "20": {
+        "19": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/9.3+galaxy0",
             "errors": null,
-            "id": 20,
+            "id": 19,
             "input_connections": {
                 "infile": {
-                    "id": 16,
+                    "id": 15,
                     "output_name": "text_file"
                 }
             },
@@ -943,7 +876,7 @@
                 }
             ],
             "position": {
-                "left": 1592.4716094560185,
+                "left": 1331.4716094560185,
                 "top": 1063.8186665413482
             },
             "post_job_actions": {
@@ -963,18 +896,18 @@
             "tool_state": "{\"find_and_replace\": [{\"__index__\": 0, \"find_pattern\": \"\\\\t(.*?)\\\\.gz\", \"replace_pattern\": \"\\\\t$1_length_filtering\", \"is_regex\": true, \"global\": true, \"caseinsensitive\": false, \"wholewords\": false, \"skip_first_line\": false, \"searchwhere\": {\"searchwhere_select\": \"line\", \"__current_case__\": 0}}], \"infile\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "9.3+galaxy0",
             "type": "tool",
-            "uuid": "557493ca-41a5-4c53-96fd-19854bf657b7",
+            "uuid": "e2fc5e91-1d42-475d-ae80-293ad899567a",
             "when": null,
             "workflow_outputs": []
         },
-        "21": {
+        "20": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fasta_formatter/cshl_fasta_formatter/1.0.1+galaxy2",
             "errors": null,
-            "id": 21,
+            "id": 20,
             "input_connections": {
                 "input": {
-                    "id": 18,
+                    "id": 17,
                     "output_name": "output_file"
                 }
             },
@@ -988,7 +921,7 @@
                 }
             ],
             "position": {
-                "left": 2202.646496697877,
+                "left": 1941.646496697877,
                 "top": 647.1088294674363
             },
             "post_job_actions": {
@@ -1010,24 +943,24 @@
             "tool_state": "{\"input\": {\"__class__\": \"ConnectedValue\"}, \"width\": \"60\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.0.1+galaxy2",
             "type": "tool",
-            "uuid": "033610ff-b678-4171-b17e-5f5c574ae1ef",
+            "uuid": "ab230c68-55fd-4a11-8ff7-56eacc1336eb",
             "when": null,
             "workflow_outputs": [
                 {
                     "label": "SE_QC_processed_FASTA",
                     "output_name": "output",
-                    "uuid": "7f5e684d-843a-45c8-884f-74ba296192e7"
+                    "uuid": "64d02ea7-65ee-43d0-a5ec-260a319e254a"
                 }
             ]
         },
-        "22": {
+        "21": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/9.3+galaxy0",
             "errors": null,
-            "id": 22,
+            "id": 21,
             "input_connections": {
                 "infile": {
-                    "id": 19,
+                    "id": 18,
                     "output_name": "text_file"
                 }
             },
@@ -1041,7 +974,7 @@
                 }
             ],
             "position": {
-                "left": 2138.7115272508017,
+                "left": 1877.7115272508015,
                 "top": 1026.8671426905246
             },
             "post_job_actions": {
@@ -1061,30 +994,30 @@
             "tool_state": "{\"find_and_replace\": [{\"__index__\": 0, \"find_pattern\": \"\\\\t(.*?)\\\\.gz\", \"replace_pattern\": \"\\\\t$1_ambiguous_base_filtering\", \"is_regex\": true, \"global\": true, \"caseinsensitive\": false, \"wholewords\": false, \"skip_first_line\": false, \"searchwhere\": {\"searchwhere_select\": \"line\", \"__current_case__\": 0}}], \"infile\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "9.3+galaxy0",
             "type": "tool",
-            "uuid": "80785ba7-400a-41e3-905b-a2d7a49e83ba",
+            "uuid": "cbd8b56e-bed3-44eb-8d3d-04969ee68ce3",
             "when": null,
             "workflow_outputs": []
         },
-        "23": {
+        "22": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.11+galaxy1",
             "errors": null,
-            "id": 23,
+            "id": 22,
             "input_connections": {
                 "results_0|software_cond|output_0|input": {
-                    "id": 14,
+                    "id": 11,
                     "output_name": "outfile"
                 },
                 "results_0|software_cond|output_1|input": {
-                    "id": 17,
+                    "id": 16,
                     "output_name": "outfile"
                 },
                 "results_0|software_cond|output_2|input": {
-                    "id": 20,
+                    "id": 19,
                     "output_name": "outfile"
                 },
                 "results_0|software_cond|output_3|input": {
-                    "id": 22,
+                    "id": 21,
                     "output_name": "outfile"
                 }
             },
@@ -1102,7 +1035,7 @@
                 }
             ],
             "position": {
-                "left": 1648.0954903946647,
+                "left": 1387.0954903946647,
                 "top": 1402.3731383710565
             },
             "post_job_actions": {
@@ -1131,18 +1064,18 @@
             "tool_state": "{\"comment\": \"\", \"export\": false, \"flat\": false, \"results\": [{\"__index__\": 0, \"software_cond\": {\"software\": \"fastqc\", \"__current_case__\": 8, \"output\": [{\"__index__\": 0, \"type\": \"data\", \"input\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 1, \"type\": \"data\", \"input\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 2, \"type\": \"data\", \"input\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 3, \"type\": \"data\", \"input\": {\"__class__\": \"ConnectedValue\"}}]}}], \"saveLog\": false, \"title\": \"\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.11+galaxy1",
             "type": "tool",
-            "uuid": "ae66ef8e-4819-4532-8c0a-4d46ed75580c",
+            "uuid": "2ebc66bb-9c10-4178-9037-01b80dadac69",
             "when": null,
             "workflow_outputs": [
                 {
-                    "label": "SE_MultiQC_stats",
-                    "output_name": "stats",
-                    "uuid": "43b6523c-11d8-4e2a-9925-7f109e29f547"
-                },
-                {
                     "label": "SE_MultiQC_report",
                     "output_name": "html_report",
-                    "uuid": "b835abdb-edf4-4f4a-bf52-5ee7b7a84a99"
+                    "uuid": "6577ae0d-94a0-442b-a3ad-7a6bc3b0fb38"
+                },
+                {
+                    "label": "SE_MultiQC_stats",
+                    "output_name": "stats",
+                    "uuid": "d54dee54-e527-4471-b5d9-70589e819419"
                 }
             ]
         }
@@ -1150,6 +1083,6 @@
     "tags": [
         "MGnify_Amplicon"
     ],
-    "uuid": "9edea3b7-e3e4-437f-8abb-1d96c336f326",
-    "version": 1
+    "uuid": "d392ef17-3871-4607-a87b-63a550500788",
+    "version": 11
 }
