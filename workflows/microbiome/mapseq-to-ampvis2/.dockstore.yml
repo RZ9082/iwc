@@ -3,9 +3,9 @@ workflows:
 - name: main
   subclass: Galaxy
   publish: true
-  primaryDescriptorPath: /mapseq-to-ampvis.ga
+  primaryDescriptorPath: /mapseq-to-ampvis2.ga
   testParameterFiles:
-  - /mapseq-to-ampvis-tests.yml
+  - /mapseq-to-ampvis2-tests.yml
   authors:
   - name: Rand Zoabi
     orcid: 0009-0000-2501-8053
