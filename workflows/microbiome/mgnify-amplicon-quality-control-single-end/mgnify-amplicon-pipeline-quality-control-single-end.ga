@@ -24,14 +24,14 @@
     "name": "MGnify's amplicon pipeline - Quality control SE",
     "steps": {
         "0": {
-            "annotation": "Single-end reads.",
+            "annotation": "Single-end reads collection.",
             "content_id": null,
             "errors": null,
             "id": 0,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "Single-end reads.",
+                    "description": "Single-end reads collection.",
                     "name": "Single-end reads"
                 }
             ],
@@ -1083,6 +1083,6 @@
     "tags": [
         "MGnify_Amplicon"
     ],
-    "uuid": "d392ef17-3871-4607-a87b-63a550500788",
-    "version": 11
+    "uuid": "b6a34087-11d2-4168-b20b-d0e728fe7c6a",
+    "version": 12
 }

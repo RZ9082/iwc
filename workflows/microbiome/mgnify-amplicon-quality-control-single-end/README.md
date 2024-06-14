@@ -2,7 +2,7 @@
 
 ## Input datasets
 
-- **Accession** Download and extract single-end reads from NCBI SRA via corresponding accession IDs.
+- **Single-end reada** A collection containing single-end reads.
 
 ## Input values
 

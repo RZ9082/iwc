@@ -1,11 +1,24 @@
 - doc: Test outline for mgnify-amplicon-pipeline-quality-control-paired-end.ga
   job:
-    Accession: 'DRR218540'
+    Paired-end reads:
+      class: Collection
+      collection_type: list:paired
+      elements:
+      - class: Collection
+        type: paired
+        identifier: ERR2715528
+        elements:
+        - identifier: forward
+          class: File
+          path: test-data/ERR2715528/forward.fastqsanger.gz
+        - identifier: reverse
+          class: File
+          path: test-data/ERR2715528/reverse.fastqsanger.gz
   outputs:
     PE_QC_processed_FASTA:
       element_tests:
-        DRR218540:
-          path: test-data/processed_FASTA/DRR218540.fasta
+        ERR2715528:
+          path: test-data/processed_FASTA/ERR2715528.fasta
           compare: diff
           lines_diff: 0
     PE_MultiQC_stats:
@@ -21,16 +34,18 @@
         sources:
           assert:
             has_text:
-              text: "FastQC	all_sections	DRR218540_ambiguity_filtering"
+              text: "FastQC	all_sections	ERR2715528_ambiguity_filtering"
     PE_MultiQC_report:
       asserts:
         - that: has_text
-          text: "DRR218540_ambiguous_base_filtering"
+          text: "ERR2715528_ambiguous_base_filtering"
         - that: has_text
-          text: "DRR218540_initial_reads"
+          text: "ERR2715528_initial_reads"
         - that: has_text
-          text: "DRR218540_length_filtering"
+          text: "ERR2715528_length_filtering"
         - that: has_text
-          text: "DRR218540_trimming"
+          text: "ERR2715528_trimming"
         - that: has_text
-          text: "81.2%"
+          text: "92.2%"
+        - that: has_text
+          text: "51%"

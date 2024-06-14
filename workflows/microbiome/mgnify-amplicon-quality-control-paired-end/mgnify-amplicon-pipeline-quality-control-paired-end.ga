@@ -24,18 +24,18 @@
     "name": "MGnify's amplicon pipeline - Quality control PE",
     "steps": {
         "0": {
-            "annotation": "",
+            "annotation": "Paired-end reads collection.",
             "content_id": null,
             "errors": null,
             "id": 0,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "",
-                    "name": "Paired-end reads "
+                    "description": "Paired-end reads collection.",
+                    "name": "Paired-end reads"
                 }
             ],
-            "label": "Paired-end reads ",
+            "label": "Paired-end reads",
             "name": "Input dataset collection",
             "outputs": [],
             "position": {
@@ -1441,14 +1441,14 @@
             "when": null,
             "workflow_outputs": [
                 {
-                    "label": "PE_MultiQC_stats",
-                    "output_name": "stats",
-                    "uuid": "b421ae19-7dd7-4e7c-b4d4-9a9553f20419"
-                },
-                {
                     "label": "PE_MultiQC_report",
                     "output_name": "html_report",
                     "uuid": "0bc765cb-c05d-4a2d-a9e8-671df117365e"
+                },
+                {
+                    "label": "PE_MultiQC_stats",
+                    "output_name": "stats",
+                    "uuid": "b421ae19-7dd7-4e7c-b4d4-9a9553f20419"
                 }
             ]
         }
@@ -1456,6 +1456,6 @@
     "tags": [
         "MGnify_Amplicon"
     ],
-    "uuid": "c85c532d-d5a3-4a56-9e51-cb7b3aa73574",
-    "version": 8
+    "uuid": "28e46833-547b-478f-af8a-841eabf3215f",
+    "version": 9
 }

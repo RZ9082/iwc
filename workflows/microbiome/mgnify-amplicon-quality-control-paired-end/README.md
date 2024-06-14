@@ -2,7 +2,7 @@
 
 ## Input datasets
 
-- **Accession** Download and extract paired-end reads from NCBI SRA via corresponding accession IDs.
+- **Paired-end reads** a paired list collection containing the forward and reverse reads.
 
 ## Input values
 
