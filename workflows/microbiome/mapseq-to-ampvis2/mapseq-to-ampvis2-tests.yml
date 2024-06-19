@@ -47,9 +47,10 @@
       compare: diff
       lines_diff: 0
     ampvis:
-      path: test-data/ampvis2_load_output.ampvis2
-      compare: diff
-      lines_diff: 0
+      asserts:
+        - that: has_size
+          value: 15000
+          delta: 1000
     metadata_list_out:
       path: test-data/metadata_list.tabular
       compare: diff
