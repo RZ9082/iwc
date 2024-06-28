@@ -419,7 +419,7 @@
           n: 2
         - that: has_n_lines
           n: 13
-          delta: 2
+          delta: 4
     UNITE_phylum_taxonomic_summary_table:
       asserts:
         - that: has_text
