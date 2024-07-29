@@ -129,7 +129,13 @@
             "type": "parameter_input",
             "uuid": "5d990811-1c1b-4de5-ae02-a9560e49c0a1",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "9d18d09f-451d-46b5-84c2-4d167067365e"
+                }
+            ]
         },
         "4": {
             "annotation": "Cut bases off the start of a read, if below a threshold quality. (Single-end)",
@@ -156,7 +162,13 @@
             "type": "parameter_input",
             "uuid": "7b19177d-56d3-44c0-a9a4-5515028bb99e",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "61e478c5-05c9-4c32-ba45-11bd137a9622"
+                }
+            ]
         },
         "5": {
             "annotation": "Number of bases to average across. (Single-end)",
@@ -183,7 +195,13 @@
             "type": "parameter_input",
             "uuid": "4c8119a0-c2fe-472f-a3a2-73b24c8de021",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "44394747-3801-4108-93d1-cb50ade93b3e"
+                }
+            ]
         },
         "6": {
             "annotation": "Cut bases off the end of a read, if below a threshold quality. (Single-end)",
@@ -210,7 +228,13 @@
             "type": "parameter_input",
             "uuid": "776b1391-be6a-4867-9f98-ee91e84adf2d",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "b0d84d9d-1536-428b-8f5e-f31ae645c8c9"
+                }
+            ]
         },
         "7": {
             "annotation": "Minimum length of reads to be kept. (Single-end)",
@@ -237,7 +261,13 @@
             "type": "parameter_input",
             "uuid": "ee36051c-8988-4499-b219-c7446b3aac2e",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "d651e9ea-5e9d-4c3e-b99f-ee8bd10590ea"
+                }
+            ]
         },
         "8": {
             "annotation": "Minimum sequence length. (Single-end)",
@@ -264,7 +294,13 @@
             "type": "parameter_input",
             "uuid": "1ba4b0f0-d94c-4d2d-ad22-b250cd023919",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "8167c5d2-3f68-40d0-85cc-2b43037b113c"
+                }
+            ]
         },
         "9": {
             "annotation": "The phred+64 encoding works the same as the phred+33 encoding, except you add 64 to the phred score to determine the ascii code of the quality character. (Single-end)",
@@ -291,7 +327,13 @@
             "type": "parameter_input",
             "uuid": "19771267-199f-4730-b720-a7f74a74d738",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "057fda47-e70f-4fa6-9a08-5c8176889d33"
+                }
+            ]
         },
         "10": {
             "annotation": "Maximal N percentage threshold to conserve sequences. (Single-end)",
@@ -318,7 +360,13 @@
             "type": "parameter_input",
             "uuid": "74e49ceb-1e21-452e-8817-8f15787606bb",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "42002ad5-a59b-4d9f-ae74-95b4617278d5"
+                }
+            ]
         },
         "11": {
             "annotation": "Enable base correction in overlapped regions. (Paired-end)",
@@ -345,7 +393,13 @@
             "type": "parameter_input",
             "uuid": "a8c66db3-9b42-47c3-8a6d-54ff5c19534c",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "4f59cd9d-e2bf-4b56-82a3-9402c78fed08"
+                }
+            ]
         },
         "12": {
             "annotation": "The quality value that a base is qualified. (Paired-end)",
@@ -372,7 +426,13 @@
             "type": "parameter_input",
             "uuid": "58fdde3c-1ca9-40e3-be62-9cec6dcd5513",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "df0de258-10d2-4750-9157-4649e69ca999"
+                }
+            ]
         },
         "13": {
             "annotation": "How many percents of bases are allowed to be unqualified (0~100). (Paired-end)",
@@ -399,7 +459,13 @@
             "type": "parameter_input",
             "uuid": "c76560ea-41ed-41b8-bc6c-a512fc7cb195",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "d9a51219-17c5-4e1d-9997-812fa49a930f"
+                }
+            ]
         },
         "14": {
             "annotation": "Reads shorter than this value will be discarded. (Paired-end)",
@@ -426,7 +492,13 @@
             "type": "parameter_input",
             "uuid": "e3296ea7-5273-471e-98b4-8d14c97dd73d",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "0fd8a8a5-2cad-4932-9357-b408a4ec0b60"
+                }
+            ]
         },
         "15": {
             "annotation": "Number of bases to average across. (Paired-end)",
@@ -453,7 +525,13 @@
             "type": "parameter_input",
             "uuid": "51ae8575-8e0a-4afc-9dbd-1ba9b3a5930c",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "7a39bd9d-0540-4578-8bca-c24b6a74ac9c"
+                }
+            ]
         },
         "16": {
             "annotation": "Average quality required. (Paired-end)",
@@ -480,7 +558,13 @@
             "type": "parameter_input",
             "uuid": "16426cd1-2f71-41a1-adba-3b48d64a991a",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "0e6abc6c-987d-4c81-a22b-2c74bc1aee4c"
+                }
+            ]
         },
         "17": {
             "annotation": "specifies the name of SSU taxonomic summary file.",
@@ -507,7 +591,13 @@
             "type": "parameter_input",
             "uuid": "ef14ca06-69dd-4aa8-9da6-7fb2fa96b347",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "3489598b-7e3d-4235-a191-2ed981ee6095"
+                }
+            ]
         },
         "18": {
             "annotation": "specifies the name of SSU taxonomic summary file, for phylum level.",
@@ -534,7 +624,13 @@
             "type": "parameter_input",
             "uuid": "83e321f8-d842-4274-b6e1-876198d7347c",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "9f3dcb84-d253-4535-86e0-d78d700ed503"
+                }
+            ]
         },
         "19": {
             "annotation": "Cut bases off the start of a read, if below a threshold quality. (Paired-end)",
@@ -561,7 +657,13 @@
             "type": "parameter_input",
             "uuid": "8d9c82d2-8a24-4aa3-8331-7697e545108d",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "dbf3885b-8054-4be8-ac4a-c9d3ea8ef90e"
+                }
+            ]
         },
         "20": {
             "annotation": "specifies the name of LSU taxonomic summary file.",
@@ -588,7 +690,13 @@
             "type": "parameter_input",
             "uuid": "15cb3c88-a22d-4f89-bbca-a2879805fbf7",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "cf03c505-41de-4d3d-9c03-7c70ad218627"
+                }
+            ]
         },
         "21": {
             "annotation": "Cut bases off the end of a read, if below a threshold quality. (Paired-end)",
@@ -615,7 +723,13 @@
             "type": "parameter_input",
             "uuid": "e2977ff0-241f-439e-a294-a0c58d4eafa6",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "adf26ca5-7af3-4840-82c3-b4dbc7c75f59"
+                }
+            ]
         },
         "22": {
             "annotation": "specifies the name of LSU taxonomic summary file, for phylum level.",
@@ -642,7 +756,13 @@
             "type": "parameter_input",
             "uuid": "74bd5b71-e745-4928-a3ad-4a3f2fc57e80",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "fcc2def1-2cc6-4dde-a247-7f20811de0ff"
+                }
+            ]
         },
         "23": {
             "annotation": "Minimum length of reads to be kept. (Paired-end)",
@@ -669,7 +789,13 @@
             "type": "parameter_input",
             "uuid": "2ecb57e8-764b-4fd5-993c-8116fe33ad72",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "83fcdfd4-2da4-4046-98a3-88837aeb083a"
+                }
+            ]
         },
         "24": {
             "annotation": "Minimum sequence length. (Paired-end)",
@@ -696,7 +822,13 @@
             "type": "parameter_input",
             "uuid": "8c61b90f-d811-48be-95b8-29558d1b0048",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "1db56c7e-ae7a-42ec-83d6-15486070f484"
+                }
+            ]
         },
         "25": {
             "annotation": "The phred+64 encoding works the same as the phred+33 encoding, except you add 64 to the phred score to determine the ascii code of the quality character. (Paired-end)",
@@ -723,7 +855,13 @@
             "type": "parameter_input",
             "uuid": "47d0a160-6950-482e-ae70-63ce9be301e7",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "74885f59-2d45-45d8-98d9-ba9c8073edec"
+                }
+            ]
         },
         "26": {
             "annotation": "Maximal N percentage threshold to conserve sequences. (Paired-end)",
@@ -750,7 +888,13 @@
             "type": "parameter_input",
             "uuid": "ad4239be-6569-4aa1-84d2-b6b6e1ac9929",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "c3c0e6e6-79e1-44a6-8992-888d5e5227e2"
+                }
+            ]
         },
         "27": {
             "annotation": "specifies the name of ITS(ITSoneDB) taxonomic summary file.",
@@ -777,7 +921,13 @@
             "type": "parameter_input",
             "uuid": "19cb42f0-11e2-4ae3-84a2-c1620bd87809",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "f79054e6-c71e-410a-a00b-2fc2b479f1ed"
+                }
+            ]
         },
         "28": {
             "annotation": "specifies the name of ITS(ITSoneDB) taxonomic summary file, for phylum level.",
@@ -804,7 +954,13 @@
             "type": "parameter_input",
             "uuid": "d1f914ca-bb35-48be-acf0-897ef8ac94b1",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "acbf30f6-95f5-4df7-b869-2746416a8213"
+                }
+            ]
         },
         "29": {
             "annotation": "specifies the name of ITS(UNITE) taxonomic summary file.",
@@ -831,7 +987,13 @@
             "type": "parameter_input",
             "uuid": "8036ff91-33a5-4b94-9188-0316d339296f",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "a51b3521-1e4e-41ce-8c8a-8de58fa57f35"
+                }
+            ]
         },
         "30": {
             "annotation": "specifies the name of ITS(UNITE) taxonomic summary file, for phylum level.",
@@ -858,7 +1020,13 @@
             "type": "parameter_input",
             "uuid": "3805f549-ef57-4cab-b7a3-990009e9bc42",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "22ca44e6-15e6-41bd-ac84-7d5b9a2e745a"
+                }
+            ]
         },
         "31": {
             "annotation": "",
@@ -2125,7 +2293,7 @@
                         ]
                     }
                 },
-                "tags": "",
+                "tags": [],
                 "uuid": "f7b2cdf1-7155-423f-b42f-01e5c3787261"
             },
             "tool_id": null,
@@ -2133,6 +2301,16 @@
             "uuid": "e8663476-0497-4624-aa97-3f9cd1ae63cd",
             "when": null,
             "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "7:output",
+                    "uuid": "d64ee12c-c4f9-4878-8c1f-6310f1615631"
+                },
+                {
+                    "label": null,
+                    "output_name": "8:output",
+                    "uuid": "1db015e2-6855-4d80-8440-ee93928a1ef2"
+                },
                 {
                     "label": "SE_MultiQC_report",
                     "output_name": "SE_MultiQC_report",
@@ -2147,6 +2325,36 @@
                     "label": "SE_QC_processed_FASTA",
                     "output_name": "SE_QC_processed_FASTA",
                     "uuid": "ae5b4ae6-6702-4e80-ad34-3544850c4137"
+                },
+                {
+                    "label": null,
+                    "output_name": "1:output",
+                    "uuid": "af5033b1-79a4-4c62-9268-9bb523b634b1"
+                },
+                {
+                    "label": null,
+                    "output_name": "2:output",
+                    "uuid": "f5a33732-9ab9-475a-b01e-caa24a19d673"
+                },
+                {
+                    "label": null,
+                    "output_name": "3:output",
+                    "uuid": "661df616-6eec-4c75-a29b-60620d098a17"
+                },
+                {
+                    "label": null,
+                    "output_name": "4:output",
+                    "uuid": "da3084f5-ee95-481e-8478-38186c8ab4e8"
+                },
+                {
+                    "label": null,
+                    "output_name": "5:output",
+                    "uuid": "8d928cc6-3199-4a89-8dc5-0bf54a72d701"
+                },
+                {
+                    "label": null,
+                    "output_name": "6:output",
+                    "uuid": "a992fcd8-0f11-47b2-a17a-48b74e6a3959"
                 }
             ]
         },
@@ -2252,6 +2460,9 @@
                 "format-version": "0.1",
                 "license": "Apache-2.0",
                 "name": "MGnify's amplicon pipeline v5.0 - Quality control PE",
+                "report": {
+                    "markdown": "\n# Workflow Execution Report\n\n## Workflow Inputs\n```galaxy\ninvocation_inputs()\n```\n\n## Workflow Outputs\n```galaxy\ninvocation_outputs()\n```\n\n## Workflow\n```galaxy\nworkflow_display()\n```\n"
+                },
                 "steps": {
                     "0": {
                         "annotation": "Paired-end reads collection.",
@@ -2309,7 +2520,7 @@
                             {
                                 "label": null,
                                 "output_name": "output",
-                                "uuid": "5c1e18fe-023d-445d-8409-6329b1ecf3e2"
+                                "uuid": "712d6646-f958-41f7-990c-8cd6d5d27807"
                             }
                         ]
                     },
@@ -2342,7 +2553,7 @@
                             {
                                 "label": null,
                                 "output_name": "output",
-                                "uuid": "f77495d5-15af-4ef3-824e-1d329e282712"
+                                "uuid": "efb86891-1984-4fd1-bd79-408992b58505"
                             }
                         ]
                     },
@@ -2375,7 +2586,7 @@
                             {
                                 "label": null,
                                 "output_name": "output",
-                                "uuid": "f6a7e551-8a61-4a1a-ba7a-ad8d3f231f83"
+                                "uuid": "f6230887-b9b3-42ab-b777-3ad0e09fa8d0"
                             }
                         ]
                     },
@@ -2408,7 +2619,7 @@
                             {
                                 "label": null,
                                 "output_name": "output",
-                                "uuid": "09f5818b-037e-4d73-a2b9-24e06b401fa2"
+                                "uuid": "5a1ce0d3-30ac-4152-b280-1a248cd438cd"
                             }
                         ]
                     },
@@ -2441,7 +2652,7 @@
                             {
                                 "label": null,
                                 "output_name": "output",
-                                "uuid": "1f77d58e-f12e-42bb-a466-00c0bd8e7076"
+                                "uuid": "09dd8f8c-000b-40ba-b6c3-8695a6f94dcd"
                             }
                         ]
                     },
@@ -2474,7 +2685,7 @@
                             {
                                 "label": null,
                                 "output_name": "output",
-                                "uuid": "5c0c9eaf-893b-4cbc-a03e-b88036dd2a5e"
+                                "uuid": "f6e9d622-8b0d-40f0-a6a3-20ca0a8ff6ca"
                             }
                         ]
                     },
@@ -2507,7 +2718,7 @@
                             {
                                 "label": null,
                                 "output_name": "output",
-                                "uuid": "af951533-7b1d-4c60-88eb-fa5840641555"
+                                "uuid": "db130c93-450a-42cc-87c1-818e03e25e4a"
                             }
                         ]
                     },
@@ -2540,7 +2751,7 @@
                             {
                                 "label": null,
                                 "output_name": "output",
-                                "uuid": "8a7f8f3a-f172-4f37-b3fb-e69c04b34c16"
+                                "uuid": "fde78123-4a9c-40b5-80ed-7b06880054f7"
                             }
                         ]
                     },
@@ -2573,7 +2784,7 @@
                             {
                                 "label": null,
                                 "output_name": "output",
-                                "uuid": "07462522-810e-4070-bb22-675f146489d3"
+                                "uuid": "92400a08-c96f-498f-ad6a-17792453c3d8"
                             }
                         ]
                     },
@@ -2606,7 +2817,7 @@
                             {
                                 "label": null,
                                 "output_name": "output",
-                                "uuid": "e3ef68cc-4faf-45c9-a5c5-3f9277b36265"
+                                "uuid": "0869daad-a73d-4308-bad2-01c49a7d53c7"
                             }
                         ]
                     },
@@ -2639,7 +2850,7 @@
                             {
                                 "label": null,
                                 "output_name": "output",
-                                "uuid": "8c41ae93-b4f7-4ad1-9b02-301c0dcb4b81"
+                                "uuid": "167b7621-a28a-453b-854f-d36987e83387"
                             }
                         ]
                     },
@@ -2672,7 +2883,7 @@
                             {
                                 "label": null,
                                 "output_name": "output",
-                                "uuid": "c7d84a57-5bc5-440c-adf2-360ba65b052c"
+                                "uuid": "c28e1191-4e7c-49ed-908e-6f1d440d2844"
                             }
                         ]
                     },
@@ -3586,7 +3797,12 @@
                                 "output_name": "output_file"
                             }
                         },
-                        "inputs": [],
+                        "inputs": [
+                            {
+                                "description": "runtime parameter for tool FASTA Width",
+                                "name": "input"
+                            }
+                        ],
                         "label": null,
                         "name": "FASTA Width",
                         "outputs": [
@@ -3615,7 +3831,7 @@
                             "owner": "devteam",
                             "tool_shed": "toolshed.g2.bx.psu.edu"
                         },
-                        "tool_state": "{\"input\": {\"__class__\": \"ConnectedValue\"}, \"width\": \"0\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+                        "tool_state": "{\"input\": {\"__class__\": \"RuntimeValue\"}, \"width\": \"60\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
                         "tool_version": "1.0.1+galaxy2",
                         "type": "tool",
                         "uuid": "b899fa36-d2c9-4cbe-880a-9984f2b48462",
@@ -3755,14 +3971,39 @@
                         ]
                     }
                 },
-                "tags": "",
-                "uuid": "28d7bc97-bd4c-44dc-a683-97d2dde828bd"
+                "tags": [],
+                "uuid": "115c5bdc-3d3d-45b7-8646-715af15caabd"
             },
             "tool_id": null,
             "type": "subworkflow",
             "uuid": "109a5c22-506c-4078-a2ec-270555c801de",
             "when": null,
             "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "8:output",
+                    "uuid": "5877b176-6ab9-48f8-a2f0-97e11a095f53"
+                },
+                {
+                    "label": null,
+                    "output_name": "9:output",
+                    "uuid": "99824876-48e3-43a8-948e-b2a9946fff4f"
+                },
+                {
+                    "label": null,
+                    "output_name": "10:output",
+                    "uuid": "f640f91f-0651-4f5d-a7f5-242066829489"
+                },
+                {
+                    "label": null,
+                    "output_name": "11:output",
+                    "uuid": "19ba7063-6b0c-4347-a6c9-25b1cac6a285"
+                },
+                {
+                    "label": null,
+                    "output_name": "12:output",
+                    "uuid": "e3eef433-0897-47c3-84cf-a714fab42df0"
+                },
                 {
                     "label": "PE_MultiQC_stats",
                     "output_name": "PE_MultiQC_stats",
@@ -3777,6 +4018,41 @@
                     "label": "PE_MultiQC_report",
                     "output_name": "PE_MultiQC_report",
                     "uuid": "edbdfddb-3960-4901-b50c-87ddd93fb243"
+                },
+                {
+                    "label": null,
+                    "output_name": "1:output",
+                    "uuid": "49de8489-cd0c-43c5-ad0a-7e9217b280c9"
+                },
+                {
+                    "label": null,
+                    "output_name": "2:output",
+                    "uuid": "c2ab2352-3c17-4623-b30c-05f118468536"
+                },
+                {
+                    "label": null,
+                    "output_name": "3:output",
+                    "uuid": "70e7e29d-84ce-4606-b3d7-dbf6f30742e0"
+                },
+                {
+                    "label": null,
+                    "output_name": "4:output",
+                    "uuid": "ca27495e-d64e-4b3f-8e36-e82948ff0d9b"
+                },
+                {
+                    "label": null,
+                    "output_name": "5:output",
+                    "uuid": "32783835-bacc-4b67-a484-06536fac0949"
+                },
+                {
+                    "label": null,
+                    "output_name": "6:output",
+                    "uuid": "e1c464be-cd2d-4307-b933-85711be446f0"
+                },
+                {
+                    "label": null,
+                    "output_name": "7:output",
+                    "uuid": "99e3c04c-11d6-470f-bc27-38f6622b5a43"
                 }
             ]
         },
@@ -5830,7 +6106,7 @@
                                     ]
                                 }
                             },
-                            "tags": "",
+                            "tags": [],
                             "uuid": "3198f625-7829-497a-b047-386fa33e2c36"
                         },
                         "tool_id": null,
@@ -6207,7 +6483,7 @@
                                     ]
                                 }
                             },
-                            "tags": "",
+                            "tags": [],
                             "uuid": "3198f625-7829-497a-b047-386fa33e2c36"
                         },
                         "tool_id": null,
@@ -6451,7 +6727,7 @@
                                     ]
                                 }
                             },
-                            "tags": "",
+                            "tags": [],
                             "uuid": "3198f625-7829-497a-b047-386fa33e2c36"
                         },
                         "tool_id": null,
@@ -6757,7 +7033,7 @@
                                     ]
                                 }
                             },
-                            "tags": "",
+                            "tags": [],
                             "uuid": "3198f625-7829-497a-b047-386fa33e2c36"
                         },
                         "tool_id": null,
@@ -7109,7 +7385,7 @@
                         ]
                     }
                 },
-                "tags": "",
+                "tags": [],
                 "uuid": "12f9e38b-9484-4610-b6c2-1875368e0de1"
             },
             "tool_id": null,
@@ -7117,6 +7393,11 @@
             "uuid": "6959258b-d746-45d6-973b-863241468041",
             "when": null,
             "workflow_outputs": [
+                {
+                    "label": "JSON_LSU_SILVA",
+                    "output_name": "JSON_LSU_SILVA",
+                    "uuid": "8bfcd55f-e7f2-441a-83ea-89fbf813fac9"
+                },
                 {
                     "label": "Classifications_SSU_SILVA",
                     "output_name": "Classifications_SSU_SILVA",
@@ -7176,11 +7457,6 @@
                     "label": "Krona_SSU_SILVA",
                     "output_name": "Krona_SSU_SILVA",
                     "uuid": "d152e643-dede-48bc-9f36-7afb20cf4228"
-                },
-                {
-                    "label": "JSON_LSU_SILVA",
-                    "output_name": "JSON_LSU_SILVA",
-                    "uuid": "8bfcd55f-e7f2-441a-83ea-89fbf813fac9"
                 }
             ]
         },
@@ -7419,7 +7695,7 @@
                         ]
                     }
                 },
-                "tags": "",
+                "tags": [],
                 "uuid": "0b57266d-c6ff-4b87-926a-0226838507d4"
             },
             "tool_id": null,
@@ -8644,7 +8920,7 @@
                                     ]
                                 }
                             },
-                            "tags": "",
+                            "tags": [],
                             "uuid": "3198f625-7829-497a-b047-386fa33e2c36"
                         },
                         "tool_id": null,
@@ -9021,7 +9297,7 @@
                                     ]
                                 }
                             },
-                            "tags": "",
+                            "tags": [],
                             "uuid": "3198f625-7829-497a-b047-386fa33e2c36"
                         },
                         "tool_id": null,
@@ -9265,7 +9541,7 @@
                                     ]
                                 }
                             },
-                            "tags": "",
+                            "tags": [],
                             "uuid": "3198f625-7829-497a-b047-386fa33e2c36"
                         },
                         "tool_id": null,
@@ -9571,7 +9847,7 @@
                                     ]
                                 }
                             },
-                            "tags": "",
+                            "tags": [],
                             "uuid": "3198f625-7829-497a-b047-386fa33e2c36"
                         },
                         "tool_id": null,
@@ -9923,7 +10199,7 @@
                         ]
                     }
                 },
-                "tags": "",
+                "tags": [],
                 "uuid": "827f53f5-2c24-4e85-bd98-96be605e5652"
             },
             "tool_id": null,
@@ -9931,11 +10207,6 @@
             "uuid": "0ecc7c81-af8e-4836-b965-9015ee0bf696",
             "when": null,
             "workflow_outputs": [
-                {
-                    "label": "ITS_FASTA",
-                    "output_name": "ITS_FASTA",
-                    "uuid": "4ea2f2de-fb60-489f-8bce-dff5a55d918e"
-                },
                 {
                     "label": "OTU_ITSoneDB",
                     "output_name": "OTU_ITSoneDB",
@@ -9985,6 +10256,11 @@
                     "label": "JSON_ITSoneDB",
                     "output_name": "JSON_ITSoneDB",
                     "uuid": "9717550d-30f4-41aa-986f-d1c3251549bd"
+                },
+                {
+                    "label": "ITS_FASTA",
+                    "output_name": "ITS_FASTA",
+                    "uuid": "4ea2f2de-fb60-489f-8bce-dff5a55d918e"
                 }
             ]
         },
@@ -10223,7 +10499,7 @@
                         ]
                     }
                 },
-                "tags": "",
+                "tags": [],
                 "uuid": "0b57266d-c6ff-4b87-926a-0226838507d4"
             },
             "tool_id": null,
@@ -10876,7 +11152,7 @@
                         ]
                     }
                 },
-                "tags": "",
+                "tags": [],
                 "uuid": "3960c02a-c130-40e1-a98a-0f40d2a545d5"
             },
             "tool_id": null,
@@ -10885,14 +11161,24 @@
             "when": "$(inputs.when)",
             "workflow_outputs": [
                 {
-                    "label": "SSU_taxonomic_summary_table",
-                    "output_name": "taxonomic_summary",
-                    "uuid": "acdad6a6-98f2-43ec-ad9f-f7afa5713f1e"
+                    "label": null,
+                    "output_name": "1:output",
+                    "uuid": "133325fa-fe66-43ab-87a4-36e7ec397a2d"
+                },
+                {
+                    "label": null,
+                    "output_name": "2:output",
+                    "uuid": "741f87a4-7f34-48c7-ae11-13ac5def9d12"
                 },
                 {
                     "label": "SSU_phylum_taxonomic_summary_table",
                     "output_name": "phylum_taxonomic_summary",
                     "uuid": "2ba77ee8-0898-47d2-9d76-635959b55c1b"
+                },
+                {
+                    "label": "SSU_taxonomic_summary_table",
+                    "output_name": "taxonomic_summary",
+                    "uuid": "acdad6a6-98f2-43ec-ad9f-f7afa5713f1e"
                 }
             ]
         },
@@ -11131,7 +11417,7 @@
                         ]
                     }
                 },
-                "tags": "",
+                "tags": [],
                 "uuid": "0b57266d-c6ff-4b87-926a-0226838507d4"
             },
             "tool_id": null,
@@ -11375,7 +11661,7 @@
                         ]
                     }
                 },
-                "tags": "",
+                "tags": [],
                 "uuid": "0b57266d-c6ff-4b87-926a-0226838507d4"
             },
             "tool_id": null,
@@ -12028,7 +12314,7 @@
                         ]
                     }
                 },
-                "tags": "",
+                "tags": [],
                 "uuid": "3960c02a-c130-40e1-a98a-0f40d2a545d5"
             },
             "tool_id": null,
@@ -12036,6 +12322,16 @@
             "uuid": "cf06c26e-7238-49f9-8aa2-d0c0ff84ee71",
             "when": "$(inputs.when)",
             "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "2:output",
+                    "uuid": "b4c757cc-b24d-4e39-9e5d-d7d2d86bed42"
+                },
+                {
+                    "label": null,
+                    "output_name": "1:output",
+                    "uuid": "d433bde1-a114-4fb7-84cc-d2deb249abc0"
+                },
                 {
                     "label": "LSU_phylum_taxonomic_summary_table",
                     "output_name": "phylum_taxonomic_summary",
@@ -12697,7 +12993,7 @@
                         ]
                     }
                 },
-                "tags": "",
+                "tags": [],
                 "uuid": "3960c02a-c130-40e1-a98a-0f40d2a545d5"
             },
             "tool_id": null,
@@ -12706,14 +13002,24 @@
             "when": "$(inputs.when)",
             "workflow_outputs": [
                 {
+                    "label": "ITSoneDB_taxonomic_summary_table",
+                    "output_name": "taxonomic_summary",
+                    "uuid": "ac51391a-e7d1-4d65-bb0d-81082f69d3bc"
+                },
+                {
                     "label": "ITSoneDB_phylum_taxonomic_summary_table",
                     "output_name": "phylum_taxonomic_summary",
                     "uuid": "70980dab-7f85-476a-a9df-938a55abe711"
                 },
                 {
-                    "label": "ITSoneDB_taxonomic_summary_table",
-                    "output_name": "taxonomic_summary",
-                    "uuid": "ac51391a-e7d1-4d65-bb0d-81082f69d3bc"
+                    "label": null,
+                    "output_name": "1:output",
+                    "uuid": "d7f5f1a7-f07e-4eb2-970f-de53a1c2897f"
+                },
+                {
+                    "label": null,
+                    "output_name": "2:output",
+                    "uuid": "db70e517-6911-4ff7-884b-24598f051da1"
                 }
             ]
         },
@@ -13366,7 +13672,7 @@
                         ]
                     }
                 },
-                "tags": "",
+                "tags": [],
                 "uuid": "3960c02a-c130-40e1-a98a-0f40d2a545d5"
             },
             "tool_id": null,
@@ -13375,14 +13681,24 @@
             "when": "$(inputs.when)",
             "workflow_outputs": [
                 {
-                    "label": "UNITE_taxonomic_summary_table",
-                    "output_name": "taxonomic_summary",
-                    "uuid": "8b131234-5ad8-4fd9-ac1f-94a5b0177626"
+                    "label": null,
+                    "output_name": "1:output",
+                    "uuid": "e229d77e-2e8e-42b4-ba60-36c213561f8c"
+                },
+                {
+                    "label": null,
+                    "output_name": "2:output",
+                    "uuid": "f18b7f97-3686-4edf-974c-ea5fc7b379ab"
                 },
                 {
                     "label": "UNITE_phylum_taxonomic_summary_table",
                     "output_name": "phylum_taxonomic_summary",
                     "uuid": "ea1b13b6-8c6d-4012-b5ed-4bebd54bf729"
+                },
+                {
+                    "label": "UNITE_taxonomic_summary_table",
+                    "output_name": "taxonomic_summary",
+                    "uuid": "8b131234-5ad8-4fd9-ac1f-94a5b0177626"
                 }
             ]
         }
@@ -13390,6 +13706,6 @@
     "tags": [
         "MGnify_Amplicon"
     ],
-    "uuid": "f803ee60-5de2-4d04-8292-ae8d081f91b2",
-    "version": 71
+    "uuid": "525d6ce5-bc66-43c8-8149-19576d45da60",
+    "version": 72
 }

@@ -22,6 +22,9 @@
     "format-version": "0.1",
     "license": "Apache-2.0",
     "name": "MGnify's amplicon pipeline v5.0 - Quality control PE",
+    "report": {
+        "markdown": "\n# Workflow Execution Report\n\n## Workflow Inputs\n```galaxy\ninvocation_inputs()\n```\n\n## Workflow Outputs\n```galaxy\ninvocation_outputs()\n```\n\n## Workflow\n```galaxy\nworkflow_display()\n```\n"
+    },
     "steps": {
         "0": {
             "annotation": "Paired-end reads collection.",
@@ -79,7 +82,7 @@
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "5c1e18fe-023d-445d-8409-6329b1ecf3e2"
+                    "uuid": "712d6646-f958-41f7-990c-8cd6d5d27807"
                 }
             ]
         },
@@ -112,7 +115,7 @@
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "f77495d5-15af-4ef3-824e-1d329e282712"
+                    "uuid": "efb86891-1984-4fd1-bd79-408992b58505"
                 }
             ]
         },
@@ -145,7 +148,7 @@
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "f6a7e551-8a61-4a1a-ba7a-ad8d3f231f83"
+                    "uuid": "f6230887-b9b3-42ab-b777-3ad0e09fa8d0"
                 }
             ]
         },
@@ -178,7 +181,7 @@
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "09f5818b-037e-4d73-a2b9-24e06b401fa2"
+                    "uuid": "5a1ce0d3-30ac-4152-b280-1a248cd438cd"
                 }
             ]
         },
@@ -211,7 +214,7 @@
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "1f77d58e-f12e-42bb-a466-00c0bd8e7076"
+                    "uuid": "09dd8f8c-000b-40ba-b6c3-8695a6f94dcd"
                 }
             ]
         },
@@ -244,7 +247,7 @@
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "5c0c9eaf-893b-4cbc-a03e-b88036dd2a5e"
+                    "uuid": "f6e9d622-8b0d-40f0-a6a3-20ca0a8ff6ca"
                 }
             ]
         },
@@ -277,7 +280,7 @@
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "af951533-7b1d-4c60-88eb-fa5840641555"
+                    "uuid": "db130c93-450a-42cc-87c1-818e03e25e4a"
                 }
             ]
         },
@@ -310,7 +313,7 @@
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "8a7f8f3a-f172-4f37-b3fb-e69c04b34c16"
+                    "uuid": "fde78123-4a9c-40b5-80ed-7b06880054f7"
                 }
             ]
         },
@@ -343,7 +346,7 @@
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "07462522-810e-4070-bb22-675f146489d3"
+                    "uuid": "92400a08-c96f-498f-ad6a-17792453c3d8"
                 }
             ]
         },
@@ -376,7 +379,7 @@
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "e3ef68cc-4faf-45c9-a5c5-3f9277b36265"
+                    "uuid": "0869daad-a73d-4308-bad2-01c49a7d53c7"
                 }
             ]
         },
@@ -409,7 +412,7 @@
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "8c41ae93-b4f7-4ad1-9b02-301c0dcb4b81"
+                    "uuid": "167b7621-a28a-453b-854f-d36987e83387"
                 }
             ]
         },
@@ -442,7 +445,7 @@
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "c7d84a57-5bc5-440c-adf2-360ba65b052c"
+                    "uuid": "c28e1191-4e7c-49ed-908e-6f1d440d2844"
                 }
             ]
         },
@@ -1356,7 +1359,12 @@
                     "output_name": "output_file"
                 }
             },
-            "inputs": [],
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool FASTA Width",
+                    "name": "input"
+                }
+            ],
             "label": null,
             "name": "FASTA Width",
             "outputs": [
@@ -1385,7 +1393,7 @@
                 "owner": "devteam",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"input\": {\"__class__\": \"ConnectedValue\"}, \"width\": \"0\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"input\": {\"__class__\": \"RuntimeValue\"}, \"width\": \"60\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.0.1+galaxy2",
             "type": "tool",
             "uuid": "b899fa36-d2c9-4cbe-880a-9984f2b48462",
@@ -1513,14 +1521,14 @@
             "when": null,
             "workflow_outputs": [
                 {
-                    "label": "PE_MultiQC_report",
-                    "output_name": "html_report",
-                    "uuid": "9f963d24-dd76-4891-b36b-4ca02116de16"
-                },
-                {
                     "label": "PE_MultiQC_stats",
                     "output_name": "stats",
                     "uuid": "5abaa0b2-2b1c-4cee-8136-8ec0d8a93322"
+                },
+                {
+                    "label": "PE_MultiQC_report",
+                    "output_name": "html_report",
+                    "uuid": "9f963d24-dd76-4891-b36b-4ca02116de16"
                 }
             ]
         }
@@ -1528,6 +1536,6 @@
     "tags": [
         "MGnify_Amplicon"
     ],
-    "uuid": "28d7bc97-bd4c-44dc-a683-97d2dde828bd",
-    "version": 10
+    "uuid": "115c5bdc-3d3d-45b7-8646-715af15caabd",
+    "version": 11
 }
