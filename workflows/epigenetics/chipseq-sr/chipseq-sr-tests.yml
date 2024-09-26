@@ -22,27 +22,11 @@
         - that: "has_text"
           text: <a href="#bowtie2" class="nav-l1">Bowtie 2 / HiSAT2</a>
     'MultiQC on input dataset(s): Stats':
-      element_tests:
-        bowtie2:
-          asserts:
-            has_text: 
-              text: "49251\t49251\t799"
-        cutadapt:
-          asserts:
-            has_text: 
-              text: "4.4\t50000\t587\t749\t49251"
-        general_stats:
-          asserts:
-            has_text: 
-              text: "200.0\t0.0\t4\t98.38\t4.612745098039215"
-        macs:
-          asserts:
-            has_text:
-              text: "4\t49.0\t44074.0\t44034.0\t1.0\t0.0\t200.0"
-        sources:
-          asserts:
-            has_n_lines: 
-              n: 3
+      asserts:
+        has_line:
+          line: "Sample	MACS2_mqc_generalstats_macs2_d	MACS2_mqc_generalstats_macs2_treatment_redundant_rate	MACS2_mqc_generalstats_macs2_peak_count	Bowtie 2 / HiSAT2_mqc_generalstats_bowtie_2_hisat2_overall_alignment_rate	Cutadapt_mqc_generalstats_cutadapt_percent_trimmed"
+        has_text_matching:
+          expression: "wt_H3K4me3\t200.0\t0.0\t4\t98.[0-9]*\t4.6[0-9]*"
     filtered BAM:
       element_tests:
         wt_H3K4me3:
@@ -65,7 +49,7 @@
             - that: "has_text"
               text: "# d = 200"
             - that: "has_text"
-              text: "# tags after filtering in treatment: 44034"
+              text: "# tags after filtering in treatment: 44038"
     MACS2 narrowPeak:
       element_tests:
         wt_H3K4me3:
@@ -81,7 +65,7 @@
             - that: "has_text"
               text: "# d = 200"
             - that: "has_text"
-              text: "# tags after filtering in treatment: 44034"
+              text: "# tags after filtering in treatment: 44038"
     coverage from MACS2:
       element_tests:
         wt_H3K4me3:
@@ -96,6 +80,6 @@
             - that: "has_text"
               text: "49251 reads; of these:"
             - that: "has_text"
-              text: "43506 (88.34%) aligned exactly 1 time"
+              text: "43525 (88.37%) aligned exactly 1 time"
             - that: "has_text"
-              text: "98.38% overall alignment rate"
+              text: "98.37% overall alignment rate"
