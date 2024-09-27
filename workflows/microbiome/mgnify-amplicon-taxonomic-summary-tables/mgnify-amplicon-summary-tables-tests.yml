@@ -6,24 +6,24 @@
       elements:
       - class: File
         identifier: ERR3046414_MERGED_FASTQ_SSU_OTU.tabular
-        path: test-data/OTU_tables/ERR3046414_MERGED_FASTQ_SSU_OTU.tabular
+        location: https://zenodo.org/records/13710235/files/ERR3046414_MERGED_FASTQ_SSU_OTU.tabular
       - class: File
         identifier: ERR3046440_MERGED_FASTQ_SSU_OTU.tabular
-        path: test-data/OTU_tables/ERR3046440_MERGED_FASTQ_SSU_OTU.tabular
+        location: https://zenodo.org/records/13710235/files/ERR3046440_MERGED_FASTQ_SSU_OTU.tabular
       - class: File
         identifier: ERR4319664_MERGED_FASTQ_SSU_OTU.tabular
-        path: test-data/OTU_tables/ERR4319664_MERGED_FASTQ_SSU_OTU.tabular
+        location: https://zenodo.org/records/13710235/files/ERR4319664_MERGED_FASTQ_SSU_OTU.tabular
       - class: File
         identifier: ERR4319712_MERGED_FASTQ_SSU_OTU.tabular
-        path: test-data/OTU_tables/ERR4319712_MERGED_FASTQ_SSU_OTU.tabular
+        location: https://zenodo.org/records/13710235/files/ERR4319712_MERGED_FASTQ_SSU_OTU.tabular
     taxonomic_summary_table: 'taxonomic_summary_table'
     phylum_taxonomic_summary_table: 'phylum_taxonomic_summary_table'
   outputs:
     taxonomic_summary:       
-      path: test-data/taxonomic_summary_table.tabular
+      location: https://zenodo.org/records/13710235/files/taxonomic_summary_table.tabular
       compare: diff
       lines_diff: 0
     phylum_taxonomic_summary:
-      path: test-data/phylum_taxonomic_summary_table.tabular
+      location: https://zenodo.org/records/13710235/files/phylum_taxonomic_summary_table.tabular
       compare: diff
       lines_diff: 0

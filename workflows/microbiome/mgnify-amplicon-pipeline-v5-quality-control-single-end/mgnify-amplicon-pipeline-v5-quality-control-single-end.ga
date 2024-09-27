@@ -1129,7 +1129,9 @@
         }
     },
     "tags": [
-        "MGnify_Amplicon"
+        "MGnify_Amplicon",
+        "amplicon",
+        "metagenomics"
     ],
     "uuid": "f7b2cdf1-7155-423f-b42f-01e5c3787261",
     "version": 13

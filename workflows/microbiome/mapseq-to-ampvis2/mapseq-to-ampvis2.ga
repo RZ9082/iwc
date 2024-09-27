@@ -50,6 +50,9 @@
     "format-version": "0.1",
     "license": "MIT",
     "name": "MAPseq to ampvis2",
+    "report": {
+        "markdown": "\n# Workflow Execution Report\n\n## Workflow Inputs\n```galaxy\ninvocation_inputs()\n```\n\n## Workflow Outputs\n```galaxy\ninvocation_outputs()\n```\n\n## Workflow\n```galaxy\nworkflow_display()\n```\n"
+    },
     "steps": {
         "0": {
             "annotation": "A dataset collection containing the tab-separated OTU outputs of MAPseq.",
@@ -188,7 +191,7 @@
             },
             "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/9.3+galaxy1",
             "tool_shed_repository": {
-                "changeset_revision": "fbf99087e067",
+                "changeset_revision": "86755160afbf",
                 "name": "text_processing",
                 "owner": "bgruening",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -233,7 +236,7 @@
             },
             "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/9.3+galaxy1",
             "tool_shed_repository": {
-                "changeset_revision": "fbf99087e067",
+                "changeset_revision": "86755160afbf",
                 "name": "text_processing",
                 "owner": "bgruening",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -368,7 +371,7 @@
             },
             "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/9.3+galaxy1",
             "tool_shed_repository": {
-                "changeset_revision": "fbf99087e067",
+                "changeset_revision": "86755160afbf",
                 "name": "text_processing",
                 "owner": "bgruening",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -391,7 +394,12 @@
                     "output_name": "tabular_output"
                 }
             },
-            "inputs": [],
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Text reformatting",
+                    "name": "infile"
+                }
+            ],
             "label": null,
             "name": "Text reformatting",
             "outputs": [
@@ -415,12 +423,12 @@
             },
             "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/9.3+galaxy1",
             "tool_shed_repository": {
-                "changeset_revision": "fbf99087e067",
+                "changeset_revision": "86755160afbf",
                 "name": "text_processing",
                 "owner": "bgruening",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"code\": \"NR > 1\", \"infile\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"code\": \"NR==2 {for(i=2; i<=NF; i++) if (index($i, \\\".\\\") > 0) $i = substr($i, 1, index($i, \\\".\\\")-1)} NR>1 {print}\", \"infile\": {\"__class__\": \"RuntimeValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "9.3+galaxy1",
             "type": "tool",
             "uuid": "8ada9fc3-1ec1-4ec8-995e-b2f6411c777f",
@@ -560,19 +568,19 @@
                     "uuid": "947416a8-a8b7-4eb1-9341-b6831dc6fc41"
                 },
                 {
-                    "label": "metadata_list_out",
-                    "output_name": "metadata_list_out",
-                    "uuid": "1b0ffbe3-56bd-457e-9d66-66295a995948"
-                },
-                {
                     "label": "taxonomy_list_out",
                     "output_name": "taxonomy_list_out",
                     "uuid": "e653bc22-b3fc-4334-b205-09b27390c7d8"
+                },
+                {
+                    "label": "metadata_list_out",
+                    "output_name": "metadata_list_out",
+                    "uuid": "1b0ffbe3-56bd-457e-9d66-66295a995948"
                 }
             ]
         }
     },
     "tags": [],
-    "uuid": "9ea16f60-58d9-43ff-b5eb-9d8ad3b0c2b7",
-    "version": 26
+    "uuid": "24d942a7-1cc8-4dd4-b625-378bd4eb86c4",
+    "version": 28
 }

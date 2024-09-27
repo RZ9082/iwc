@@ -222,7 +222,7 @@
             },
             "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/9.3+galaxy1",
             "tool_shed_repository": {
-                "changeset_revision": "fbf99087e067",
+                "changeset_revision": "86755160afbf",
                 "name": "text_processing",
                 "owner": "bgruening",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -272,7 +272,7 @@
             },
             "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/9.3+galaxy1",
             "tool_shed_repository": {
-                "changeset_revision": "fbf99087e067",
+                "changeset_revision": "86755160afbf",
                 "name": "text_processing",
                 "owner": "bgruening",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -448,7 +448,7 @@
             },
             "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/9.3+galaxy1",
             "tool_shed_repository": {
-                "changeset_revision": "fbf99087e067",
+                "changeset_revision": "86755160afbf",
                 "name": "text_processing",
                 "owner": "bgruening",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -499,7 +499,7 @@
             },
             "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/9.3+galaxy1",
             "tool_shed_repository": {
-                "changeset_revision": "fbf99087e067",
+                "changeset_revision": "86755160afbf",
                 "name": "text_processing",
                 "owner": "bgruening",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -591,7 +591,7 @@
             },
             "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/9.3+galaxy1",
             "tool_shed_repository": {
-                "changeset_revision": "fbf99087e067",
+                "changeset_revision": "86755160afbf",
                 "name": "text_processing",
                 "owner": "bgruening",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -611,7 +611,9 @@
         }
     },
     "tags": [
-        "MGnify_Amplicon"
+        "MGnify_Amplicon",
+        "amplicon",
+        "metagenomics"
     ],
     "uuid": "3960c02a-c130-40e1-a98a-0f40d2a545d5",
     "version": 67

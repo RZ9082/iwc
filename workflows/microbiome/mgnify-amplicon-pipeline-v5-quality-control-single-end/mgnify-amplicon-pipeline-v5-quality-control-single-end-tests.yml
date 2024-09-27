@@ -6,16 +6,16 @@
       elements:
       - class: File
         identifier: DRR010481
-        path: test-data/DRR010481.fastqsanger.gz
+        location: https://zenodo.org/records/13710235/files/DRR010481.fastqsanger.gz
   outputs:
     SE_MultiQC_stats:
       element_tests:
         fastqc:
-          path: test-data/MultiQC_stats/fastqc.tabular
+          location: https://zenodo.org/records/13710235/files/fastqc_SE.tabular
           compare: diff
           lines_diff: 0
         general_stats:
-          path: test-data/MultiQC_stats/general_stats.tabular
+          location: https://zenodo.org/records/13710235/files/general_stats_SE.tabular
           compare: diff
           lines_diff: 0
         sources:
@@ -55,6 +55,6 @@
     SE_QC_processed_FASTA:
       element_tests:
         DRR010481:
-          path: test-data/processed_FASTA/DRR010481.fasta
+          location: https://zenodo.org/records/13710235/files/DRR010481_SE.fasta
           compare: diff
           lines_diff: 0

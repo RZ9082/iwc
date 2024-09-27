@@ -6,13 +6,13 @@
       elements:
       - class: File
         identifier: DRR010481_FASTQ.fasta
-        path: test-data/sequences/DRR010481_FASTQ.fasta
+        location: https://zenodo.org/records/13710235/files/DRR010481_SE.fasta
       - class: File
         identifier: ERR2715528_MERGED_FASTQ.fasta
-        path: test-data/sequences/ERR2715528_MERGED_FASTQ.fasta
+        location: https://zenodo.org/records/13710235/files/ERR2715528_PE.fasta
     Clan information file:
       class: File
-      path: test-data/ribo.claninfo
+      location: "ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/pipeline-5.0/ref-dbs/rfam_models/ribosomal_models/ribo.claninfo"
     Covariance models:
       class: File
       location: "ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/pipeline-5.0/ref-dbs/rfam_models/ribosomal_models/ribo.cm"
@@ -20,22 +20,22 @@
     LSU_SSU_BED:
       element_tests:
         DRR010481_FASTQ.fasta:
-          path: test-data/LSU_SSU_BED/DRR010481_FASTQ.fasta.bed
+          location: https://zenodo.org/records/13710235/files/DRR010481.bed
           compare: diff
           lines_diff: 0
         ERR2715528_MERGED_FASTQ.fasta:
-          path: test-data/LSU_SSU_BED/ERR2715528_MERGED_FASTQ.fasta.bed
+          location: https://zenodo.org/records/13710235/files/ERR2715528.bed
           compare: diff
           lines_diff: 0
     SSU_FASTA:
       element_tests:
         ERR2715528_MERGED_FASTQ.fasta:
-          path: test-data/SSU_FASTA/ERR2715528_MERGED_FASTQ.fasta.fasta
+          location: https://zenodo.org/records/13710235/files/ERR2715528_SSU.fasta
           compare: contains
     LSU_FASTA:
       element_tests:
         DRR010481_FASTQ.fasta:
-          path: test-data/LSU_FASTA/DRR010481_FASTQ.fasta.fasta
+          location: https://zenodo.org/records/13710235/files/DRR010481_LSU.fasta
           compare: contains
     Classifications_SSU_SILVA:
       element_tests:

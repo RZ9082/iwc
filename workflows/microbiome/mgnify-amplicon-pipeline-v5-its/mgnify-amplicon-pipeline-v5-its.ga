@@ -508,7 +508,7 @@
             },
             "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/9.3+galaxy1",
             "tool_shed_repository": {
-                "changeset_revision": "fbf99087e067",
+                "changeset_revision": "86755160afbf",
                 "name": "text_processing",
                 "owner": "bgruening",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -553,7 +553,7 @@
             },
             "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/9.3+galaxy1",
             "tool_shed_repository": {
-                "changeset_revision": "fbf99087e067",
+                "changeset_revision": "86755160afbf",
                 "name": "text_processing",
                 "owner": "bgruening",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -598,7 +598,7 @@
             },
             "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/9.3+galaxy1",
             "tool_shed_repository": {
-                "changeset_revision": "fbf99087e067",
+                "changeset_revision": "86755160afbf",
                 "name": "text_processing",
                 "owner": "bgruening",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -682,7 +682,7 @@
             },
             "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/9.3+galaxy1",
             "tool_shed_repository": {
-                "changeset_revision": "fbf99087e067",
+                "changeset_revision": "86755160afbf",
                 "name": "text_processing",
                 "owner": "bgruening",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -727,7 +727,7 @@
             },
             "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/9.3+galaxy1",
             "tool_shed_repository": {
-                "changeset_revision": "fbf99087e067",
+                "changeset_revision": "86755160afbf",
                 "name": "text_processing",
                 "owner": "bgruening",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -772,7 +772,7 @@
             },
             "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/9.3+galaxy1",
             "tool_shed_repository": {
-                "changeset_revision": "fbf99087e067",
+                "changeset_revision": "86755160afbf",
                 "name": "text_processing",
                 "owner": "bgruening",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -1191,7 +1191,7 @@
                         ]
                     }
                 },
-                "tags": "",
+                "tags": [],
                 "uuid": "3198f625-7829-497a-b047-386fa33e2c36"
             },
             "tool_id": null,
@@ -1568,7 +1568,7 @@
                         ]
                     }
                 },
-                "tags": "",
+                "tags": [],
                 "uuid": "3198f625-7829-497a-b047-386fa33e2c36"
             },
             "tool_id": null,
@@ -1812,7 +1812,7 @@
                         ]
                     }
                 },
-                "tags": "",
+                "tags": [],
                 "uuid": "3198f625-7829-497a-b047-386fa33e2c36"
             },
             "tool_id": null,
@@ -2118,7 +2118,7 @@
                         ]
                     }
                 },
-                "tags": "",
+                "tags": [],
                 "uuid": "3198f625-7829-497a-b047-386fa33e2c36"
             },
             "tool_id": null,
@@ -2471,7 +2471,9 @@
         }
     },
     "tags": [
-        "MGnify_Amplicon"
+        "MGnify_Amplicon",
+        "amplicon",
+        "metagenomics"
     ],
     "uuid": "827f53f5-2c24-4e85-bd98-96be605e5652",
     "version": 23
