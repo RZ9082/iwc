@@ -14,4 +14,4 @@ This pipeline executes the following subworkflows:
 - **Quality control - paired-end**
 - **rRNA-prediction** Classification and visualization of rRNA sequences based on SSUs and LSUs
 - **ITS** Classification and visualization of rRNA sequences based on ITS
-- **Summery tables** Generates taxonomic abundance summary tables
+- **Summary tables** Generates taxonomic abundance summary tables

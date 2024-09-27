@@ -1,6 +1,6 @@
 {
     "a_galaxy_workflow": "true",
-    "annotation": "This workflow creates taxonomic summery tables out of the amplicon pipeline results. ",
+    "annotation": "This workflow creates taxonomic summary tables out of the amplicon pipeline results. ",
     "comments": [
         {
             "color": "green",
